@@ -1,0 +1,77 @@
+.container{
+    padding: 0;
+    margin: 0;
+    .top{
+        padding: 1rem;
+        margin: 3rem 0;
+        list-style-type: none;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        :first-child{
+            margin-top: 2rem;
+        }
+        
+        :last-child{
+            margin-bottom: 2rem;
+        }
+        .nav-list{
+            .nav-link{
+                text-decoration: none;
+                font-size: 1.2rem;
+                color: black;
+                cursor: pointer;
+                :visited{
+                    color: black;
+                }
+            }
+        }
+        .nav-list+.nav-list{
+            margin-top: 1.5rem;
+        }
+    }
+    .bottom{
+        list-style-type: none;
+        margin: 3rem 0 5rem 0;
+        padding: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 500px;
+        .fineprint{
+            font-family: 'GT Zirkon Light';
+            font-size: .8rem;
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+            :visited{
+                color: black;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 700px){
+    .container{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        .top{
+            display: flex;
+            flex-direction: row;
+            padding: 3rem 0;
+            margin-bottom: 0;
+            .nav-list{
+                margin: 0;
+            }
+            .nav-list+.nav-list{
+                margin-top: 0;
+                margin-left: 1.5rem;
+            }
+        }
+        .bottom{
+            margin: 0rem 0 2rem 0;
+            padding-left: 0;
+        }
+    }
+}
