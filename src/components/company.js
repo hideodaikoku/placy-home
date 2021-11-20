@@ -3,9 +3,13 @@ import * as styles from "../styles/company.module.scss";
 
 const Company = () => {
   return (
-    <div className={styles.container}>
+    <div className="sectionContainer">
+    <div className="titleContainer">
+      <h1 className="sectionTitle">
         Company
+      </h1>
     </div>
+  </div>
   );
 };
 

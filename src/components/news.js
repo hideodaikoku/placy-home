@@ -3,8 +3,12 @@ import * as styles from "../styles/news.module.scss";
 
 const News = () => {
   return (
-    <div className={styles.container}>
-        News
+    <div className="sectionContainer">
+      <div className="titleContainer">
+        <h1 className="sectionTitle">
+          News
+        </h1>
+      </div>
     </div>
   );
 };

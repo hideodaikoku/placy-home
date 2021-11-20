@@ -17,6 +17,23 @@ const IndexPage = () => {
       <Top />
       <div className={styles.bottomContainer}>
         <section className={styles.leftNav}>
+          <ul>
+            <li>
+              Vision
+            </li>
+            <li>
+              Our Business
+            </li>
+            <li>
+              People
+            </li>
+            <li>
+              News
+            </li>
+            <li>
+              Company
+            </li>
+          </ul>
         </section>
         <section className={styles.main}>
           <Vision />

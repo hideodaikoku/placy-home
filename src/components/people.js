@@ -3,8 +3,12 @@ import * as styles from "../styles/people.module.scss";
 
 const People = () => {
   return (
-    <div className={styles.container}>
-        People
+    <div className="sectionContainer">
+      <div className="titleContainer">
+        <h1 className="sectionTitle">
+          People
+        </h1>
+      </div>
     </div>
   );
 };
