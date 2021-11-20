@@ -13,6 +13,10 @@ const GlobalStyle = createGlobalStyle`
   a {
     font-family: 'GT Zirkon';
   }
+  body{
+    height: 100vh;
+    overflow: ${({nav})=>nav?"hidden":"visible"};
+  }
 `
 
 const MenuIcon = styled.button`
@@ -92,15 +96,32 @@ const Menu = styled.nav`
           background-size: 100% 2px;
         }
       }
+      :last-child{
+        margin-top: 2rem;
+      }
     }
+  }
+
+  div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+    width: 30%;
+    padding-left: 1rem;
   }
 `
 
 const Header = (props) => {
   const [nav, showNav] = useState(false);
+
+  function handleChange() {
+    showNav(!nav)
+}
+
   return (
     <div className={styles.container}>
-      <GlobalStyle />
+      <GlobalStyle nav={nav}/>
       <StaticImage
         className={styles.image}
         src="../images/placy-logo.png"
@@ -114,7 +135,7 @@ const Header = (props) => {
         className={styles.menuIcon}>
         <MenuIcon
           nav={nav}
-          onClick={() => showNav(!nav)}
+          onClick={handleChange}
         >
           <div />
           <div />
@@ -139,7 +160,49 @@ const Header = (props) => {
             <li>
               <a href="https://placy.typeform.com/to/lfzKCU" target="_blank" rel="noopener noreferrer" alt="Contact Us">Contact</a>
             </li>
+            <li>
+              <StaticImage
+                src="../images/switch.svg"
+                alt="Switch Mode"
+                placeholder="dominantColor"
+                layout="fixed"
+                width={24}
+                height={24}
+              />
+            </li>
           </ul>
+          <div>
+            <a href="#">
+              <StaticImage
+              src="../images/instagram.png"
+              alt="Placy Instagram"
+              placeholder="dominantColor"
+              layout="fixed"
+              width={20}
+              height={20}
+              />
+            </a>
+            <a href="#">
+              <StaticImage
+              src="../images/twitter.png"
+              alt="Placy Twitter"
+              placeholder="dominantColor"
+              layout="fixed"
+              width={20}
+              height={20}
+              />
+            </a>
+            <a href="#">
+              <StaticImage
+              src="../images/facebook.png"
+              alt="Placy Facebook"
+              placeholder="dominantColor"
+              layout="fixed"
+              width={20}
+              height={20}
+              />
+            </a>
+          </div>
         </Menu>
       </div>
 
