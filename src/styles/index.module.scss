@@ -12,12 +12,13 @@
     .bottom-container {
         display: flex;
         flex-direction: row;
-        padding: 1rem;
+        padding: 3.75rem;
         .left-nav{
             display: flex;
             margin-top: 7rem;
+            margin-bottom: 3rem;
             width: 15rem;
-            position: relative;
+            position: sticky;
             ul{
                 list-style-type: '\2605';
                 position: fixed;

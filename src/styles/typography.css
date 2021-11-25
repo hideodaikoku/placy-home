@@ -1,9 +1,9 @@
 @font-face {
     font-family: "GT Zirkon";
     src: url("../fonts/GT-Zirkon-Bold.woff2");
-  }
+}
 
-  @font-face {
-    font-family: "GT Zirkon Light";
-    src: url("../fonts/GT-Zirkon-Light.woff2");
-  }
+@font-face {
+  font-family: "GT Zirkon Light";
+  src: url("../fonts/GT-Zirkon-Light.woff2");
+}
