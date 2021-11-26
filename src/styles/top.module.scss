@@ -4,6 +4,9 @@
     margin: 3rem auto;
     padding: 1rem;
     display: flex;
+    .empty{
+        display: none;
+    }
     .top-text{
         font-size: 2rem;
         line-height: 3rem;
@@ -20,8 +23,15 @@
 @media only screen and (min-width: 700px){
     .container{
         padding: 3.75rem;
+        flex-direction: row;
+        .empty{
+            display: flex;
+            content: " ";
+            width: 15rem;
+        }
         .top-text{
-            padding-left: 15rem;
+            width: 90%;
+            padding-left: 1rem;
             #first-break{
                 display: none;
             }
@@ -29,6 +39,15 @@
                 display: inline;
             }
         }
-    }
-    
+    }  
 }
+
+//     @media only screen and (min-width: 1200px){
+//         .container{
+//             .top-text{
+//                 padding-left: 15rem;
+//             }
+//         }
+        
+//     }
+// }

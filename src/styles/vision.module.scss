@@ -20,6 +20,8 @@
             .paragraph{
                 font-family: 'Noto Sans JP', sans-serif;
                 font-weight: 400;
+                font-size: 0.875rem;
+                line-height: 2.25rem;
             }
         }
     }
@@ -30,7 +32,7 @@
         flex-direction: row-reverse;
         padding-top: 5rem;
         padding-bottom: 5rem;
-        align-items: flex-start;
+        align-items: center;
         justify-content: space-between;
         margin: 0;
         .image-container{
