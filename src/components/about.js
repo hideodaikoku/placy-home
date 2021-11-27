@@ -15,7 +15,7 @@ const About = (props) => {
         <h2 className={styles.title}>{textData.title}</h2>
         <section className={styles.section}>
           <div className={styles.imageContainer}>
-            <StaticImage src={'../images/2.png'} backgroundColor='white' width={1000} alt="Placy App"/>
+            <StaticImage src={'../images/2.png'} width={1000} alt="Placy App"/>
           </div>
           <div className={styles.textContainer}>
             <div className={styles.sectionTitle}>
@@ -38,7 +38,7 @@ const About = (props) => {
         </section>
         <section className={styles.section}> 
         <div className={styles.imageContainer}>
-          <StaticImage src={'../images/3.png'} backgroundColor='white' width={1000} alt="Placy App"/>
+          <StaticImage src={'../images/3.png'} width={1000} alt="Placy App"/>
           </div>
           <div className={styles.textContainer}>
             <div className={styles.sectionTitle}>
@@ -60,7 +60,7 @@ const About = (props) => {
         </section>
         <section className={styles.section}>
         <div className={styles.imageContainer}>
-          <StaticImage src={'../images/4.png'} backgroundColor='white' width={1000} alt="Placy App"/>
+          <StaticImage src={'../images/4.png'} width={1000} alt="Placy App"/>
           </div>
           <div className={styles.textContainer}>
             <div className={styles.sectionTitle}>
