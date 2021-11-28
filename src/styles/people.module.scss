@@ -9,7 +9,6 @@
     }
     .member-container{
         display: grid;
-        column-gap: 1rem;
         grid-template-columns: repeat(auto-fill, 150px);
         justify-content: space-between;
         .member{
@@ -46,6 +45,14 @@
         margin-bottom: 5rem;
         .member-container{
             width: 80%;
+            grid-template-columns: repeat(auto-fill, 150px);
+            .member{
+                .profile-container{
+                    clip-path: circle(75px);
+                    height: 150px;
+                    overflow: hidden;
+                }
+            }
         }
     }
 }

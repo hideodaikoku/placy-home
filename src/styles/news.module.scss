@@ -1,0 +1,94 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    .news-article{
+        margin-bottom: 2.25rem;
+        a{
+            text-decoration: none;
+            color: black;
+
+            .image-container{
+                height: 12rem;
+                object-fit: contain;
+                object-position: center;
+                overflow: hidden;
+                margin-bottom: .5rem;
+            }
+            .title{
+                text-decoration: none;
+                color: black;
+                font-size: 0.875rem;
+                line-height: 2rem;
+                margin-bottom: 0.5rem;
+            }
+            .date{
+                font-weight: 400;
+                font-size: 0.875rem;
+                line-height: 2rem;
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+}
+
+.button{
+    border: 1px solid black;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    padding: 1.5rem;
+    transition: all .3s ease-in;
+    .button-text{
+        font-family: 'GT Zirkon', sans-serif;
+        font-size: 1rem;
+        line-height: 2rem;
+        margin-bottom: 0;
+        color: black;
+        :visited{
+            color: black;
+        }
+    }
+    .arrow{
+        width: 3rem;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.button:hover{
+    background-color: black;
+    border-color: #f3c91f;
+    .button-text{
+        color: #f3c91f;
+    }
+    .arrow{
+        svg{
+            path{
+                fill: #f3c91f;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .container{
+        display: grid;
+        column-gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-between;
+        margin-top: 5rem;
+        .image-container{
+            margin-bottom: 1rem;
+        }
+        .title{
+            margin-bottom: 1rem;
+        }
+    }
+    .arrow{
+        width: 5rem;
+    }
+}

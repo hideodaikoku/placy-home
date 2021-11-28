@@ -13,7 +13,7 @@ const Vision =()=>{
       </div>
       <div className={styles.container}>
         <div className={styles.imageContainer}>
-          <StaticImage src='../images/1.png' width={1000} alt='maria-medem' /> 
+          <StaticImage src='../images/1.png' width={500} alt='maria-medem' /> 
         </div>
         <div className={styles.textContainer}>
           <h2 className={styles.paragraphTitle}>{text.title}</h2>

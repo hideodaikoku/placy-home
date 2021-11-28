@@ -31,3 +31,5 @@
 React-ScrollSpy
 
 https://makotot.github.io/react-scrollspy/
+
+Use Framer Motion for SVG Animation
