@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.13.3",
+    "dotenv": "^8.6.0",
     "gatsby": "^4.2.0",
     "gatsby-plugin-google-analytics": "^4.2.0",
     "gatsby-plugin-image": "^2.2.0",
@@ -23,6 +24,7 @@
     "gatsby-plugin-sass": "^5.2.0",
     "gatsby-plugin-sharp": "^4.2.0",
     "gatsby-plugin-styled-components": "^5.2.0",
+    "gatsby-source-contentful": "^7.0.0",
     "gatsby-source-filesystem": "^4.2.0",
     "gatsby-transformer-remark": "^5.2.0",
     "gatsby-transformer-sharp": "^4.2.0",

@@ -1,3 +1,9 @@
+const dotenv = require('dotenv')
+
+if (process.env.NODE_ENV!=='production'){
+  dotenv.config()
+}
+
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
@@ -32,6 +38,13 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `5rbeuk9gkv8a`,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
     },
   ],
 };
