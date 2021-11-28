@@ -8,14 +8,15 @@
     }
 }
 
+
 @media only screen and (min-width: 700px) {
     .bottom-container {
         display: flex;
         flex-direction: row;
-        padding: 3.75rem;
+        padding: 3rem;
         .left-nav{
             display: flex;
-            width: 15rem;
+            width: 10rem;
             position: sticky;            
             align-self: flex-start;
             top: 0;
@@ -30,6 +31,17 @@
         }
         .main{
             width: 90%;
+        }
+    }
+}
+
+
+
+@media only screen and (min-width: 1000px) {
+    .bottom-container{
+        padding: 3.75rem;
+        .left-nav{
+            width: 15rem;
         }
     }
 }
