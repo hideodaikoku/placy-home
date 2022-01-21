@@ -25,11 +25,3 @@
     Your site is now running at http://localhost:8000!
 
     Edit `src/pages/index.js` to see your site update in real-time!
-
-## Notes
-
-React-ScrollSpy
-
-https://makotot.github.io/react-scrollspy/
-
-Use Framer Motion for SVG Animation

@@ -13,6 +13,11 @@
     }
   }
 }
+.active {
+  li{ 
+    list-style-type: '\2605';
+  }
+}
 
 html {
   font-family: sans-serif;

@@ -5,7 +5,7 @@ import text from '../data/vision.json';
 
 const Vision =()=>{
   return (
-    <div className="sectionContainer">
+    <div id="vision" className="sectionContainer">
       <div className="titleContainer">
         <h1 className="sectionTitle">
           Vision

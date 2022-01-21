@@ -23,7 +23,7 @@ const News = () => {
 `)
 
   return (
-    <div className="sectionContainer">
+    <div id="news" className="sectionContainer">
       <div className="titleContainer">
         <h1 className="sectionTitle">
           News

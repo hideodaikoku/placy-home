@@ -1,4 +1,5 @@
-import * as React from "react"
+import * as React from "react";
+import { createRef } from 'react';
 import Layout from '../components/layout'
 import Seo from '../components/seo'
 import Top from '../components/top'
@@ -7,7 +8,7 @@ import About from '../components/about'
 import People from '../components/people'
 import News from '../components/news'
 import Company from '../components/company'
-import Scrollspy from 'react-scrollspy'
+import { Link } from 'react-scroll'
 import * as styles from '../styles/index.module.scss'
 
 const IndexPage = () => {
@@ -18,21 +19,31 @@ const IndexPage = () => {
       <div className={styles.bottomContainer}>
         <section className={styles.leftNav}>
           <ul>
-            <li>
-              Vision
-            </li>
-            <li>
-              Our Business
-            </li>
-            <li>
-              People
-            </li>
-            <li>
-              News
-            </li>
-            <li>
-              Company
-            </li>
+            <Link activeClass="active" to="vision" offset={-100} spy={true} smooth={true}>
+              <li>
+                Vision
+              </li>
+            </Link>
+            <Link activeClass="active" to="about" offset={-100} spy={true} smooth={true}>
+              <li>
+                Our Business
+              </li>
+            </Link>
+            <Link activeClass="active" to="people" offset={-100} spy={true} smooth={true}>
+              <li>
+                People
+              </li>
+            </Link>
+            <Link activeClass="active" to="news" offset={-100} spy={true} smooth={true}>
+              <li>
+                News
+              </li>
+            </Link>
+            <Link activeClass="active" to="company" offset={-100} spy={true} smooth={true}>
+              <li>
+                Company
+              </li>
+            </Link>
           </ul>
         </section>
         <section className={styles.main}>
@@ -40,7 +51,7 @@ const IndexPage = () => {
           <About />
           <People />
           <News />
-          <Company />
+          <Company id="company" />
         </section>
       </div>
     </Layout>

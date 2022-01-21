@@ -4,7 +4,7 @@ import textData from '../data/company.json';
 
 const Company = () => {
   return (
-    <div className="sectionContainer">
+    <div id="company" className="sectionContainer">
     <div className="titleContainer">
       <h1 className="sectionTitle">
         Company

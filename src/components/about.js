@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image";
 
 const About = (props) => {
   return (
-    <div className="sectionContainer">
+    <div id="about" className="sectionContainer">
       <div className="titleContainer">
         <h1 className="sectionTitle">
           Our Business

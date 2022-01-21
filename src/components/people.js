@@ -32,7 +32,7 @@ const People = () => {
   }
 
   return (
-    <div className="sectionContainer">
+    <div id="people" className="sectionContainer">
       <div className="titleContainer">
         <h1 className="sectionTitle">
           People
