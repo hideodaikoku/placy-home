@@ -63,7 +63,7 @@ const People = () => {
                       <GatsbyImage
                       alt={member.name} 
                       grayscale={true}
-                      image={data.allFile.edges.find(queryData=>queryData.node.relativePath==member.profile_img).node.childImageSharp.gatsbyImageData}
+                      image={data.allFile.edges.find(queryData=>queryData.node.relativePath===member.profile_img).node.childImageSharp.gatsbyImageData}
                       />
                     </div>
                     <h3 className={styles.name}>
