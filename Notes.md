@@ -1,7 +1,7 @@
 # Notes
 
 ## TODO
-- [ ] Sidebar
+- [X] Sidebar
 - [ ] News page
 - [ ] Project
 - [ ] Projects page
