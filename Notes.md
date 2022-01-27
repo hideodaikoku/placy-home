@@ -54,3 +54,8 @@
 React-ScrollSpy
 
 https://makotot.github.io/react-scrollspy/
+
+
+```
+const found = arr1.some(r=> arr2.includes(r))
+```
