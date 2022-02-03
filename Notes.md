@@ -59,3 +59,5 @@ https://makotot.github.io/react-scrollspy/
 ```
 const found = arr1.some(r=> arr2.includes(r))
 ```
+
+https://stackoverflow.com/questions/48255528/programmatically-create-gatsby-pages-from-contentful-data
