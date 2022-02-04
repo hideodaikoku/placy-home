@@ -51,7 +51,7 @@ const IndexPage = () => {
           <About />
           <People />
           <News />
-          <Company id="company" />
+          <Company />
         </section>
       </div>
     </Layout>
