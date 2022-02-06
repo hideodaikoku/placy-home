@@ -1,0 +1,96 @@
+.content {
+    display: block;
+    width: 100%;
+    .project-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        .text-container {
+            margin-top: 3rem;
+            font-size: 0.875rem;
+            h1 {
+                font-size: 1.5rem;
+            }
+            h2 {
+                font-size: 1.125rem;
+            }
+        }
+        a {
+            width: 100%;
+            height: 5rem;
+            .back-box {
+                width: 100%;
+                height: 100%;
+                border: 1px solid black;
+                display: flex;
+                margin-bottom: 1rem;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                p {
+                    min-width: 7.2rem;
+                    margin: 0;
+                    margin-left: 2rem;
+                }
+                .arrow-container {
+                    display: flex;
+                    align-items: center;
+                    margin-right: 2rem;
+                    div {
+                        width: 5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.top-links, .bottom-links {
+    padding: 0rem;
+    margin: 0rem;
+    font-size: 0.75rem;
+    a:hover {
+        text-decoration: underline;
+    }
+    p {
+        margin: 0rem;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@media only screen and (min-width: 900px) {
+    .project-content {
+        margin-bottom: 12rem;
+        .image-container {
+            width: 80%;
+            max-width: 65.75rem;
+            .image {
+                width: 100%;
+            }
+        }
+        .text-container {
+            width: 54%;
+        }
+        a {
+            width: 54% !important;
+        }
+    }
+
+    .arrow-container div {
+        width: 10rem !important;
+    }
+    
+    .top-links, .bottom-links {
+        margin-left: 1.8rem;
+        font-size: 0.875rem;
+    }
+    .top-links {
+        margin-bottom: 3rem;
+    }
+}

@@ -23,14 +23,15 @@
             width: 100%;
                 .image-container{
                     height: 16.75rem;
-                    display: flex;
-                    // align-items: center;
-                    // justify-content: center;
-                    object-fit: contain;
-                    object-position: center;
                     overflow: hidden;
                     margin-bottom: 1rem;
                     background-color: black;
+                    .image {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                    }
                 }
                 .text-container{
                     margin: 0 auto;
@@ -41,6 +42,10 @@
                         font-weight: 700;
                         line-height: 2.25rem;
                         margin-bottom: 0.5rem;
+                        a {
+                            text-decoration: none;
+                            color: black;
+                        }
                     }
                     .paragraph{
                         font-family: 'Noto Sans JP', sans-serif;
@@ -48,6 +53,10 @@
                         font-size: 0.75rem;
                         line-height: 1.3125rem;
                         margin-bottom: 0;
+                        a {
+                            text-decoration: none;
+                            color: black;
+                        }
                     }
                 }
         }   
@@ -111,6 +120,12 @@
         .text-container {
             max-width: 37.5rem;
             padding: 1rem 0 1rem 5rem;
+            .project-title {
+                font-size: 2.25rem !important;
+            }
+            .paragraph {
+                font-size: 0.875rem !important; 
+            }
         }
     }
     .project-container:nth-child(odd) {
