@@ -41,7 +41,9 @@ const Projects = () => {
               projectsData.map((projects) => (
                 <div className={styles.projectContainer} key={projects.node.id}>
                     <div className={styles.imageContainer}>
-                      <GatsbyImage image={projects.node.image.gatsbyImageData} className={styles.image}/>
+                      <a href={projects.node.type? projects.node.slug : "/"}>
+                      <GatsbyImage image={projects.node.image.gatsbyImageData} className={styles.image} objectFit="cover"/>
+                      </a>
                     </div>
                     <div className={styles.textContainer}>
                       <h3 className={styles.projectTitle}>
