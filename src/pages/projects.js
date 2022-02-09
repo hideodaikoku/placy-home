@@ -8,7 +8,7 @@ import * as styles from '../styles/projects.module.scss'
 const Projects = () => {
   const data = useStaticQuery(graphql`
   {
-    allContentfulProjects(sort: {order: ASC, fields: id}) {
+    allContentfulProjects(sort: {order: ASC, fields: createdAt}) {
       edges {
         node {
           id
@@ -16,6 +16,7 @@ const Projects = () => {
             gatsbyImageData
           }
           slug
+          link
           title
           type
           summary {
@@ -41,18 +42,26 @@ const Projects = () => {
               projectsData.map((projects) => (
                 <div className={styles.projectContainer} key={projects.node.id}>
                     <div className={styles.imageContainer}>
-                      <a href={projects.node.type? projects.node.slug : "/"}>
-                      <GatsbyImage image={projects.node.image.gatsbyImageData} className={styles.image} objectFit="cover"/>
+                      <a href={projects.node.type? projects.node.slug : projects.node.link}>
+                      <GatsbyImage image={projects.node.image.gatsbyImageData} className={styles.image}
+                        aspectRatio={5/4} layout="constrained" objectFit={
+                          (() => {
+                            switch(projects.node.title) {
+                              case "Archive sound aspects of city with vinyl postcards.": return "contain";
+                              default: return "cover";
+                            }
+                          })()
+                        } />
                       </a>
                     </div>
                     <div className={styles.textContainer}>
                       <h3 className={styles.projectTitle}>
-                        <a href={projects.node.type? projects.node.slug : "/"} style={{textDecoration: "none"}}>
+                        <a href={projects.node.type? projects.node.slug : projects.node.link} style={{textDecoration: "none"}}>
                         {projects.node.title}
                         </a>
                       </h3>
                       <p className={styles.paragraph}>
-                        <a href={projects.node.type? projects.node.slug : "/"}>
+                        <a href={projects.node.type? projects.node.slug : projects.node.link}>
                         {projects.node.summary.summary}
                         </a>
                       </p>

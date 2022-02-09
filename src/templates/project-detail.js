@@ -42,19 +42,34 @@ export default function ProjectDetail({data}) {
         </div>
         <div className={styles.projectContent}>
             <div className={styles.imageContainer}>
-                <GatsbyImage image={project.image.gatsbyImageData} className={styles.image} objectFit="contain"/>
+                <GatsbyImage image={project.image.gatsbyImageData} className={styles.image}
+                 objectFit={
+                    (() => {
+                        switch(project.title) {
+                          case "Archive sound aspects of city with vinyl postcards.": return "contain";
+                          default: return "cover";
+                        }
+                      })()
+                 } layout="constrained"/>
             </div>
             <div className={styles.textContainer}>
-                {renderRichText(project.content, options)}
+                {project.content
+                ? renderRichText(project.content, options)
+                : <>
+                    <h1>{project.title}</h1>
+                    <h4 style={{textAlign:"start"}}>Coming soon...</h4>
+                    </>}
+                <Link to="/projects">
+                    <div className={styles.backBox}>
+                    <p>Back to the list</p>
+                    <div className={styles.arrowContainer}>
+                        <StaticImage src="../images/arrow.png" alt="" width={160} layout="constrained" objectFit="contain"/>
+                    </div>
+                    </div>
+                </Link>
             </div>
-            <Link to="/">
-            <div className={styles.backBox}>
-                <p className={styles.backText}>Back to the list</p>
-                <div className={styles.arrowContainer}>
-                <StaticImage src="../images/arrow.png" alt="" width={160} layout="constrained"/>
-                </div>
-            </div>
-            </Link>
+            
+            
         </div>
         <div className={styles.bottomLinks}>
             <p>
