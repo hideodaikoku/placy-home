@@ -1,0 +1,49 @@
+@import url('./typography.css');
+
+.bottom-container {
+    display: flex;
+    flex-direction: column;
+    .left-nav {
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 700px) {
+    .bottom-container {
+        display: flex;
+        flex-direction: row;
+        padding: 3rem;
+        .left-nav{
+            display: flex;
+            width: 10rem;
+            position: sticky;            
+            align-self: flex-start;
+            top: 0;
+            ul{
+                margin-top: 7rem;
+                list-style-type: none;
+                padding:0;
+                margin-left:0;
+                li{
+                    padding-left: 1rem;
+                    font-size: .8rem;
+                }
+            }
+        }
+        .main{
+            width: 90%;
+        }
+    }
+}
+
+
+
+@media only screen and (min-width: 1000px) {
+    .bottom-container{
+        padding: 3.75rem;
+        .left-nav{
+            width: 15rem;
+        }
+    }
+}
