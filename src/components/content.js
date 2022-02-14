@@ -117,8 +117,12 @@ const Content = () => {
                                         <img src={placelist.composer.attributes.profile_image_url} alt='place-list'></img>
                                     </div>
                                     <div className={styles.cardText}>
+                                        <div className={styles.parentTitle}>
                                         <h4 className={styles.cardTitle}>{placelist.title}</h4>
+                                        </div>
+                                        <div className={styles.parentDesc}>
                                         <p className={styles.cardAuthor}>{placelist.composer.attributes.name}</p>
+                                        </div>
                                         <MapPin />
                                         <p className={styles.cardPlace}>{placelist.place_count}つのプレイス</p>
                                     </div>
@@ -126,7 +130,7 @@ const Content = () => {
                             ))
                             }
                         </div>
-                        { viewablePlacelists.length != placelists.length 
+                        { viewablePlacelists.length !== placelists.length 
                         && <button className={styles.viewMore} onClick={() => ViewMore(
                                 viewablePlacelists, setViewMorePlacelists, placelists
                                 )}>
@@ -160,7 +164,7 @@ const Content = () => {
                                 </div>
                             ))}
                         </div>
-                        {viewableBundles.length != bundles.length 
+                        {viewableBundles.length !== bundles.length 
                         && <button className={styles.viewMore} onClick={()=> ViewMore(
                             viewableBundles, setViewMoreBundles, bundles
                         )}>
