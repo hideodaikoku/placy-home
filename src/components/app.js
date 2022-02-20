@@ -20,7 +20,7 @@ const App = () => {
                             {text.paragraph}
                         </p>
                     </div>
-                    <a href='https://apps.apple.com/jp/app/placy/id1474567327'>
+                    <a href='https://apps.apple.com/jp/app/placy/id1474567327' target='_blank' rel='noopener noreferrer'>
                     <StaticImage src='../images/app-store.png' width={130} alt='app-store'/>
                     </a>
                     

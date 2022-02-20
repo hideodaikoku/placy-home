@@ -1,0 +1,564 @@
+[
+    {
+      "place": "China - Wuhan",
+      "author": "Shu Wei",
+      "img": "china",
+      "slug": "wuhan",
+      "medium": "https://medium.com/post-quarantine-urbanism/post-quarantine-urbanism-of-china-its-all-about-human-conditions-2e1bb3acdf52",
+      "date": "2020/04/17",
+      "title": "Post-Quarantine Urbanism of China: It’s All About Human Conditions"
+    },
+    {
+      "place": "Switzerland - Zurich",
+      "author": "Melanie Imefeld",
+      "img": "zurich",
+      "slug": "zurich",
+      "medium": "https://medium.com/post-quarantine-urbanism/zurichs-post-pandemic-balcony-and-what-we-can-learn-about-it-from-this-health-crisis-889e4081bfa3",
+      "date": "2020/04/19",
+      "title": "The impact of the health crisis on urban design: The post-pandemic balcony"
+    },
+    {
+      "place": "Hong Kong",
+      "author": "Stephen Law",
+      "img": "hkg",
+      "slug": "hong-kong",
+      "medium": "https://medium.com/post-quarantine-urbanism/speculating-hong-kongs-urban-futures-in-a-post-covid-world-9f548f874d6e",
+      "date": "2020/04/20",
+      "title": "Early speculations on how COVID19 can shape Hong Kong’s Urban Future"
+    },
+    {
+      "place": "Greece - Athens",
+      "author": "Anastassis Parmaksizoglou",
+      "img": "athens",
+      "slug": "athens",
+      "medium": "https://medium.com/post-quarantine-urbanism/greece-in-the-age-of-covid-19-an-unlikely-success-story-and-the-new-challenges-ahead-3c84820b692c",
+      "date": "2020/04/14",
+      "title": "Greece in the age of COVID-19: An unlikely success story and the new challenges ahead"
+    },
+    {
+      "place": "England - London",
+      "author": "Alfie Long",
+      "img": "london",
+      "slug": "london",
+      "medium": "https://medium.com/post-quarantine-urbanism/london-parks-space-and-pandemic-94e41bc4e78?source=collection_home---2------0-----------------------",
+      "date": "2020/04/20",
+      "title": "London Parks, Space, and Pandemic"
+    },
+    {
+      "place": "Russia - Moscow",
+      "author": "Yevgeniya Yusova",
+      "img": "russia",
+      "slug": "moscow",
+      "medium": "https://medium.com/post-quarantine-urbanism/quarantine-in-moscow-everyone-is-isolated-everything-is-delivered-cad0013397bb",
+      "date": "2020/04/23",
+      "title": "Quarantine in Moscow: in Delivery We Trust"
+    },
+    {
+      "place": "Australia - Melbourne",
+      "author": "George Reed",
+      "img": "australia",
+      "slug": "melbourne",
+      "medium": "https://medium.com/post-quarantine-urbanism/post-pandemic-urbanism-australia-the-merge-scenario-9b783e564e65",
+      "date": "2020/04/24",
+      "title": "Post Pandemic Urbanism Australia: The Merge Scenario"
+    },
+    {
+      "place": "Japan - Tokyo",
+      "author": "Soma Suzuki",
+      "img": "tokyo",
+      "slug": "tokyo",
+      "medium": "https://medium.com/post-quarantine-urbanism/where-matters-52eba9406bed",
+      "date": "2020/05/02",
+      "title": "Where Matters."
+    },
+    {
+      "place": "Chile - Santiago",
+      "author": "Carolina Cornelio",
+      "img": "chile",
+      "slug": "santiago",
+      "medium": "https://medium.com/post-quarantine-urbanism/post-quarantine-in-a-segregated-metropolis-mobility-key-factor-to-unite-two-santiagos-today-and-a17d01b742ce",
+      "date": "2020/05/04",
+      "title": "Post-Quarantine in a segregated metropolis: Mobility, key factor to unite two Santiagos today and after the Covid-19 crisis"
+    },
+    {
+      "place": "Brazil - Rio",
+      "author": "Luis Claudio Arcos",
+      "img": "rio",
+      "slug": "rio-de-janeiro",
+      "medium": "https://medium.com/post-quarantine-urbanism/notes-from-rio-towards-a-more-collaborative-city-6c94d563c6d9",
+      "date": "2020/05/04",
+      "title": "Notes from Rio: towards a more collaborative city."
+    },
+    {
+      "place": "Germany - Berlin",
+      "author": "Srna Tulić",
+      "img": "berlin",
+      "slug": "berlin",
+      "medium": "https://medium.com/post-quarantine-urbanism/berlin-where-the-streets-belong-to-children-and-bikes-c2fc98c00523",
+      "date": "2020/05/06",
+      "title": "Berlin: Where the streets belong to children. And bikes."
+    },
+    {
+      "place": "Ukraine - Kyiv",
+      "author": "Olena Diadikova",
+      "img": "kyiv",
+      "slug": "kyiv",
+      "medium": "https://medium.com/post-quarantine-urbanism/kyiv-it-is-time-to-be-different-7ae10639db59",
+      "date": "2020/05/09",
+      "title": "Kyiv: It is time to be different"
+    },
+    {
+      "place": "South Africa - Cape Town",
+      "author": "Simone Phoré",
+      "img": "capeTown",
+      "slug": "cape-town",
+      "medium": "https://medium.com/post-quarantine-urbanism/covid-19-and-inequality-a-view-from-south-africa-e6bfeb72cc95",
+      "date": "2020/05/09",
+      "title": "COVID-19 and Inequality: A view from South Africa"
+    },
+    {
+      "place": "Italy - Venice",
+      "author": "Giacomo Martinis",
+      "img": "venice",
+      "slug": "venice",
+      "medium": "https://medium.com/post-quarantine-urbanism/venice-vis-%C3%A0-vis-covid-19-cad2b8e71e0a",
+      "date": "2020/05/09",
+      "title": "Venice vis-à-vis Covid-19: a crucial opportunity to rethink tourism (?)"
+    },
+    {
+      "place": "Singapore",
+      "author": "Bryan Tan",
+      "img": "singapore",
+      "slug": "singapore",
+      "medium": "https://medium.com/post-quarantine-urbanism/singapores-trusty-partner-the-void-deck-15fde8ce8ca1",
+      "date": "2020/05/10",
+      "title": "Singapore's Trusty Partner: The Void Deck"
+    },
+    {
+      "place": "Croatia - Zagreb",
+      "author": "Edita Vilic",
+      "img": "zagreb",
+      "slug": "zagreb",
+      "medium": "https://medium.com/post-quarantine-urbanism/croatia-success-in-saving-lives-will-there-be-a-success-in-saving-the-economy-5264404befd0",
+      "date": "2020/05/10",
+      "title": "Croatia: success in saving lives, will there be a success in saving the economy?"
+    },
+    {
+      "place": "Luxembourg",
+      "author": "Konstantina Vidou",
+      "img": "luxembourg",
+      "slug": "luxembourg",
+      "medium": "https://medium.com/post-quarantine-urbanism/covid-19-the-case-of-the-grand-duchy-of-luxembourg-f4bfd2ff657c",
+      "date": "2020/05/12",
+      "title": "COVID — 19: The case of the Grand Duchy of Luxembourg"
+    },
+    {
+      "place": "Wales",
+      "author": "Catrin Stephens",
+      "img": "wales",
+      "slug": "wales",
+      "medium": "https://medium.com/post-quarantine-urbanism/wales-help-change-urban-spaces-into-safe-areas-of-encounter-bba1c37e1846",
+      "date": "2020/05/12",
+      "title": "Wales: Help change urban spaces into safe areas of encounter"
+    },
+    {
+      "place": "Brazil - São Paulo",
+      "author": "Paula Palermo",
+      "img": "saopaolo",
+      "slug": "sao-paolo",
+      "medium": "https://medium.com/post-quarantine-urbanism/post-covid-19-s%C3%A3o-paulo-92d8a72ba288",
+      "date": "2020/05/12",
+      "title": "Post Covid-19 São Paulo: Potential matches between Technology and Social Innovation for an alternative future."
+    },
+    {
+      "place": "Spain - Valencia",
+      "author": "Natasha Marjoram",
+      "img": "valencia",
+      "slug": "valencia",
+      "medium": "https://medium.com/post-quarantine-urbanism/de-densifying-spanish-cities-d3e216ee976a",
+      "date": "2020/05/10",
+      "title": "De-densifying Spanish cities"
+    },
+    {
+      "place": "Spain - Madrid",
+      "author": "Ana Muñoz-Antuña",
+      "img": "madrid",
+      "slug": "madrid",
+      "medium": "https://medium.com/post-quarantine-urbanism/madrid-breaking-the-silence-by-reconquering-streets-and-parks-bf63e2e445d1",
+      "ogp": "https://miro.medium.com/max/1400/1*gtgLQl33mhDJSoMJzk2ctQ.jpeg",
+      "date": "2020/05/14",
+      "title": "Madrid: Breaking the silence by reconquering streets and parks."
+    },
+    {
+      "place": "Egypt - Cairo",
+      "author": "Soliman Saad",
+      "img": "cairo",
+      "slug": "cairo",
+      "medium": "https://medium.com/post-quarantine-urbanism/urban-scenarios-after-the-pandemic-fa4a726a4c30",
+      "ogp": "https://miro.medium.com/max/1000/1*91nyZkxyDN7m3Flllry57Q.jpeg",
+      "date": "2020/05/16",
+      "title": "Urban Scenarios After The Pandemic-Cairo"
+    },
+    {
+      "place": "Sweden - Stockholm",
+      "author": "Stefan Attig",
+      "img": "stockholm",
+      "slug": "stockholm",
+      "medium": "https://medium.com/post-quarantine-urbanism/take-it-lagom-sweden-s-controversial-covid-19-strategy-and-potentials-9ed38c43393d",
+      "ogp": "https://miro.medium.com/max/1400/1*7tpK3JCvcx75_qwL6flMCw.jpeg",
+      "date": "2020/05/18",
+      "title": "Take it ‘lagom’. Sweden’s controversial COVID-19 Strategy and potentials."
+    },
+    {
+      "place": "England - London",
+      "author": "Felix De Grey",
+      "img": "london_participatory_design",
+      "slug": "london-participatory-design",
+      "medium": "https://medium.com/post-quarantine-urbanism/participatory-design-and-more-social-infrastructure-london-should-start-its-post-pandemic-7d9e0cd5856b",
+      "ogp": "https://miro.medium.com/max/1400/1*iMkc5vHa8cXHeq-je73JdA.jpeg",
+      "date": "2020/05/20",
+      "title": "Participatory design and more social infrastructure: London should start its post-pandemic transformation by listening to its communities."
+    },
+    {
+      "place": "Germany - Berlin",
+      "author": "Angela Alcantara",
+      "img": "berlin_neighbourhood",
+      "slug": "berlin-neighbourhood",
+      "medium": "https://medium.com/post-quarantine-urbanism/threshold-observations-berlin-neighbourhood-shifts-thru-a-pandemic-20b230e375c0",
+      "ogp": "https://miro.medium.com/max/1150/1*AWEROFWUHQtxYrtf8ubZVA.jpeg",
+      "date": "2020/05/20",
+      "title": "Threshold observations: Berlin neighbourhood shifts through a pandemic"
+    },
+    {
+      "place": "India - Hyderabad",
+      "author": "Manisha Rayaprolu",
+      "img": "hyderabad",
+      "slug": "hyderabad",
+      "medium": "https://medium.com/post-quarantine-urbanism/on-walking-while-in-lockdown-e03ace64e863",
+      "ogp": "https://miro.medium.com/max/1400/1*K5-yAlpfXN5At7aRmFbtcg.jpeg",
+      "date": "2020/05/21",
+      "title": "On Walking While in Lockdown: Pedestrian experiences from Hyderabad, India."
+    },
+    {
+      "place": "Italy",
+      "author": "Massimo Iannetti",
+      "img": "italy",
+      "slug": "italy",
+      "medium": "https://medium.com/post-quarantine-urbanism/drive-in-to-the-post-quarantine-urbanism-the-future-of-italian-socially-distanced-cinema-f327c9df22c2",
+      "ogp": "https://miro.medium.com/max/1400/1*r_AZv9tV15b5bSmRKYCERw.jpeg",
+      "date": "2020/05/21",
+      "title": "Drive-in(to) the Post-Quarantine Urbanism: the Future of Italian Socially Distanced Cinema"
+    },
+    {
+      "place": "Italy - Venice",
+      "author": "Irma Delmonte",
+      "img": "venice_rising",
+      "slug": "venice-rising",
+      "medium": "https://medium.com/post-quarantine-urbanism/venice-in-quarantine-the-beauty-of-urban-environment-rises-again-how-can-we-preserve-it-82a21710cd46",
+      "ogp": "https://miro.medium.com/max/1400/1*59gAH6eViaXeDcDLBhckyQ.jpeg",
+      "date": "2020/05/22",
+      "title": "Venice in quarantine: the beauty of our urban environment rises again. How can we preserve it?"
+    },
+    {
+      "place": "Brazil - São Paulo",
+      "author": "Gabriela Garcia",
+      "img": "sao_paolo_civic",
+      "slug": "sao-paolo-civic-solidarity",
+      "medium": "https://medium.com/post-quarantine-urbanism/s%C3%A3o-paulo-the-harsh-concrete-jungle-in-a-movement-of-civic-solidarity-during-covid-19-times-ffc989effdba",
+      "ogp": "https://miro.medium.com/max/1400/1*Nny24mQlhdYLhIidrSSHZw.jpeg",
+      "date": "2020/05/22",
+      "title": "São Paulo, the harsh concrete jungle in a movement of civic solidarity during COVID-19 times"
+    },
+    {
+      "place": "Germany - Berlin",
+      "author": "Leah Hamilton",
+      "img": "berlin_night_time",
+      "slug": "berlin-night-time",
+      "medium": "https://medium.com/post-quarantine-urbanism/berlins-kontaktbeschr%C3%A4nkungen-and-the-night-time-culture-shift-a0945b5ef642",
+      "ogp": "https://miro.medium.com/max/4800/1*wG6wNlmcTgV2dAorezcSCQ.jpeg",
+      "date": "2020/05/22",
+      "title": "Berlin's Kontaktbeschränkungen and the Night Time Culture Shift"
+    },
+    {
+      "place": "Korea - Seoul",
+      "author": "Min Sung Kim",
+      "img": "seoul",
+      "slug": "seoul",
+      "medium": "https://medium.com/post-quarantine-urbanism/south-korea-covid-19-and-diversity-7b110072e501",
+      "ogp": "https://miro.medium.com/max/2800/0*81oKtcytcjpcIk0_.jpg",
+      "date": "2020/05/25",
+      "title": "Seoul, South Korea: COVID-19 and Diversity"
+    },
+    {
+      "place": "Jordan - Amman",
+      "author": "Mazen Jubeihi",
+      "img": "amman",
+      "slug": "amman",
+      "medium": "https://medium.com/post-quarantine-urbanism/a-shift-in-momentum-amman-during-the-covid-19-pandemic-cf6b98f26b32",
+      "ogp": "https://miro.medium.com/max/1400/1*HZh-DAsiO0xaxa_AcUD8_g.jpeg",
+      "date": "2020/05/28",
+      "title": "A Shift in Momentum; Amman during the Covid-19 Pandemic"
+    },
+  
+    {
+      "place": "Singapore",
+      "author": "Archana Kannan",
+      "img": "singapore_road_to_recovery",
+      "slug": "singapore-road-to-recovery",
+      "medium": "https://medium.com/post-quarantine-urbanism/small-steps-in-the-road-to-recovery-49d9519c20f",
+      "ogp": "https://miro.medium.com/max/1400/1*PU0OopuMsRmkLPoyh21AZw.jpeg",
+      "date": "2020/05/28",
+      "title": "Small Steps in the Road to Recovery: Singapore"
+    },
+    {
+      "place": "Ghana",
+      "author": "Mohammed Musah",
+      "img": "ghana",
+      "slug": "ghana",
+      "medium": "https://medium.com/post-quarantine-urbanism/not-ordinary-times-ghana-in-the-shadow-of-covid-19-3933f86aad2f",
+      "ogp": "https://miro.medium.com/max/1210/1*VqtIRTRdKEFmzcNdj5iZNQ.png",
+      "date": "2020/05/28",
+      "title": "Not Ordinary Times; Ghana in the Shadow of COVID-19"
+    },
+    {
+      "place": "India",
+      "author": "Souvik Chowdhury",
+      "img": "chaotic_india",
+      "slug": "chaotic-india",
+      "medium": "https://medium.com/post-quarantine-urbanism/india-was-always-chaotic-will-it-find-a-way-out-now-54ad89288618",
+      "ogp": "https://miro.medium.com/max/1400/1*eW4dpyi59muXH3N1LWsHHw.jpeg",
+      "date": "2020/05/29",
+      "title": "India was Always Chaotic, Will it Find a Way Out Now?"
+    },
+    {
+      "place": "Spain - Madrid",
+      "author": "Maria Perona",
+      "img": "madrid_covid",
+      "slug": "madrid-covid",
+      "medium": "https://medium.com/post-quarantine-urbanism/madrid-covid-main-scenario-47f27ce2a9f2",
+      "ogp": "https://miro.medium.com/max/4800/1*qXkzQGW8O1-ZVSmIKmjcNg.jpeg",
+      "date": "2020/05/22",
+      "title": "MADRID. COVID MAIN SCENARIO"
+    },
+    {
+      "place": "United Kingdom - London",
+      "author": "Natalie Cefala",
+      "img": "london_lockdown",
+      "slug": "london-lockdown",
+      "medium": "https://medium.com/post-quarantine-urbanism/london-under-lockdown-active-travel-and-behaviour-change-d862a0f6663a",
+      "ogp": "https://miro.medium.com/max/1400/1*mLNsyP93gVLDIS1kNeu2Pw.jpeg",
+      "date": "2020/06/01",
+      "title": "London Under Lockdown: Active Travel and Behaviour Change"
+    },
+    {
+      "place": "Singapore",
+      "author": "Victoria See",
+      "img": "singapore_landscapes",
+      "slug": "singapore-landscapes",
+      "medium": "https://medium.com/post-quarantine-urbanism/singapore-repurposing-landscapes-for-covid-19-41c75caa80",
+      "ogp": "https://miro.medium.com/max/1400/1*BvpuEHxTlNEW4KT-S-fdSw.jpeg",
+      "date": "2020/06/01",
+      "title": "Singapore: Repurposing landscapes for COVID-19"
+    },
+    {
+      "place": "India",
+      "author": "Moiz Uddin",
+      "img": "india_public_places",
+      "slug": "india-public-places",
+      "medium": "https://medium.com/post-quarantine-urbanism/covid19-impact-post-pandemic-public-spaces-a-case-of-indian-cities-3a6eab5f08aa",
+      "ogp": "https://miro.medium.com/max/1400/1*gWiCoYcZj3t9D20TRRE1Gg.jpeg",
+      "date": "2020/06/02",
+      "title": "Covid19 Impact & Post Pandemic Public Spaces: A case of Indian Cities"
+    },
+    {
+      "place": "Denmark - Copenhagen",
+      "author": "Marcin Żebrowski",
+      "img": "copenhagen",
+      "slug": "copenhagen",
+      "medium": "https://medium.com/post-quarantine-urbanism/sidelining-public-life-in-copenhagen-8ee7b3c52ed5",
+      "ogp": "https://miro.medium.com/max/2000/1*C0szBlLvOGOkxqIxTOo6kg.jpeg",
+      "date": "2020/06/03",
+      "title": "Sidelining public life in Copenhagen"
+    },
+    {
+      "place": "United Kingdom - London",
+      "author": "Francis Clay",
+      "img": "brexit",
+      "slug": "brexit",
+      "medium": "https://medium.com/post-quarantine-urbanism/mutual-aid-and-communities-of-place-in-brexit-britain-58afa992f59c",
+      "ogp": "https://miro.medium.com/max/1248/1*bTqi5YrmAeFAuzexcuK_zA.jpeg",
+      "date": "2020/06/04",
+      "title": "Mutual Aid and Communities of Place in Brexit Britain"
+    },
+    {
+      "place": "Australia - Melbourne",
+      "author": "Natasha C Manawadu",
+      "img": "melbourne_fair_space",
+      "slug": "melbourne-fair-space",
+      "medium": "https://medium.com/post-quarantine-urbanism/melbourne-lets-talk-about-actualising-fairer-urban-spaces-e092f5a43453",
+      "ogp": "https://miro.medium.com/max/1400/1*r_jnOzgIwfKrq4XKrvOOpw.jpeg",
+      "date": "2020/06/09",
+      "title": "Melbourne: Let’s Talk About Actualising Fairer Urban Spaces"
+    },
+    {
+      "place": "Singapore",
+      "author": "Shaivi Herur",
+      "img": "singapore_whats_next",
+      "slug": "melboursingapore-whats-next",
+      "medium": "https://medium.com/post-quarantine-urbanism/what-next-singapores-risen-fallen-and-plateaued-relationship-with-covid-19-d2c896039123",
+      "ogp": "https://miro.medium.com/max/1400/0*UdGZyPKtP0a5WGJE",
+      "date": "2020/06/09",
+      "title": "What’s Next? Singapore’s risen, fallen and plateaued relationship with Covid-19"
+    },
+    {
+      "place": "France",
+      "author": "Nathan Jover",
+      "img": "france",
+      "slug": "france",
+      "medium": "https://medium.com/post-quarantine-urbanism/what-should-we-expect-for-our-post-corona-cities-49b6b971e545",
+      "ogp": "https://miro.medium.com/max/1400/1*kpc9KaKtn4DM-sWPol0wZA.jpeg",
+      "date": "2020/06/09",
+      "title": "What should we expect for our post-corona cities ?"
+    },
+  
+    {
+      "place": "Mexico",
+      "author": "Luis Arturo Obregón Vázquez",
+      "img": "mexico",
+      "slug": "mexico",
+      "medium": "https://medium.com/post-quarantine-urbanism/flashing-a-light-on-social-inequities-covid-19-in-mexico-7d809c0faba1",
+      "ogp": "https://miro.medium.com/max/1400/1*PwmfR1BFQh0W1qQJJID8Jg.jpeg",
+      "date": "2020/06/09",
+      "title": "Flashing a light on social inequities: Covid-19 in Mexico"
+    },
+    {
+      "place": "Canada - Montreal",
+      "author": "Anish Ramanan",
+      "img": "montreal",
+      "slug": "montreal",
+      "medium": "https://medium.com/post-quarantine-urbanism/%C3%A7a-va-bien-aller-5c988485f60c",
+      "ogp": "https://miro.medium.com/max/1140/1*1ZqqVzCtFtwO8g4cnrjJYQ.png",
+      "date": "2020/06/09",
+      "title": "Ça va bien aller?"
+    },
+    {
+      "place": "Indonesia",
+      "author": "Una Dika Firmanila",
+      "img": "indonesia",
+      "slug": "indonesia",
+      "medium": "https://medium.com/post-quarantine-urbanism/indonesia-the-test-of-our-social-life-71384ae93645",
+      "ogp": "https://miro.medium.com/max/1400/1*gqwPv_lRAerEat0pVEtwsA.jpeg",
+      "date": "2020/06/09",
+      "title": "Indonesia: The Test of Our Social Life"
+    },
+    {
+      "place": "Belgium - Brussels",
+      "author": "Adela Hankus",
+      "img": "brussels",
+      "slug": "brussels",
+      "medium": "https://medium.com/post-quarantine-urbanism/towards-greener-post-pandemic-cities-the-case-of-brussels-and-transport-cd0956d2e5c",
+      "ogp": "https://miro.medium.com/max/2000/1*mXHh4Pqk3OdOXne8yK0Vkw.jpeg",
+      "date": "2020/06/09",
+      "title": "Towards Greener Post-Pandemic Cities: the Case of Brussels and Transport"
+    },
+    {
+      "place": "Philippines - Manilla",
+      "author": "Marie Denise Abella",
+      "img": "manilla",
+      "slug": "manilla",
+      "medium": "https://medium.com/post-quarantine-urbanism/towards-a-better-normal-will-metro-manila-become-a-humanised-city-post-quarantine-76a6ace2d163",
+      "ogp": "https://miro.medium.com/max/1400/1*BxhFFttvo2yGV7ir242AuQ.jpeg",
+      "date": "2020/06/09",
+      "title": "Towards A Better Normal: Will Metro Manila become a humanised city post-quarantine?"
+    },
+    {
+      "place": "Turkey - Ankara",
+      "author": "Sinay Coskun",
+      "img": "ankara",
+      "slug": "ankara",
+      "medium": "https://medium.com/post-quarantine-urbanism/reinterpretation-of-urban-public-spaces-after-covid-19-experiences-from-ankara-turkey-79fc6cb7b2dc",
+      "ogp": "https://miro.medium.com/max/1280/1*fd35TbaJL-5JH9lvurWwyg.jpeg",
+      "date": "2020/06/10",
+      "title": "Reinterpretation of Urban Public Spaces after COVID-19 : Experiences from Ankara/Turkey"
+    },
+    {
+      "place": "United Kingdom - London",
+      "author": "Nick Ansell",
+      "img": "london_social_distancing",
+      "slug": "london-social-distancing",
+      "medium": "https://medium.com/post-quarantine-urbanism/london-social-distancing-green-spaces-post-quarantine-urbanism-a21d2dc2d2a0",
+      "ogp": "https://miro.medium.com/max/1400/1*LamlX3UoDzigZdkByvUqvQ.jpeg",
+      "date": "2020/06/10",
+      "title": "London: Social distancing, green spaces & post-quarantine urbanism"
+    },
+    {
+      "place": "U.A.E. - Dubai",
+      "author": "Mihir Saraf",
+      "img": "dubai",
+      "slug": "dubai",
+      "medium": "https://medium.com/post-quarantine-urbanism/dubai-an-urban-spectacle-fallen-lackluster-for-now-930b7fbd354a",
+      "ogp": "https://miro.medium.com/max/1400/1*uUQGIeogVyDarqgOR0LB6A.jpeg",
+      "date": "2020/06/10",
+      "title": "Dubai: An Urban Spectacle fallen lackluster… for now"
+    },
+    {
+      "place": "Italy - Milan",
+      "author": "Camilla Piccolo",
+      "img": "milan",
+      "slug": "milan",
+      "medium": "https://medium.com/post-quarantine-urbanism/new-life-unfolding-milans-streets-b5b32aef5bb9",
+      "ogp": "https://miro.medium.com/max/1260/1*HA1I56K2C6cjXyvCHjjGqg.jpeg",
+      "date": "2020/06/10",
+      "title": "New life unfolding Milan’s streets"
+    },
+    {
+      "place": "Mexico - Mexico City",
+      "author": "Jessica M. Del Real A.",
+      "img": "mexico_city",
+      "slug": "mexico-city",
+      "medium": "https://medium.com/post-quarantine-urbanism/mexico-the-informality-that-kills-4e8211d55cf1",
+      "ogp": "https://miro.medium.com/max/1400/1*AzSz2nb2a12DkT76Wc_-0g.jpeg",
+      "date": "2020/06/11",
+      "title": "Mexico: The Informality that kills"
+    },
+    {
+      "place": "United Kingdom - London",
+      "author": "Helen Tartaglia",
+      "img": "london_home",
+      "slug": "london-home",
+      "medium": "https://medium.com/post-quarantine-urbanism/save-a-life-sit-on-your-sofa-coronavirus-and-the-evolution-of-home-372b1e9a6cea",
+      "ogp": "https://miro.medium.com/max/1400/1*TZiM_q0t8F72JoAfu-07gQ.jpeg",
+      "date": "2020/06/16",
+      "title": "‘Save a life, sit on your sofa.’ Coronavirus and the evolution of ‘home’."
+    },
+    {
+      "place": "Vietnam - Hanoi",
+      "author": "Clément Coquillat",
+      "img": "hanoi",
+      "slug": "hanoi",
+      "medium": "https://medium.com/post-quarantine-urbanism/breathing-again-in-the-public-spaces-of-hanoi-b042b45d3684",
+      "ogp": "https://miro.medium.com/max/1400/1*DcZ4WQFhfMJHhFly35f8Rg.jpeg",
+      "date": "2020/06/16",
+      "title": "Breathing again in the public spaces of Hanoi"
+    },
+    {
+      "place": "U.A.E. - Dubai",
+      "author": "Kishwerniha Buhari",
+      "img": "dubai_dreamers",
+      "slug": "dubai-dreamers",
+      "medium": "https://medium.com/post-quarantine-urbanism/u-a-e-how-are-the-dreamers-keeping-their-visions-alive-411c932e3e7d",
+      "ogp": "https://miro.medium.com/max/1400/1*UMuFjIZA0PTc3gmQ6uWooA.jpeg",
+      "date": "2020/06/16",
+      "title": "U.A.E: How are the Dreamers keeping their visions alive?"
+    },
+    {
+      "place": "Czechia - Prague",
+      "author": "Anna-Marie Mašková",
+      "img": "prague",
+      "slug": "prague",
+      "medium": "https://medium.com/post-quarantine-urbanism/prague-3c6e077b3c0f",
+      "ogp": "https://miro.medium.com/max/1400/0*F_C0dJhOwMM3WIRh",
+      "date": "2020/07/01",
+      "title": "Prague and COVID-19"
+    }
+  ]

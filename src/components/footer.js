@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
+// import { Link } from "gatsby";
 import * as styles from "../styles/footer.module.scss";
 
 
@@ -11,7 +11,7 @@ const Footer = () => {
           <li className={styles.navList}>
             <a  
               className={styles.navLink}
-              href="#" 
+              href="https://www.instagram.com/placy_city/" 
               target="_blank" 
               rel="noopener noreferrer" 
               alt="Contact Us">
@@ -21,7 +21,7 @@ const Footer = () => {
           <li className={styles.navList}>
             <a  
               className={styles.navLink}
-              href="#" 
+              href="https://twitter.com/placy_city" 
               target="_blank" 
               rel="noopener noreferrer" 
               alt="Contact Us">
@@ -31,7 +31,7 @@ const Footer = () => {
           <li className={styles.navList}>
             <a  
               className={styles.navLink}
-              href="#" 
+              href="https://www.facebook.com/placy.city/" 
               target="_blank" 
               rel="noopener noreferrer" 
               alt="Contact Us">
@@ -46,7 +46,7 @@ const Footer = () => {
         <li>
           <a  
               className={styles.fineprint}
-              href="#" 
+              href="/document/term_of_use.pdf" 
               target="_blank" 
               rel="noopener noreferrer" 
               alt="Contact Us">
@@ -56,7 +56,7 @@ const Footer = () => {
         <li>
           <a  
               className={styles.fineprint}
-              href="#" 
+              href="/document/privacy_policy.pdf" 
               target="_blank" 
               rel="noopener noreferrer" 
               alt="Contact Us">

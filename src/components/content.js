@@ -42,6 +42,8 @@ const Content = () => {
         if (allBundlesReceived) {
             setViewMoreBundles([...bundles.slice(0,3)])
             setAllBundlesReceived(false)
+            console.log(bundles)
+
         }
 
     }, [allBundlesReceived, bundles])
@@ -113,6 +115,7 @@ const Content = () => {
                             {
                             viewablePlacelists.map((placelist) => (
                                 <div key={placelist.id} className={styles.card}>
+                                    <a href={`https://web.placy.city/placelist?id=${placelist.id}`}>
                                     <div className={styles.cardImage}>
                                         <img src={placelist.composer.attributes.profile_image_url} alt='place-list'></img>
                                     </div>
@@ -126,6 +129,7 @@ const Content = () => {
                                         <MapPin />
                                         <p className={styles.cardPlace}>{placelist.place_count}つのプレイス</p>
                                     </div>
+                                    </a>
                                 </div>
                             ))
                             }
@@ -151,6 +155,7 @@ const Content = () => {
                             {
                             viewableBundles.map((bundle) => (
                                 <div key={bundle.id} className={ styles.bundleCard}>
+                                    <a href='/music-map'>
                                     <div className={styles.bundleImg}>
                                         <img src={bundle.attributes.bundle_main_image_url} alt='bundle-img'></img>
                                     </div>
@@ -161,6 +166,7 @@ const Content = () => {
                                         <p className={styles.bundlePlace}>{bundle.attributes.placelists_size}個のプレイスリスト
                                         </p>
                                     </div>
+                                    </a>
                                 </div>
                             ))}
                         </div>
@@ -174,7 +180,7 @@ const Content = () => {
                         
                     </div>
                 </div>
-                <div className={styles.listContainer}>
+                {/* <div className={styles.listContainer}>
                     <div className={styles.listTitle}>
                         Deep Insight
                     </div>
@@ -190,31 +196,13 @@ const Content = () => {
                                     <p className={styles.deepDate}>2021/4/28</p>
                                 </div>
                             </div>
-                            <div className={styles.deepCard}>
-                                <div className={styles.deepImage}></div>
-                                <div className={styles.deepText}>
-                                    <h4 className={styles.deepTitle}>XXXXXXXXXXXXXXXXXX<br></br>
-                                    XXXXXXXXXXXXXXXXXX<br></br>
-                                    XXXXXXXXXXXXXXXXXX</h4>
-                                    <p className={styles.deepDate}>2021/4/28</p>
-                                </div>
-                            </div>
-                            <div className={styles.deepCard}>
-                                <div className={styles.deepImage}></div>
-                                <div className={styles.deepText}>
-                                    <h4 className={styles.deepTitle}>XXXXXXXXXXXXXXXXXX<br></br>
-                                    XXXXXXXXXXXXXXXXXX<br></br>
-                                    XXXXXXXXXXXXXXXXXX</h4>
-                                    <p className={styles.deepDate}>2021/4/28</p>
-                                </div>
-                            </div>
                         </div>
                         <div className={styles.viewMore}>
                             <h3>View More</h3>
                             <div className={styles.plus}><PlusSign /></div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     )

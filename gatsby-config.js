@@ -48,6 +48,14 @@ module.exports = {
       __key: "pages",
     },
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "posts",
+        path: `${__dirname}/src/posts`,
+      },
+      __key: "posts",
+    },
+    {
       resolve: `gatsby-source-contentful`,
       options: {
         spaceId: `5rbeuk9gkv8a`,

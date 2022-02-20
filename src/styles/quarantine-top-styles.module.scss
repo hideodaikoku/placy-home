@@ -1,0 +1,106 @@
+.container{
+    width: 100%;
+    border-bottom: solid 1px black;
+    .img-container{
+        .pqr{
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 30rem;
+        
+            // Adjust image positioning (if image covers area with defined height) and add font-family for polyfill
+            & > img {
+            object-fit: fill !important;
+            object-position: 50% 50% !important; 
+            }   
+        }
+    }
+    .text-container{
+        color:gray;
+        width: 70%;
+        max-width: 960px;
+        margin: 5rem auto;
+        font-weight: 700;
+        line-height: 1.8rem;
+    }
+    .button-container{
+        width: 70vw;
+        max-width: 960px;
+        margin: 1rem auto;
+        display: flex;
+        .button{
+            background-color: #f3c91f;
+            padding: .75rem 1rem;
+            font-weight: 800;
+            font-size: 1rem;
+            border-radius: .5rem;
+            margin: 0 auto;
+            transition: all .2s ease-in-out;
+        }
+        .button:hover{
+            opacity: .8;
+            transform: scale(1.05);
+        }
+    }
+    .diagram{
+        width: 70vw;
+        max-width: 960px;
+        margin: 5rem auto;
+        .box{
+            background-color:rgb(196, 196, 196);
+            text-align: center;
+            padding: 1rem;
+            border-radius: .5rem;
+            color: rgb(68, 67, 67);
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        
+    }
+
+    .arrow{
+        margin: 1rem auto;
+        width: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+        color: rgb(68, 67, 67);
+    }
+
+    .media-container{
+        margin: 5rem auto;
+        max-width: 300px;
+        text-align: center;
+        .media-img-container{
+            display:flex;
+            justify-content: center;
+            .media-img{
+                width: 48%;
+            }
+            .media-img+.media-img{
+                margin-left: 1rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .container{
+        .img-container{
+            .pqr{
+                height: 15rem;
+            }
+        }
+        .media-container{
+            h1{
+                text-align: center;
+            }
+            .media-img-container{
+                justify-content: center;
+                .media-img+.media-img{
+                    margin-left:1rem;
+                }
+            }
+        }
+    }
+}

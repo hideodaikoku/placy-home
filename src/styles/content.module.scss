@@ -25,122 +25,127 @@
                     border-radius: 0.5rem;
                     margin-bottom: 1rem;
                     position: relative;
-                    .card-image {
-                        width: 100%;
-                        height: 52%;
-                        background-color: black;
-                        border-top-left-radius: 0.5rem;
-                        border-top-right-radius: 0.5rem;
-                        img {
+                    a {
+                        .card-image {
                             width: 100%;
-                            height: 100%;
-                            object-fit: cover;
+                            height: 52%;
+                            background-color: black;
                             border-top-left-radius: 0.5rem;
                             border-top-right-radius: 0.5rem;
-                        }
-                    }
-                    .card-text {
-                        padding-top: 1rem;
-                        padding-right: 1rem;
-                        padding-left: 1rem;
-                        width: 100%;
-                        .parent-title {
-                            margin-bottom: 0.25rem;
-                            .card-title {
-                                display: table-cell;
-                                white-space: nowrap;
-                                text-overflow: ellipsis;
-                                overflow: hidden;
-                                height: 1.6575rem;
-                                font-size: 0.875rem;
-                                line-height: 1.5rem;
-                            }
-                        }
-                        .parent-desc {
-                            margin-bottom: 0.5rem;
-                            .card-author {
-                                display: table-cell;
-                                white-space: nowrap;
-                                text-overflow: ellipsis;
-                                overflow: hidden;
+                            img {
                                 width: 100%;
-                                height: 1.6575rem;
-                                font-size: 0.875rem;
-                                line-height: 1.5rem;
-                                margin-bottom: 0.5rem;
+                                height: 100%;
+                                object-fit: cover;
+                                border-top-left-radius: 0.5rem;
+                                border-top-right-radius: 0.5rem;
                             }
                         }
-                        svg {
-                            height: 1.5rem;
-                            margin-right: 0.4rem;
-                            margin-bottom: 0.31rem;
-                        }
-                        .card-place {
-                            display: inline-block;
-                            overflow: hidden;
-                            height: 1.5rem;
-                            font-size: 0.75rem;
-                            line-height: 1.5rem;
-                            margin-bottom: 0.31rem;
+                        .card-text {
+                            padding-top: 1rem;
+                            padding-right: 1rem;
+                            padding-left: 1rem;
+                            width: 100%;
+                            .parent-title {
+                                margin-bottom: 0.25rem;
+                                .card-title {
+                                    display: table-cell;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                    overflow: hidden;
+                                    height: 1.6575rem;
+                                    font-size: 0.875rem;
+                                    line-height: 1.5rem;
+                                }
+                            }
+                            .parent-desc {
+                                margin-bottom: 0.5rem;
+                                .card-author {
+                                    display: table-cell;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                    overflow: hidden;
+                                    width: 100%;
+                                    height: 1.6575rem;
+                                    font-size: 0.875rem;
+                                    line-height: 1.5rem;
+                                    margin-bottom: 0.5rem;
+                                }
+                            }
+                            svg {
+                                height: 1.5rem;
+                                margin-right: 0.4rem;
+                                margin-bottom: 0.31rem;
+                            }
+                            .card-place {
+                                display: inline-block;
+                                overflow: hidden;
+                                height: 1.5rem;
+                                font-size: 0.75rem;
+                                line-height: 1.5rem;
+                                margin-bottom: 0.31rem;
+                            }
                         }
                     }
+                    
                 }
                 .bundle-card {
                     height: 15rem;
                     border-radius: 0.5rem;
                     margin-bottom: 1rem;
                     position: relative;
-                    .bundle-img {
-                        width: 100%;
-                        height: 100%;
-                        background-color: black;
-                        border-radius: 0.5rem;
-                        img {
+                    a {
+                        .bundle-img {
                             width: 100%;
                             height: 100%;
-                            object-fit: cover;
-                            border: 1px solid black;
+                            background-color: black;
                             border-radius: 0.5rem;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                border: 1px solid black;
+                                border-radius: 0.5rem;
+                            }
                         }
-                    }
-                    .bundle-text {
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        box-sizing: border-box;
-                        position:absolute;
-                        padding-top: 1.5rem;
-                        padding-left: 1rem;
-                        padding-right: 1rem;
-                        .bundle-title {
-                            height: 1.875rem;
-                            font-size: 1.25rem;
-                            line-height: 1.875rem;
-                            margin-bottom: 4.875rem;
-                        }
-                        .bundle-desc {
-                            height: 3.75rem;
-                            font-size: 0.875rem;
-                            line-height: 1.25rem;
-                            margin-bottom: 1rem;
-                        }
-                        svg {
-                            margin-right: 0.5rem;
-                            margin-bottom: 0.5rem;
-                            height: 1.5rem;
-                        }
-                        .bundle-place {
-                            width: 80%;
-                            height: 1.5rem;
-                            font-size: 0.875rem;
-                            line-height: 1.5rem;
-                            margin-bottom: 0.5rem;
-                            display: inline-block;
-                        }
-                        .bundle-title, .bundle-desc, .bundle-place {
-                            color: white;
-                            overflow: hidden;
+                        .bundle-text {
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            box-sizing: border-box;
+                            position:absolute;
+                            padding-top: 1.5rem;
+                            padding-left: 1rem;
+                            padding-right: 1rem;
+                            .bundle-title {
+                                height: 1.875rem;
+                                font-size: 1.25rem;
+                                line-height: 1.875rem;
+                                margin-bottom: 4.875rem;
+                            }
+                            .bundle-desc {
+                                height: 3.75rem;
+                                font-size: 0.875rem;
+                                line-height: 1.25rem;
+                                margin-bottom: 1rem;
+                            }
+                            svg {
+                                margin-right: 0.5rem;
+                                margin-bottom: 0.5rem;
+                                height: 1.5rem;
+                            }
+                            .bundle-place {
+                                width: 80%;
+                                height: 1.5rem;
+                                font-size: 0.875rem;
+                                line-height: 1.5rem;
+                                margin-bottom: 0.5rem;
+                                display: inline-block;
+                            }
+                            .bundle-title, .bundle-desc, .bundle-place {
+                                color: white;
+                                overflow: hidden;
+                            }
                         }
                     }
                 }
