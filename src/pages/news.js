@@ -120,9 +120,9 @@ const News = () => {
                       <small className={styles.date}>
                         {news.node.date.split('T')[0].replaceAll('-', '/')}
                       </small>
-                      <small className={styles.newsType}>
-                        {news.node.type}
-                      </small>
+                        {news.node.type.map((type) => (
+                          <small className={styles.newsType}>{type}</small>
+                        ))}
                     </a>
                   </div>
                 ))
