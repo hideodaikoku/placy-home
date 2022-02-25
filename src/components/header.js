@@ -126,7 +126,7 @@ const Header = (props) => {
         className={styles.image}
         src="../images/placy-logo.png"
         alt="Placy Logo"
-        placeholder="dominantColor"
+        placeholder="tracedSVG"
         layout="fixed"
         width={91.8}
         height={24}
