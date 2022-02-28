@@ -43,11 +43,11 @@ const Top = () => {
         {boxes.map((b) => (
           <Spring 
           loop 
-          to={{x:0}} 
+          to={{x:-240}} 
           from={
-            {x: Math.floor(Math.random() * (windowDimensions.width - windowDimensions.width*0.8) + windowDimensions.width*0.8)}
+            {x: Math.floor(Math.random() * (windowDimensions.width+240 - windowDimensions.width*0.9) + windowDimensions.width*0.9)}
           }
-          config={{duration: Math.floor(Math.random() * (10000 -6000) + 6000)}}
+          config={{duration: Math.floor(Math.random() * (11500 -7000) + 7000)}}
           key={b}
           >
           {sty=> <animated.div style={{...sty}}
