@@ -29,9 +29,6 @@ const TopMusicMap = (props) => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Color spring
-  const [colorStyle, animate] = useSpring(()=> ({ background: 'linear-gradient(180deg, #fbd70900 100%, #00A3FF 0%)' }))
-
   //boxes array
   const boxes = windowDimensions.width < 700 ?  Array.from(Array(3).keys()) : Array.from(Array(10).keys())
 
