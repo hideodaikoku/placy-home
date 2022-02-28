@@ -1,13 +1,59 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
+import {useSpring, animated, Spring, SpringRef} from "react-spring"
 import * as styles from "../styles/top.module.scss";
 
-const Top = (props) => {
+const Top = () => {
+  // get window size
+  function getWindowDimensions() {
+    const { innerWidth: width, innerHeight: height } = window;
+    return {
+      width,
+      height
+    };
+  }
+
+  // state initial window size
+  const [windowDimensions, setWindowDimensions] = useState(
+    getWindowDimensions()
+  );
+
+  // Handle window resize
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  // Color spring
+  const [colorStyle, animate] = useSpring(()=> ({ background: 'linear-gradient(180deg, #fbd70900 100%, #00A3FF 0%)' }))
+
+  //boxes array
+  const boxes = windowDimensions.width < 700 ?  Array.from(Array(3).keys()) : Array.from(Array(10).keys())
+
+
   return (
     <div className={styles.container}>
         <div className={styles.empty}></div>
         <h1 className={styles.topText}>
         We are Placy,<br id={styles.firstBreak}/> a collective reinterpreting the value of place,<br id={styles.secondBreak}/> through spatial analysis and cultural curation.
         </h1>
+        {boxes.map((b) => (
+          <Spring 
+          loop 
+          to={{x:0}} 
+          from={
+            {x: Math.floor(Math.random() * (windowDimensions.width - windowDimensions.width*0.8) + windowDimensions.width*0.8)}
+          }
+          config={{duration: Math.floor(Math.random() * (10000 -6000) + 6000)}}
+          key={b}
+          >
+          {sty=> <animated.div style={{...sty}}
+           className={styles.box}></animated.div>}
+        </Spring>
+        ))}
     </div>
   );
 };

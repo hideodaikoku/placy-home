@@ -4,6 +4,8 @@
     margin: 3rem auto;
     padding: 1rem;
     display: flex;
+    position: relative;
+    overflow: hidden;
     .empty{
         display: none;
     }
@@ -18,12 +20,81 @@
             display: none;
         }
     }
+    .box {
+        width: 0;
+        height: 0;
+        position: absolute;
+        bottom: 0;
+        border-top: 1px solid #000000;
+        border-left: 1px solid #000000;
+        border-right: 1px solid #000000;
+        border-radius: 12px 12px 0px 0px;
+        z-index: 1;
+        opacity: 0.6;
+    }
+    .box::before {
+        position: absolute;
+        border-radius: 12px 12px 0px 0px;
+        content: "";
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(180deg, #F00000 0%, #00A3FF 100%);
+        z-index: -1;
+        transition: opacity 0.5s linear;
+        opacity: 0;
+    }
+    .box:hover::before{
+        opacity: 0.6;
+    }
+    .box:nth-child(3) {
+        width: 12rem;
+        height: 19rem;
+    }
+    .box:nth-child(4) {
+        width: 11rem;
+        height: 21rem;
+    }
+    .box:nth-child(5) {
+        width: 10rem;
+        height: 17rem;
+    }
+    .box:nth-child(6) {
+        width: 17rem;
+        height: 16rem;
+    }
+    .box:nth-child(7) {
+        width: 10rem;
+        height: 15rem;
+    }
+    .box:nth-child(8) {
+        width: 9rem;
+        height: 12rem;
+    }
+    .box:nth-child(9) {
+        width: 14rem;
+        height: 10rem;
+    }
+    .box:nth-child(10) {
+        width: 13rem;
+        height: 16rem;
+    }
+    .box:nth-child(11) {
+        width: 15rem;
+        height: 11rem;
+    }
+    .box:nth-child(12) {
+        width: 17rem;
+        height: 19rem;
+    }
 }
 
 @media only screen and (min-width: 700px){
     .container{
         padding: 3.75rem;
         flex-direction: row;
+        position: relative;
         .empty{
             display: flex;
             content: " ";
@@ -32,6 +103,7 @@
         .top-text{
             width: 90%;
             padding-left: 1rem;
+            z-index: 2;
             #first-break{
                 display: none;
             }
@@ -39,7 +111,27 @@
                 display: inline;
             }
         }
+        .box:nth-child(3) {
+            width: 12rem;
+            height: 15rem;
+        }
+        .box:nth-child(4) {
+            width: 11rem;
+            height: 18.5rem;
+        }
+        .box:nth-child(5) {
+            width: 10rem;
+            height: 12rem;
+        }
     }  
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        margin: 0 auto;
+        padding: 6.75rem 0;
+        overflow: hidden;
+    }
 }
 
 //     @media only screen and (min-width: 1200px){
