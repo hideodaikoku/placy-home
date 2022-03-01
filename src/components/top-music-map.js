@@ -47,7 +47,7 @@ const TopMusicMap = (props) => {
             { 
               rotateZ: -45, 
               x: Math.floor(Math.random() * (windowDimensions.width +240 - windowDimensions.width*0.9) + windowDimensions.width*0.9),
-              y: Math.floor(Math.random() * (240 + 80) - 80),
+              y: Math.floor(Math.random() * (200 + 200) - 200),
             }
           }
           config={{duration: Math.floor(Math.random() * (11500 -7000) + 7000)}}
