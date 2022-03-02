@@ -122,15 +122,17 @@ const Header = (props) => {
   return (
     <div className={styles.container}>
       <GlobalStyle nav={nav}/>
-      <StaticImage
-        className={styles.image}
-        src="../images/placy-logo.png"
-        alt="Placy Logo"
-        placeholder="tracedSVG"
-        layout="fixed"
-        width={91.8}
-        height={24}
-      />
+      <Link to="/">
+        <StaticImage
+          className={styles.image}
+          src="../images/placy-logo.png"
+          alt="Placy Logo"
+          placeholder="tracedSVG"
+          layout="fixed"
+          width={91.8}
+          height={24}
+        />
+      </Link>
       <div 
         className={styles.menuIcon}>
         <MenuIcon

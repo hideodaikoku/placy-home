@@ -7,6 +7,14 @@ const TopMusicMap = (props) => {
 
   // get window size
   function getWindowDimensions() {
+    const isBrowser = typeof window !== "undefined"
+    if (!isBrowser) {
+      return {
+        width: 1400,
+        height: 900
+      };
+    }
+
     const { innerWidth: width, innerHeight: height } = window;
     return {
       width,
@@ -23,6 +31,10 @@ const TopMusicMap = (props) => {
   useEffect(() => {
     function handleResize() {
       setWindowDimensions(getWindowDimensions());
+    }
+
+    if (typeof window === "undefined") {
+      return handleResize();
     }
 
     window.addEventListener("resize", handleResize);
