@@ -246,7 +246,7 @@ const Header = (props) => {
                 Contact
             </a>
           </li>
-          <li className={styles.navItem}>
+          {/* <li className={styles.navItem}>
             <StaticImage
               className={styles.switch}
               src="../images/switch.svg"
@@ -256,7 +256,7 @@ const Header = (props) => {
               width={24}
               height={24}
             />
-          </li>
+          </li> */}
         </ul>
       </nav>
 
