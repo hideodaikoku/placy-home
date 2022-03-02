@@ -10,7 +10,7 @@ const TopMusicMap = (props) => {
     const isBrowser = typeof window !== "undefined"
     if (!isBrowser) {
       return {
-        width: 1400,
+        width: 2200,
         height: 900
       };
     }
