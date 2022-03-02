@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import {useSpring, animated, Spring, SpringRef} from "react-spring"
+import { animated, Spring} from "react-spring"
 import * as styles from "../styles/top.module.scss";
 
 const Top = () => {
