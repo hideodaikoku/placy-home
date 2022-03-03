@@ -20,7 +20,7 @@ export default function ArticleDetail({data}) {
             <Seo/>
             <div className={styles.container}>
         <div className={styles.backButton}>
-          <Link to="/post-quarantine-urbanism">
+          <Link to="/projects/post-quarantine-urbanism">
             <span className={styles.backArr}>&larr;</span> Post
             Quarantine Urbanism Top
           </Link>

@@ -1,8 +1,8 @@
 import React from "react";
-import Layout from "../components/layout";
-import QuarantineTop from "../components/quarantine-top";
-import QuarantineArticles from "../components/quarantine-articles";
-import Seo from "../components/seo";
+import Layout from "../../components/layout";
+import QuarantineTop from "../../components/quarantine-top";
+import QuarantineArticles from "../../components/quarantine-articles";
+import Seo from "../../components/seo";
 import { graphql } from "gatsby";
 
 const Quarantine = ({data}) => {

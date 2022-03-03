@@ -28,7 +28,7 @@ exports.createPages = async ({graphql, actions, reporter }) => {
     result.data.allContentfulProjects.edges.forEach(({node}) => {
         node.slug !== "post-quarantine-urbanism" && 
         createPage({
-            path: node.slug,
+            path: `projects/${node.slug}`,
             component: projectDetailTemplate,
             context: {slug: node.slug}
         })
@@ -59,7 +59,7 @@ exports.createPages = async ({graphql, actions, reporter }) => {
     const articlePostTemplate = path.resolve(`./src/templates/article-detail.js`)
         articles.data.allMarkdownRemark.edges.forEach((edge) => {
             createPage({
-                path: `post-quarantine-urbanism/${edge.node.frontmatter.slug}`,
+                path: `projects/post-quarantine-urbanism/${edge.node.frontmatter.slug}`,
                 component: articlePostTemplate,
                 context: {
                     slug: `${edge.node.frontmatter.slug}`,

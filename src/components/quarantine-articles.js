@@ -14,7 +14,7 @@ const QuarantineArticles = ({articles}) => {
                 post === firstPost ? 
                 <div key={post.node.id} className={styles.mainArticle}>
                   <div className={styles.imageContainer}>
-                    <Link to={"/post-quarantine-urbanism/" + post.node.frontmatter.slug}>
+                    <Link to={"/projects/post-quarantine-urbanism/" + post.node.frontmatter.slug}>
                       <GatsbyImage
                         image={getImage(post.node.frontmatter.img)}
                         className={styles.image}
@@ -41,7 +41,7 @@ const QuarantineArticles = ({articles}) => {
                       }
                     </p>
                     <Link
-                      to={"/post-quarantine-urbanism/" + post.node.frontmatter.slug}
+                      to={"/projects/post-quarantine-urbanism/" + post.node.frontmatter.slug}
                       style={{ textDecoration: "underline" }}
                     >
                       Read More
@@ -51,7 +51,7 @@ const QuarantineArticles = ({articles}) => {
                 :
                 <div key={post.node.id} className={styles.article}>
                   <div className={styles.imageContainer}>
-                    <Link to={"/post-quarantine-urbanism/" + post.node.frontmatter.slug}>
+                    <Link to={"/projects/post-quarantine-urbanism/" + post.node.frontmatter.slug}>
                       <GatsbyImage
                         image={getImage(post.node.frontmatter.img)}
                         className={styles.image} alt="article-img"/>

@@ -42,7 +42,7 @@ const Projects = () => {
               projectsData.map((projects) => (
                 <div className={styles.projectContainer} key={projects.node.id}>
                     <div className={styles.imageContainer}>
-                      <a href={projects.node.type? `/${projects.node.slug}` : projects.node.link}>
+                      <a href={projects.node.type? `/projects/${projects.node.slug}` : projects.node.link}>
                       <GatsbyImage image={projects.node.image.gatsbyImageData} className={styles.image}
                         aspectRatio={5/4} layout="constrained" objectFit={
                           (() => {
@@ -56,12 +56,12 @@ const Projects = () => {
                     </div>
                     <div className={styles.textContainer}>
                       <h3 className={styles.projectTitle}>
-                        <a href={projects.node.type? `/${projects.node.slug}` : projects.node.link} style={{textDecoration: "none"}}>
+                        <a href={projects.node.type? `/projects/${projects.node.slug}` : projects.node.link} style={{textDecoration: "none"}}>
                         {projects.node.title}
                         </a>
                       </h3>
                       <p className={styles.paragraph}>
-                        <a href={projects.node.type? `/${projects.node.slug}` : projects.node.link}>
+                        <a href={projects.node.type? `/projects/${projects.node.slug}` : projects.node.link}>
                         {projects.node.summary.summary}
                         </a>
                       </p>
