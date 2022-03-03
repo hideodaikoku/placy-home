@@ -37,7 +37,7 @@ export default function ProjectDetail({data}) {
         <div className={styles.content}>
         <div className={styles.topLinks}>
                 <p>
-                    <Link to="/projects">Projects</Link> / {project.title.substring(0,28)}...
+                    <Link to="/projects/">Projects</Link> / {project.title.substring(0,28)}...
                 </p>
         </div>
         <div className={styles.projectContent}>
