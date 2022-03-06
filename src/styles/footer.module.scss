@@ -1,39 +1,41 @@
 .container{
     padding: 0;
     margin: 0;
-    .top{
-        padding: 1rem;
-        margin: 3rem 0;
-        list-style-type: none;
+    .top-container {
         border-top: 1px solid black;
         border-bottom: 1px solid black;
-        display: flex;
-        flex-direction: column;
-        :first-child{
-            margin-top: 2rem;
-        }
-        
-        :last-child{
-            margin-bottom: 2rem;
-        }
-        .nav-list{
-            .nav-link{
-                text-decoration: none;
-                font-size: 1.2rem;
-                color: black;
-                cursor: pointer;
-                :visited{
+        margin: 3rem 0;
+        margin-bottom: 2rem;
+        .top{
+            padding: 1rem;
+            list-style-type: none;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            .nav-list{
+                margin-bottom: 1.5rem;
+                .nav-link{
+                    text-decoration: none;
+                    font-size: 1.2rem;
                     color: black;
+                    cursor: pointer;
+                    :visited{
+                        color: black;
+                    }
                 }
             }
-        }
-        .nav-list+.nav-list{
-            margin-top: 1.5rem;
+            .nav-list:first-child {
+                margin-top: 2rem;
+            }
+            .nav-list:last-child {
+                margin-bottom: 2rem;
+            }
         }
     }
     .bottom{
         list-style-type: none;
         margin: 3rem 0 5rem 0;
+        margin-top: 2rem;
         padding: 1rem;
         display: flex;
         flex-direction: row;
@@ -56,17 +58,20 @@
     .container{
         padding-left: 2rem;
         padding-right: 2rem;
-        .top{
-            display: flex;
-            flex-direction: row;
-            padding: 3rem 0;
-            margin-bottom: 0;
-            .nav-list{
-                margin: 0;
-            }
-            .nav-list+.nav-list{
-                margin-top: 0;
-                margin-left: 1.5rem;
+        .top-container {
+            margin-bottom: 0.5rem;
+            .top{
+                display: flex;
+                flex-direction: row;
+                padding: 3rem 0;
+                padding-right: 1rem;
+                margin-left: 0;
+                margin-bottom: 0;
+                justify-content: space-between;
+                max-width: 500px;
+                .nav-list, .nav-list:first-child, .nav-list:last-child{
+                    margin: 0;
+                }
             }
         }
         .bottom{

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "gatsby"
 import * as styles from '../styles/for-shops.module.scss'
 import text from '../data/for-shops.json'
 
@@ -19,11 +20,9 @@ const ForShops = () => {
                         {text.paragraph}
                     </p>
                 </div>
-                <a href='#'>
-                    <div className={styles.button}>
-                        {text.button}
-                    </div>    
-                </a>
+                <Link to="/music-map">
+                  {text.button}
+                </Link>
                 
             </div>
         </div>

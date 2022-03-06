@@ -2,6 +2,7 @@ import React from "react";
 import * as styles from "../styles/about.module.scss";
 import textData from '../data/about.json';
 import { StaticImage } from "gatsby-plugin-image";
+import { Link } from "gatsby"
 
 const About = (props) => {
   return (
@@ -30,9 +31,9 @@ const About = (props) => {
             <p>
               {textData.paragraph_1b}
             </p>
-            <button>
+            <Link to="/music-map">
               Learn More
-            </button>
+            </Link>
           </div>
 
         </section>
@@ -53,9 +54,9 @@ const About = (props) => {
             <p>
               {textData.paragraph_2b}
             </p>
-            <button>
+            <Link to="/projects">
               Learn More
-            </button>
+            </Link>
           </div>
         </section>
         <section className={styles.section}>
@@ -75,9 +76,9 @@ const About = (props) => {
             <p>
               {textData.paragraph_3b}
             </p>
-            <button>
+            <Link to="/projects">
               Learn More
-            </button>
+            </Link>
           </div>
         </section>
       </div>

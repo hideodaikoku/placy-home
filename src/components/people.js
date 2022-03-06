@@ -52,7 +52,8 @@ const People = () => {
           </div>
           :null
         }
-        <div className={styles.container}>
+      </div>
+      <div className={styles.container}>
           <h2 className={styles.subtitle}>Who we are</h2>
           <div className={styles.memberContainer}>
             {
@@ -63,6 +64,8 @@ const People = () => {
                       <GatsbyImage
                       alt={member.name} 
                       grayscale={true}
+                      objectFit={"cover"}
+                      objectPosition={"50% top"}
                       image={data.allFile.edges.find(queryData=>queryData.node.relativePath===member.profile_img).node.childImageSharp.gatsbyImageData}
                       />
                     </div>
@@ -78,7 +81,6 @@ const People = () => {
             }
           </div>
         </div>
-      </div>
     </div>
   );
 };

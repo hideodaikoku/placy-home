@@ -1,69 +1,81 @@
 [
     {
-      "name": "Soma Suzuki",
+      "name": "鈴木 綜真",
       "position": "CEO",
-      "profile_img": "members/soma.jpg",
-      "text": "京都大学工学部物理工学科にて学部課程を卒業後、ロンドンのUCLBartlett Schoolにて都市空間解析学の研究を行い修士課程を取得。"
+      "profile_img": "members/soma.png",
+      "text": "京都大学物理工学科を卒業後、MITメディアラボにてブロックチェーンで音楽の著作権を管理するプラットフォームの開発に参加。その後、ロンドン大学UCL Bartlett School修士課程で都市解析を学び、2019年5月にPlacyを創業。空間解析と音楽解析を強みに持つ。現在、Wired Japanにて「Cultivating The CityOS」連載中。"
     },
     {
       "name": "森下 和之",
-      "position": "Spatial Data Engineer",
-      "profile_img": "members/kazu.png",
-      "text": "メルボルン大学で数学科卒業。アクチュアリとして金融機関勤務。Placyでは空間データベースの構築及び解析業務を担う。"
+      "position": "CTO",
+      "profile_img": "members/kazu.jpg",
+      "text": "メルボルン大学数学科卒業。専門は、離散数学、最適化、意思決定論。その後、フリーランスのエンジニア、シェフなどを経て、現在は米国金融機関のビジネス分析部門に属している。強みとして、地図情報によるリスク分析や音楽解析業務経験がある。Placyでは、アルゴリズムの開発、リサーチディレクションを担う。"
+    },
+    {
+      "name": "山中 良太",
+      "position": "COO",
+      "profile_img": "members/ryota.png",
+      "text": "アクセラ時代にPlacyのメンターを担当し、事業領域とメンバーの熱量に移籍を決意。慶大卒。外資コンサルではシニアマネジャーとして大企業DXをリードする傍ら、SaaS型デジマ事業を立案からローンチまで経験。サムライインキュベート参画後は、自治体×大企業型のアクセラ事業を立上げ、1年で2億円超までの規模に成長させる。大手デベとの再開発案件も手掛ける。"
+    },
+    {
+      "name": "川崎 ゆうき",
+      "position": "CCO",
+      "profile_img": "members/yuki.jpeg",
+      "text": "JR東日本との企画において、ライティング業務を担当したことがPlacyとの出会い。音楽と場所の新たな関係構築の可能性としてPlacyへ興味を持っていたところに、鈴木にメンバーとして誘われる。Mixmag japan編集長を担当。オルタナティブな日本のクラブシーンを世の中に広めるため、日夜奔走中。映画館にも頻繁に現れ、大学でメディアアートについての講義を行う。"
+    },
+    {
+      "name": "小島 清樹",
+      "position": "Designer",
+      "profile_img": "members/kojima.jpg",
+      "text": "IT系事業会社に所属。デザインディレクターとしてユーザー体験やビジュアルデザインの品質担保を担う。共著に『インクルーシブデザイン：社会の課題を解決する参加型デザイン』。PlacyではAppのUX/UIや販促物のグラフィックデザインを担当。"
+    },
+    {
+      "name": "山田 佑亮",
+      "position": "Engineer",
+      "profile_img": "members/yamada.jpeg",
+      "text": "大学院で機械学習の研究に従事し、人工知能学会全国大会での受賞歴や、ACM Multimedia Art Galleryなどでの採択歴がある。複数のスタートアップでエンジニアやテックリードを経験し、ispecにCTOとしてジョイン。Placyでは、アプリのバックエンドシステムの設計、実装や技術的観点からのプロダクトマネジメントのサポートを行う。"
+    },
+    {
+      "name": "中嶋 裕也",
+      "position": "Engineer",
+      "profile_img": "members/yuya.jpg",
+      "text": "大学院では、IoTのオートメーションに関する研究に従事。Life is Tech! のメンターを務め、iPhoneアプリコースのリーダーとしてカリキュラムの改善に携わる。teamLab.incでの複数のアプリ開発を経た後、ispecで、モバイルチームのリードを務める。 Placyでは、iOSアプリのリードエンジニアを担う。"
+    },
+    {
+      "name": "谷村 朋樹",
+      "position": "Engineer",
+      "profile_img": "members/tomoki.jpg",
+      "text": "慶應義塾大学SFC卒業。大学・大学院では、機械学習と画像処理にまつわる研究を複数行い、国際会議での発表や論文誌へ掲載。また、機械学習・バックエンドエンジニアとして複数のプロダクトの開発を経験。現在は、ispec 執行役員として、bHAP という自社事業の責任者を務める。Placyでは、バックエンドからプロダクトマネジメントのサポートまで幅広く楽しんでいる。"
+    },
+    {
+      "name": "金澤 貴寛",
+      "position": "Contents Planner",
+      "profile_img": "members/kanazawa_.jpg",
+      "text": "明治大学文学部卒業。在学中、イギリス・University of Leedsに留学しMedia and Communicationを学ぶ。帰国後より日本の音楽を英語で発信するライターとして活動を始める。国内のみならずグラスゴー 、マドリードやニューヨークの音楽フェスにも参加した経験をもとに、Placyではアーティストインタビューから企画まで幅広く担当。"
+    },
+    {
+      "name": "及川 百合香",
+      "position": "Writer",
+      "profile_img": "members/yurika.jpeg",
+      "text": "東京学芸大学中等教育教員養成課程社会専攻卒業。在学中、文化地理学を学び、場所と音楽に関する研究を行う。卒業後は音楽WEBメディアでのインターンを経て、アーティストマネジメント・プロモーション、コンテンツライティングに携わる。Placyではアーティストインタビューやライティングを担当。"
+    },
+    {
+      "name": "和田 拓也",
+      "position": "Editor / Writer",
+      "profile_img": "members/wada.jpg",
+      "text": "「カルチャーとその孵化装置としての社会／都市」を基軸に、WIRED、VOGUE、黒鳥社などメディア・出版レーベルでのコンテンツ制作、また行政機関の調査や都市開発事業者のコンテンツ制作などに携わる。Placyではプロジェクト全般のコンテンツディレクションを担う。"
     },
     {
       "name": "大穀 英雄",
-      "position": "Spatial Data Engineer",
+      "position": "Engineer",
       "profile_img": "members/hideo.png",
-      "text": "ニューデリー生まれ育ち慶應義塾大学院、政策・メディア学科２年。Placyではソフトウェア開発とデザインを担当。"
+      "text": "インドのニューデリー生まれ育ち慶應義塾大学院政策・メディア２年生。Placyではソフトウェア開発とデザインを担当。"
     },
     {
-      "name": "marina",
-      "position": "App Engineer",
-      "profile_img": "members/marina.png",
-      "text": "東京電機大学工学部在籍、主に通信工学を勉強している。Placyでは、iOSアプリ開発を担当している。"
-    },
-    {
-      "name": "Miki",
-      "position": "App Engineer",
-      "profile_img": "members/miki.png",
-      "text": "明治大学総合数理学部FMS在籍。Placyではモバイルアプリ開発を担当。コーヒーが好きで普段はバリスタとしても働いている。"
-    },
-    {
-      "name": "Stephen Law",
-      "position": "Spatial Data Engineer",
-      "profile_img": "members/stephen.png",
-      "text": "英国国立統計機関Alan Turing Institute リサーチフェロー. Placyではロンドン支部の立ち上げ及び都市モデリングの構築を担当。"
-    },
-    {
-      "name": "Todd Perry",
-      "position": "Spatial Data Engineer",
-      "profile_img": "members/todd.png",
-      "text": "ロンドンのデータ分析のベンチャー企業「Huq Industries」でエンジニアとして働いている。Placyでソフトウエア開発やインフラに関する仕事をしている。"
-    },
-    {
-      "name": "sp4ghet",
-      "position": "Computer Wrangler",
-      "profile_img": "members/sp4ghet.png",
-      "text": "ロンドンのUCLで理論物理学の学部課程在籍。進学以前はMITや千葉大学で植物工場のソフトウェアを研究・開発を行っていた。趣味でVJやクリエイティブコーディングをしている。"
-    },
-    {
-        "name": "水口瑛介",
-        "position": "Consultant",
+        "name": "水口 瑛介",
+        "position": "Consulting Lawyer",
         "profile_img": "members/eisuke.jpg",
         "text": "音楽家に無料法律相談サービスを提供するMusic Lawyer Collective「Law and Theory」代表。アーティスト、音楽レーベル、音楽関係企業などをクライアントとする案件を多く手がける。"
-    },
-    {
-        "name" : "城野　響",
-        "position": "iOS Engineer",
-        "profile_img": "members/jono.JPG",
-        "text": "「京都の大学を卒業後、都内のクラブを中心に電子音楽ユニットとして活躍。現在は京都情報大学院大学在学。Placyではモバイルアプリ開発に携わる。」"
-    },
-    {
-        "name" : "守屋 直記",
-        "position": "Event / PR",
-        "profile_img": "members/moriya.jpg",
-        "text": "2017年9月に退職後、10月に表町2丁目に餃子世界を開業。2019年3月に2店舗目となるアジア市民会館を表町3丁目に開業。同年11月デザインネオン制作事業に着手。"
     }
 ]
   

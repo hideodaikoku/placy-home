@@ -7,6 +7,7 @@ const Footer = () => {
   
   return (
     <div className={styles.container}>
+      <div className={styles.topContainer}>
       <ul className={styles.top}>
           <li className={styles.navList}>
             <a  
@@ -39,6 +40,7 @@ const Footer = () => {
             </a>
           </li>
       </ul>
+      </div>
       <ul className={styles.bottom}>
         <li className={styles.fineprint}>
           &copy; Placy, 2021

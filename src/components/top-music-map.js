@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
-import { animated, Spring} from "react-spring"
-
+import { animated, Spring} from "react-spring";
+import InnerBox from "./inner-box";
 import * as styles from "../styles/top-music-map.module.scss";
 
 const TopMusicMap = (props) => {
@@ -10,7 +10,7 @@ const TopMusicMap = (props) => {
     const isBrowser = typeof window !== "undefined"
     if (!isBrowser) {
       return {
-        width: 2200,
+        width: -700,
         height: 900
       };
     }
@@ -54,19 +54,27 @@ const TopMusicMap = (props) => {
         {boxes.map((b) => (
           <Spring 
           loop 
-          to={{ x:-240 }} 
+          to={{ x:-450 }} 
           from={
             { 
               rotateZ: -45, 
-              x: Math.floor(Math.random() * (windowDimensions.width +240 - windowDimensions.width*0.9) + windowDimensions.width*0.9),
+              x: windowDimensions.width + b*350,
               y: Math.floor(Math.random() * (200 + 200) - 200),
             }
           }
-          config={{duration: Math.floor(Math.random() * (11500 -7000) + 7000)}}
+          config={{duration: Math.floor(Math.random() * (11500 -7000) + 7000) + b*1500}}
           key={b}
           >
-          {sty=> <animated.div style={{...sty}}
-           className={styles.box}></animated.div>}
+          {sty=> <animated.div style={
+            {
+              ...sty,
+              width: Math.floor(Math.random() * (340 - 150) + 150),
+              height: Math.floor(Math.random() * (350 - 160) + 160)
+            }
+          }
+           className={styles.box}>
+              <InnerBox boxClass={styles.innerBoxRound} />
+             </animated.div>}
         </Spring>
         ))}
 

@@ -72,7 +72,7 @@ const Content = () => {
         fetch(`https://api.app.placy.city/api/v2/placelists/feed`)
         .then(response => response.json())
         .then(resultData => {
-            const newPlacelists = resultData.data.reverse().slice(0,9).map((placelist) => { 
+            const newPlacelists = resultData.data.reverse().map((placelist) => { 
                 const composer = resultData.included.find(({ id }) => id === placelist.relationships.composer.data.id)
                 return (
                     {

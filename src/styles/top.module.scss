@@ -21,8 +21,6 @@
         }
     }
     .box {
-        width: 0;
-        height: 0;
         position: absolute;
         bottom: 0;
         border-top: 1px solid #000000;
@@ -31,62 +29,22 @@
         border-radius: 12px 12px 0px 0px;
         z-index: 1;
         opacity: 0.6;
-    }
-    .box::before {
-        position: absolute;
-        border-radius: 12px 12px 0px 0px;
-        content: "";
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-image: linear-gradient(180deg, #F00000 0%, #00A3FF 100%);
-        z-index: -1;
-        transition: opacity 0.5s linear;
-        opacity: 0;
-    }
-    .box:hover::before{
-        opacity: 0.6;
-    }
-    .box:nth-child(3) {
-        width: 12rem;
-        height: 23.4rem;
-    }
-    .box:nth-child(4) {
-        width: 11rem;
-        height: 20rem;
-    }
-    .box:nth-child(5) {
-        width: 10rem;
-        height: 17rem;
-    }
-    .box:nth-child(6) {
-        width: 17rem;
-        height: 16rem;
-    }
-    .box:nth-child(7) {
-        width: 10rem;
-        height: 15rem;
-    }
-    .box:nth-child(8) {
-        width: 9rem;
-        height: 12rem;
-    }
-    .box:nth-child(9) {
-        width: 14rem;
-        height: 10rem;
-    }
-    .box:nth-child(10) {
-        width: 13rem;
-        height: 16rem;
-    }
-    .box:nth-child(11) {
-        width: 15rem;
-        height: 11rem;
-    }
-    .box:nth-child(12) {
-        width: 17rem;
-        height: 19rem;
+        .inner-box {
+            top:0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-radius: 12px 12px 0px 0px;
+            position: absolute;
+        }
+        .inner-box-round {
+            top:0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-radius: 12px;
+            position: absolute;
+        }
     }
 }
 
@@ -109,18 +67,6 @@
             #second-break{
                 display: inline;
             }
-        }
-        .box:nth-child(3) {
-            width: 12rem;
-            height: 15rem;
-        }
-        .box:nth-child(4) {
-            width: 11rem;
-            height: 18.5rem;
-        }
-        .box:nth-child(5) {
-            width: 10rem;
-            height: 12rem;
         }
     }  
 }

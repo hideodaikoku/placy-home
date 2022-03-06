@@ -117,10 +117,10 @@ const Header = (props) => {
 
   function handleChange() {
     showNav(!nav)
-}
+  }
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} style={{backgroundColor:props.color}}>
       <GlobalStyle nav={nav}/>
       <Link to="/">
         <StaticImage
@@ -248,7 +248,7 @@ const Header = (props) => {
                 Contact
             </a>
           </li>
-          {/* <li className={styles.navItem}>
+          <li className={styles.navItem} onClick={props.onDark}>
             <StaticImage
               className={styles.switch}
               src="../images/switch.svg"
@@ -258,7 +258,7 @@ const Header = (props) => {
               width={24}
               height={24}
             />
-          </li> */}
+          </li>
         </ul>
       </nav>
 
