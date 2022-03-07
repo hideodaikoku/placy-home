@@ -9,7 +9,7 @@ const Top = () => {
     const isBrowser = typeof window !== "undefined"
     if (!isBrowser) {
       return {
-        width: -700,
+        width: 4000,
         height: 900
       };
     }
