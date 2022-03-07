@@ -15,7 +15,7 @@ const Footer = () => {
               href="https://www.instagram.com/placy_city/" 
               target="_blank" 
               rel="noopener noreferrer" 
-              alt="Contact Us">
+              alt="Instagram">
                 Instagram
             </a>
           </li>
@@ -25,7 +25,7 @@ const Footer = () => {
               href="https://twitter.com/placy_city" 
               target="_blank" 
               rel="noopener noreferrer" 
-              alt="Contact Us">
+              alt="Twitter">
                 Twitter
             </a>
           </li>
@@ -35,7 +35,7 @@ const Footer = () => {
               href="https://www.facebook.com/placy.city/" 
               target="_blank" 
               rel="noopener noreferrer" 
-              alt="Contact Us">
+              alt="Facebook">
                 Facebook
             </a>
           </li>
@@ -51,7 +51,7 @@ const Footer = () => {
               href="/document/term_of_use.pdf" 
               target="_blank" 
               rel="noopener noreferrer" 
-              alt="Contact Us">
+              alt="Terms and Conditions">
                 Terms and Conditions
             </a>
         </li>
@@ -61,7 +61,7 @@ const Footer = () => {
               href="/document/privacy_policy.pdf" 
               target="_blank" 
               rel="noopener noreferrer" 
-              alt="Contact Us">
+              alt="Privacy Policy">
                 Privacy Policy
             </a>
         </li>

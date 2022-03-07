@@ -4,6 +4,10 @@ import { StaticImage } from "gatsby-plugin-image"
 import styled, { createGlobalStyle } from 'styled-components'
 import * as styles from "../styles/header.module.scss";
 import font from '../fonts/GT-Zirkon-Bold.woff2';
+import SwitchIcon from "../images/switch.svg"
+import InstaIcon from "../images/instagram.svg"
+import FaceIcon from "../images/facebook.svg"
+import TwitIcon from "../images/twitter.svg"
 
 const GlobalStyle = createGlobalStyle`
    @font-face {
@@ -163,46 +167,28 @@ const Header = (props) => {
               <a href="https://placy.typeform.com/to/lfzKCU" target="_blank" rel="noopener noreferrer" alt="Contact Us">Contact</a>
             </li>
             <li>
-              <StaticImage
-                src="../images/switch.svg"
-                alt="Switch Mode"
-                placeholder="dominantColor"
-                layout="fixed"
-                width={24}
-                height={24}
-              />
+              <SwitchIcon />
             </li>
           </ul>
           <div>
-            <a href="#">
-              <StaticImage
-              src="../images/instagram.png"
-              alt="Placy Instagram"
-              placeholder="dominantColor"
-              layout="fixed"
-              width={20}
-              height={20}
-              />
+            <a
+              href="https://www.instagram.com/placy_city/" 
+              target="_blank" 
+              rel="noopener noreferrer">
+              <InstaIcon  />
             </a>
-            <a href="#">
-              <StaticImage
-              src="../images/twitter.png"
-              alt="Placy Twitter"
-              placeholder="dominantColor"
-              layout="fixed"
-              width={20}
-              height={20}
-              />
+            <a 
+              className={styles.navLink}
+              href="https://twitter.com/placy_city" 
+              target="_blank" 
+              rel="noopener noreferrer">
+              <TwitIcon />
             </a>
-            <a href="#">
-              <StaticImage
-              src="../images/facebook.png"
-              alt="Placy Facebook"
-              placeholder="dominantColor"
-              layout="fixed"
-              width={20}
-              height={20}
-              />
+            <a 
+              href="https://www.facebook.com/placy.city/" 
+              target="_blank" 
+              rel="noopener noreferrer">
+              <FaceIcon />
             </a>
           </div>
         </Menu>
@@ -248,7 +234,7 @@ const Header = (props) => {
                 Contact
             </a>
           </li>
-          <li className={styles.navItem} onClick={props.onDark}>
+          <li className={styles.navItem}>
             <StaticImage
               className={styles.switch}
               src="../images/switch.svg"

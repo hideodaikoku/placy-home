@@ -48,11 +48,14 @@
                 padding: .75rem 1rem;
                 font-family: 'GT Zirkon', sans-serif;
                 cursor: pointer;
-
+                color: black;
                 background: linear-gradient(to right, black 50%, #f3c91f 50%);
                 background-size: 200% 100%;
                 background-position: right bottom;
                 transition: all .2s ease-out;
+            }
+            a:visited {
+                color: black;
             }
             a:hover{
                 background-position: left bottom;
