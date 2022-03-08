@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image"
 import styled, { createGlobalStyle } from 'styled-components'
 import * as styles from "../styles/header.module.scss";
 import font from '../fonts/GT-Zirkon-Bold.woff2';
-import SwitchIcon from "../images/switch.svg"
+import PlacyLogo from "../images/placy-logo.svg"
 import InstaIcon from "../images/instagram.svg"
 import FaceIcon from "../images/facebook.svg"
 import TwitIcon from "../images/twitter.svg"
+import DarkModeToggle from "./dark-mode-toggle"
 
 const GlobalStyle = createGlobalStyle`
    @font-face {
@@ -127,15 +127,7 @@ const Header = (props) => {
     <div className={styles.container} style={{backgroundColor:props.color}}>
       <GlobalStyle nav={nav}/>
       <Link to="/">
-        <StaticImage
-          className={styles.image}
-          src="../images/placy-logo.png"
-          alt="Placy Logo"
-          placeholder="tracedSVG"
-          layout="fixed"
-          width={91.8}
-          height={24}
-        />
+      <PlacyLogo className={props.textColor && styles.logo} />
       </Link>
       <div 
         className={styles.menuIcon}>
@@ -167,7 +159,7 @@ const Header = (props) => {
               <a href="https://placy.typeform.com/to/lfzKCU" target="_blank" rel="noopener noreferrer" alt="Contact Us">Contact</a>
             </li>
             <li>
-              <SwitchIcon />
+              <DarkModeToggle textColor={props.textColor} />
             </li>
           </ul>
           <div>
@@ -175,52 +167,57 @@ const Header = (props) => {
               href="https://www.instagram.com/placy_city/" 
               target="_blank" 
               rel="noopener noreferrer">
-              <InstaIcon  />
+              <InstaIcon className={styles.socialIcon} />
             </a>
             <a 
               className={styles.navLink}
               href="https://twitter.com/placy_city" 
               target="_blank" 
               rel="noopener noreferrer">
-              <TwitIcon />
+              <TwitIcon className={styles.socialIcon} />
             </a>
             <a 
               href="https://www.facebook.com/placy.city/" 
               target="_blank" 
               rel="noopener noreferrer">
-              <FaceIcon />
+              <FaceIcon className={styles.socialIcon} />
             </a>
           </div>
         </Menu>
       </div>
 
-      <nav className={styles.nav}>
+      <nav className={styles.nav} style={{borderBottom: `1px solid ${props.textColor}`}}>
         <ul className={styles.navList}>
           <li className={styles.navItem}>
             <Link 
             href="/"
-            className={styles.navLink}>
+            className={styles.navLink}
+            style={{color:props.textColor}}>
               Home
             </Link>
           </li>
           <li className={styles.navItem}>
             <Link 
             href="/music-map" 
-            className={styles.navLink}>
+            className={styles.navLink}
+            style={{color:props.textColor}}>
               Music Map
             </Link>
           </li>
-          <li className={styles.navItem}>
+          <li className={styles.navItem}
+          style={{color:props.textColor}}>
             <Link 
             href="/projects" 
-            className={styles.navLink}>
+            className={styles.navLink}
+            style={{color:props.textColor}}>
               Projects
             </Link>
           </li>
           <li className={styles.navItem}>
             <Link 
             href="/news" 
-            className={styles.navLink}>
+            className={styles.navLink}
+            style={{color:props.textColor}}>
               News
             </Link>
           </li>
@@ -230,21 +227,14 @@ const Header = (props) => {
               href="https://placy.typeform.com/to/lfzKCU" 
               target="_blank" 
               rel="noopener noreferrer" 
-              alt="Contact Us">
+              alt="Contact Us"
+              style={{color:props.textColor}}>
                 Contact
             </a>
           </li>
-          {/* <li className={styles.navItem}>
-            <StaticImage
-              className={styles.switch}
-              src="../images/switch.svg"
-              alt="Switch Mode"
-              placeholder="dominantColor"
-              layout="fixed"
-              width={24}
-              height={24}
-            />
-          </li> */}
+          <li className={styles.navItem}>
+            <DarkModeToggle textColor={props.textColor} />
+          </li>
         </ul>
       </nav>
 

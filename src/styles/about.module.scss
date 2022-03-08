@@ -1,7 +1,7 @@
 .container{
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--color-text);
     .title{
         font-family: 'Noto Sans JP', sans-serif;
         font-weight: 700;
@@ -43,27 +43,31 @@
                 line-height: 2rem;
             }
             a{
-                border: 1px solid black;
+                text-decoration: none;
+                border: 1px solid var(--color-text);
                 background-color: transparent;
                 padding: .75rem 1rem;
                 font-family: 'GT Zirkon', sans-serif;
                 cursor: pointer;
-                color: black;
-                background: linear-gradient(to right, black 50%, #f3c91f 50%);
+                color: var(--color-text);
+                background: linear-gradient(to right, var(--color-text) 50%, var(--color-background) 50%);
                 background-size: 200% 100%;
                 background-position: right bottom;
                 transition: all .2s ease-out;
             }
             a:visited {
-                color: black;
+                color: var(--color-text);
             }
             a:hover{
                 background-position: left bottom;
-                background-color: black;
-                color: #f3c91f;
-                border: 1px solid #f3c91f;
+                background-color: var(--color-text);
+                color: var(--color-background);
+                border: 1px solid var(--color-background);
             }
         }
+    }
+    .title, span, h3, p {
+        color: var(--color-text);
     }
 }
 

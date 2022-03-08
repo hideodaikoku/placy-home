@@ -1,14 +1,54 @@
 .container{
-    background: #f3c91f;
+    background: var(--color-background);
     position: fixed;
     width: 100%;
     padding: 1rem;
     z-index: 6;
+    .menu-icon {
+        div {
+            background-color: var(--color-text);
+        }
+    }
+    .mobile-menu {
+        nav {
+            background-color: var(--color-background);
+        }
+        ul li a {
+            color: var(--color-text);
+        }
+        ul li svg {
+            path {
+                fill: var(--color-text);
+                stroke: var(--color-text);
+            }
+        }
+    }
     .image{
         z-index: 7;
     }
     .nav{
         display: none;
+    }
+
+    a svg {
+        path {
+            fill: var(--color-text);
+        }
+    }
+
+    a svg.logo {
+        path {
+            fill: var(--color-blackwhite);
+
+        }
+    }
+
+    a svg.social-icon {
+        path {
+            fill: var(--color-background);
+            stroke: var(--color-text);
+
+        }
     }
 }
 
@@ -29,7 +69,7 @@ a svg {
             display: flex;
             justify-content: flex-end;
             margin-top: -1.25rem;
-            border-bottom: 1px solid black;
+            border-bottom: 1px solid var(--color-text);
             .nav-list{
                 display: flex;
                 flex-direction: row;
@@ -37,12 +77,19 @@ a svg {
                 list-style-type: none;
                 .nav-item{
                     .nav-link{
-                        color: black;
+                        color: var(--color-text);
                         cursor: pointer;
                         text-decoration: none;
                         :visited{
-                            color: black;
+                            color: var(--color-text);
                             text-decoration: none;
+                        }
+                    }
+                    svg {
+                        cursor: pointer;
+                        path {
+                        transition: all 0.3s ease-in;
+                        fill: var(--color-text);
                         }
                     }
                 }

@@ -2,9 +2,12 @@
     display: flex;
     flex-direction: column;
     padding-top: 2.25rem;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--color-text);
     .list-container {
         margin-bottom: 2.25rem;
+        .list-title, .list-content {
+            color: var(--color-text);
+        }
         .list-title {
             font-size: 1.25rem;
             font-weight: 400;
@@ -21,15 +24,16 @@
                 margin-bottom: 2rem;
                 .card {
                     height: 14.5rem;
-                    border: 1px solid black;
+                    border: 1px solid var(--color-text);
                     border-radius: 0.5rem;
                     margin-bottom: 1rem;
                     position: relative;
                     a {
+                        text-decoration: none;
                         .card-image {
                             width: 100%;
                             height: 52%;
-                            background-color: black;
+                            background-color: var(--color-text);
                             border-top-left-radius: 0.5rem;
                             border-top-right-radius: 0.5rem;
                             img {
@@ -75,6 +79,9 @@
                                 height: 1.5rem;
                                 margin-right: 0.4rem;
                                 margin-bottom: 0.31rem;
+                                path {
+                                    stroke: var(--color-text);
+                                }
                             }
                             .card-place {
                                 display: inline-block;
@@ -83,6 +90,9 @@
                                 font-size: 0.75rem;
                                 line-height: 1.5rem;
                                 margin-bottom: 0.31rem;
+                            }
+                            .card-title, .card-author, .card-place {
+                                color: var(--color-text);
                             }
                         }
                     }
@@ -97,13 +107,13 @@
                         .bundle-img {
                             width: 100%;
                             height: 100%;
-                            background-color: black;
+                            background-color: var(--color-text);
                             border-radius: 0.5rem;
                             img {
                                 width: 100%;
                                 height: 100%;
                                 object-fit: cover;
-                                border: 1px solid black;
+                                border: 1px solid var(--color-text);
                                 border-radius: 0.5rem;
                             }
                         }
@@ -157,7 +167,7 @@
                     .deep-image {
                         width: 100%;
                         height: 57%;
-                        background-color: black;
+                        background-color: var(--color-text);
                         img {
                             width: 100%;
                             height: 100%;
@@ -189,11 +199,11 @@
                 align-items: center;
                 justify-content: center;
                 padding: 1.5rem 0;
-                border: 1px solid black;
+                border: 1px solid var(--color-text);
                 background-color: #fbd70900;
                 transition: all .3s ease-in;
                 h3 {
-                    color: black;
+                    color: var(--color-text);
                     font-size: 1rem;
                     line-height: 1.69rem;
                     margin: 0;
@@ -204,19 +214,22 @@
                     height: 100%;
                     display: flex;
                     align-items: center;
+                    svg path {
+                        fill: var(--color-text);
+                    }
                 }
             }
             .view-more:hover {
                 cursor: pointer;
-                background-color: black;
-                border-color: #f3c91f;
+                background-color: var(--color-text);
+                border-color: var(--color-background);
                 h3 {
-                    color: #f3c91f;
+                    color: var(--color-background);
                 }
                 .plus {
                     svg {
                         path {
-                            fill: #f3c91f;
+                            fill: var(--color-background);
                         }
                     }
                 }

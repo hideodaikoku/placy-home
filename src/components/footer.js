@@ -1,13 +1,13 @@
 import React from "react";
-// import { Link } from "gatsby";
 import * as styles from "../styles/footer.module.scss";
 
 
-const Footer = () => {
+const Footer = (props) => {
   
   return (
     <div className={styles.container}>
-      <div className={styles.topContainer}>
+      <div className={styles.topContainer} style={{borderTop: `1px solid ${props.textColor}`, 
+        borderBottom: `1px solid ${props.textColor}`}}>
       <ul className={styles.top}>
           <li className={styles.navList}>
             <a  
@@ -15,7 +15,8 @@ const Footer = () => {
               href="https://www.instagram.com/placy_city/" 
               target="_blank" 
               rel="noopener noreferrer" 
-              alt="Instagram">
+              alt="Instagram"
+              style={{color:props.textColor}}>
                 Instagram
             </a>
           </li>
@@ -25,7 +26,8 @@ const Footer = () => {
               href="https://twitter.com/placy_city" 
               target="_blank" 
               rel="noopener noreferrer" 
-              alt="Twitter">
+              alt="Twitter"
+              style={{color:props.textColor}}>
                 Twitter
             </a>
           </li>
@@ -35,14 +37,16 @@ const Footer = () => {
               href="https://www.facebook.com/placy.city/" 
               target="_blank" 
               rel="noopener noreferrer" 
-              alt="Facebook">
+              alt="Facebook"
+              style={{color:props.textColor}}>
                 Facebook
             </a>
           </li>
       </ul>
       </div>
       <ul className={styles.bottom}>
-        <li className={styles.fineprint}>
+        <li className={styles.fineprint}
+          style={{color:props.textColor}}>
           &copy; Placy, 2021
         </li>
         <li>
@@ -51,7 +55,8 @@ const Footer = () => {
               href="/document/term_of_use.pdf" 
               target="_blank" 
               rel="noopener noreferrer" 
-              alt="Terms and Conditions">
+              alt="Terms and Conditions"
+              style={{color:props.textColor}}>
                 Terms and Conditions
             </a>
         </li>
@@ -61,7 +66,8 @@ const Footer = () => {
               href="/document/privacy_policy.pdf" 
               target="_blank" 
               rel="noopener noreferrer" 
-              alt="Privacy Policy">
+              alt="Privacy Policy"
+              style={{color:props.textColor}}>
                 Privacy Policy
             </a>
         </li>

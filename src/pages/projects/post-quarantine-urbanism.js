@@ -7,7 +7,7 @@ import { graphql } from "gatsby";
 
 const Quarantine = ({data}) => {
   return (
-    <Layout color="white">
+    <Layout color="var(--color-whiteblack)" textColor="var(--color-blackwhite)">
       <Seo />
       <QuarantineTop />
       <QuarantineArticles articles={data.allMarkdownRemark.edges} />

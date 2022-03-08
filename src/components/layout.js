@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import Header from "./header";
 import Footer from "./footer";
 import '../styles/index.scss'
@@ -8,10 +8,10 @@ const Layout = (props) => {
 
   return (
     <div className={styles.container} style={{backgroundColor: props.color}}>
-      <Header color={props.color} />
+      <Header color={props.color} textColor={props.textColor}/>
       <div className={styles.content}>{props.children}</div>
       <div>
-        <Footer />
+        <Footer textColor={props.textColor}/>
       </div>
     </div>
   );

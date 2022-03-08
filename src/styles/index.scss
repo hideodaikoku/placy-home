@@ -1,15 +1,35 @@
 @import url("./typography.css");
 @import url(https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap);
 
+:root {
+  background-color: #f3c91f;
+  --color-background: #f3c91f;
+  --color-text: #000000;
+  --color-whiteblack: white;
+  --color-blackwhite: black;
+  --color-yellowhite: #f3c91f;
+}
+
+:root.dark {
+  background-color: #000000;
+  --color-background: #000000;
+  --color-text: #f3c91f;
+  --color-whiteblack: black;
+  --color-blackwhite: white;
+  --color-yellowhite: white;
+
+}
+
 .sectionContainer {
   margin: 3rem auto;
   padding: 1rem;
   .titleContainer {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--color-text);
     .sectionTitle {
       font-size: 2.25rem;
       line-height: 3.375rem;
       font-family: "GT Zirkon";
+      color: var(--color-text);
     }
   }
 }

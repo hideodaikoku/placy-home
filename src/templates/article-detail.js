@@ -16,7 +16,7 @@ export default function ArticleDetail({data}) {
     // }
 
     return (
-        <Layout color="white">
+        <Layout color="var(--color-whiteblack)" textColor="var(--color-blackwhite)">
             <Seo/>
             <div className={styles.container}>
         <div className={styles.backButton}>

@@ -6,7 +6,7 @@
         margin-bottom: 2.25rem;
         a{
             text-decoration: none;
-            color: black;
+            color: var(--color-text);
 
             .image-container{
                 height: 12rem;
@@ -19,7 +19,7 @@
             }
             .title{
                 text-decoration: none;
-                color: black;
+                color: var(--color-text);
                 font-size: 0.875rem;
                 line-height: 2rem;
                 margin-bottom: 0.5rem;
@@ -35,7 +35,7 @@
 }
 
 .button{
-    border: 1px solid black;
+    border: 1px solid var(--color-text);
     width: 100%;
     background-color: transparent;
     display: flex;
@@ -50,28 +50,31 @@
         font-size: 1rem;
         line-height: 2rem;
         margin-bottom: 0;
-        color: black;
+        color: var(--color-text);
         :visited{
-            color: black;
+            color: var(--color-text);
         }
     }
     .arrow{
         width: 3rem;
         display: flex;
         align-items: center;
+        svg path {
+            fill: var(--color-text);
+        }
     }
 }
 
 .button:hover{
-    background-color: black;
-    border-color: #f3c91f;
+    background-color: var(--color-text);
+    border-color: var(--color-background);
     .button-text{
-        color: #f3c91f;
+        color: var(--color-background);
     }
     .arrow{
         svg{
             path{
-                fill: #f3c91f;
+                fill: var(--color-background);
             }
         }
     }

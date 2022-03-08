@@ -29,7 +29,9 @@
         margin: 1rem auto;
         display: flex;
         .button{
+            color: black;
             background-color: #f3c91f;
+            text-decoration: none;
             padding: .75rem 1rem;
             font-weight: 800;
             font-size: 1rem;
@@ -71,10 +73,14 @@
         margin: 5rem auto;
         max-width: 300px;
         text-align: center;
+        h1 {
+            color: var(--color-blackwhite);
+        }
         .media-img-container{
             display:flex;
             justify-content: center;
             .media-img{
+                background-color: white;
                 width: 48%;
             }
             .media-img+.media-img{
