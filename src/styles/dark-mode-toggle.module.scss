@@ -1,6 +1,9 @@
 .toggle {
+    circle {
+        stroke: var(--color-blackwhite) !important;
+    }
     path {
         fill: var(--color-blackwhite) !important;
-        stroke: var(--color-blackwhite);
+        stroke: var(--color-blackwhite) !important;
     }
 }
