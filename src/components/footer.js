@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import * as styles from "../styles/footer.module.scss";
 
 
@@ -9,6 +10,23 @@ const Footer = (props) => {
       <div className={styles.topContainer} style={{borderTop: `1px solid ${props.textColor}`, 
         borderBottom: `1px solid ${props.textColor}`}}>
       <ul className={styles.top}>
+          <li className={styles.navList}>
+            <Link className={styles.navLink} to="/">Home</Link>
+          </li>
+          <li className={styles.navList}>
+            <Link className={styles.navLink} to="/about">About</Link>
+          </li>
+          <li className={styles.navList}>
+            <a  
+              className={styles.navLink}
+              href="https://form.typeform.com/to/lfzKCU?typeform-source=placy.typeform.com" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              alt="Contact Us"
+              style={{color:props.textColor}}>
+                Contact
+            </a>
+          </li>
           <li className={styles.navList}>
             <a  
               className={styles.navLink}
