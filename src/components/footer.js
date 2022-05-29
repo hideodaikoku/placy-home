@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "gatsby";
 import * as styles from "../styles/footer.module.scss";
+import InstaIcon from "../images/instagram.svg";
+import TwitIcon from "../images/twitter.svg";
+import FaceIcon from "../images/facebook.svg";
 
 
 const Footer = (props) => {
@@ -35,10 +38,8 @@ const Footer = (props) => {
               rel="noopener noreferrer" 
               alt="Instagram"
               style={{color:props.textColor}}>
-                Instagram
+                <InstaIcon />
             </a>
-          </li>
-          <li className={styles.navList}>
             <a  
               className={styles.navLink}
               href="https://twitter.com/placy_city" 
@@ -46,10 +47,8 @@ const Footer = (props) => {
               rel="noopener noreferrer" 
               alt="Twitter"
               style={{color:props.textColor}}>
-                Twitter
+                <TwitIcon />
             </a>
-          </li>
-          <li className={styles.navList}>
             <a  
               className={styles.navLink}
               href="https://www.facebook.com/placy.city/" 
@@ -57,7 +56,7 @@ const Footer = (props) => {
               rel="noopener noreferrer" 
               alt="Facebook"
               style={{color:props.textColor}}>
-                Facebook
+                <FaceIcon />
             </a>
           </li>
       </ul>

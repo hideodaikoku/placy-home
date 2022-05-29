@@ -1,5 +1,5 @@
 import React from "react";
-import * as styles from "../styles/about.module.scss";
+import * as styles from "../styles/ourbusiness.module.scss";
 import textData from '../data/about.json';
 import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby"

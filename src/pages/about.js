@@ -4,11 +4,11 @@ import Layout from '../components/layout'
 import Seo from '../components/seo'
 import Top from '../components/top'
 import Vision from '../components/vision'
-import About from '../components/about'
+import About from '../components/ourbusiness'
 import People from '../components/people'
 import Company from '../components/company'
 import { Link } from 'react-scroll'
-import * as styles from '../styles/index.module.scss'
+import * as styles from '../styles/aboutpage.module.scss'
 
 const IndexPage = () => {
   return (

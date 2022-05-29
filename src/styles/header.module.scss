@@ -36,6 +36,7 @@
     }
 
     a svg {
+        width: 5.65rem;
         path {
             fill: var(--color-text);
         }
@@ -57,7 +58,7 @@
     }
 }
 
-a svg {
+.nav-link svg {
     margin-right: 0.4rem;
 }
 
