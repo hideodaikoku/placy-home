@@ -140,11 +140,10 @@
     .content {
         display: flex;
         flex-direction: row;
-        max-width: 92rem;
         .left-nav{
             display: flex;
-            min-width: 8rem;
-            position: sticky;            
+            position: sticky;
+            min-width: 10%;
             align-self: flex-start;
             top: 0;
             .sidebar{
@@ -186,9 +185,7 @@
 
 @media only screen and (min-width: 1000px) {
     .content{
-        .left-nav{
-            min-width: 9rem;
-        }
+        max-width: 92rem;
         .posts{
             column-gap: 3rem;
             grid-template-columns: repeat(3, 1fr);
@@ -198,5 +195,8 @@
                 }
             }
         }
+    }
+    .main {
+        margin: 0 0.8rem 6.5rem 0.8rem;
     }
 }

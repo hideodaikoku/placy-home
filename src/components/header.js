@@ -126,9 +126,12 @@ const Header = (props) => {
   return (
     <div className={styles.container} style={{backgroundColor:props.color}}>
       <GlobalStyle nav={nav}/>
-      <Link to="/">
-      <PlacyLogo className={props.textColor && styles.logo} />
-      </Link>
+      <div className={styles.logoContainer}>
+        <Link to="/">
+          <PlacyLogo className={props.textColor && styles.logo} />
+        </Link>
+        <div className={styles.slogan}> Forget the reviews. Follow your rhythm.</div>
+      </div>
       <div 
         className={styles.menuIcon}>
         <MenuIcon
@@ -188,7 +191,7 @@ const Header = (props) => {
 
       <nav className={styles.nav} style={{borderBottom: `1px solid ${props.textColor}`}}>
         <ul className={styles.navList}>
-          <li className={styles.navItem}>
+          {/* <li className={styles.navItem}>
             <Link 
             href="/"
             className={styles.navLink}
@@ -231,7 +234,7 @@ const Header = (props) => {
               style={{color:props.textColor}}>
                 Contact
             </a>
-          </li>
+          </li> */}
           <li className={styles.navItem}>
             <DarkModeToggle textColor={props.textColor} />
           </li>

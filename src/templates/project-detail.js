@@ -36,9 +36,7 @@ export default function ProjectDetail({data}) {
         <Seo />
         <div className={styles.content}>
         <div className={styles.topLinks}>
-                <p>
-                    <Link to="/projects/">Projects</Link> / {project.title.substring(0,28)}...
-                </p>
+            <Link to="/">Home</Link> / {project.title.substring(0,28)}...
         </div>
         <div className={styles.projectContent}>
             <div className={styles.imageContainer}>
@@ -59,9 +57,9 @@ export default function ProjectDetail({data}) {
                     <h1>{project.title}</h1>
                     <h4 style={{textAlign:"start"}}>Coming soon...</h4>
                     </>}
-                <Link to="/projects" className={styles.button}>
+                <Link to="/" className={styles.button}>
                 <p className={styles.buttonText}>
-                    Back to the list
+                    Back
                 </p>
                 <span className={styles.arrow}>
                     <svg width="160" height="8" viewBox="0 0 160 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -74,16 +72,14 @@ export default function ProjectDetail({data}) {
             
         </div>
         <div className={styles.bottomLinks}>
-            <p>
-                <Link to="/projects">Projects</Link> / {project.title.substring(0, 28)}...
-            </p>
+            <Link to="/">Home</Link> / {project.title.substring(0, 28)}...
         </div>
         </div>
         
       </Layout>
     )
 }
-  
+
 export const projectQuery = graphql`
 query($slug: String!) {
     contentfulProjects(slug: {eq: $slug}) {

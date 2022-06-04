@@ -1,3 +1,8 @@
+.logo-container {
+    .slogan {
+        display: none;
+    }
+}
 .container{
     background: var(--color-background);
     position: fixed;
@@ -18,12 +23,12 @@
         }
         ul li svg {
             path {
-                transition: all 0.3s ease-in;
+                transition: color 0.3s ease-in;
                 fill: var(--color-text);
                 stroke: var(--color-text);
             }
             circle {
-                transition: all 0.3s ease-in;
+                transition: color 0.3s ease-in;
                 stroke: var(--color-text);
             }
         }
@@ -63,8 +68,19 @@
 }
 
 @media only screen and (min-width: 700px){
+    .logo-container {
+        display: flex;
+        align-items: center;
+        .slogan {
+            display: block;
+            font-size: 0.875rem;
+            line-height: 150%;
+            margin-left: 3rem;
+        }
+    }
+
     .container{
-        padding: 2rem 2rem 0 2rem;
+        padding: 2rem 2rem 0rem 2rem;
         .menu-icon{
             display: none;
         }
@@ -81,7 +97,7 @@
                 flex-direction: row;
                 justify-content: space-between;
                 list-style-type: none;
-                margin-bottom: 2rem;
+                margin-bottom: 1rem;
                 .nav-item{
                     margin-bottom: 0;
                     .nav-link{

@@ -34,6 +34,34 @@ exports.createPages = async ({graphql, actions, reporter }) => {
         })
     })
 
+    // Post pages
+    const posts = await graphql(`
+    query MyQuery {
+        allContentfulFeature {
+            edges {
+            node {
+                slug
+                title
+                id
+            }
+            }
+        }
+    }
+    `)
+
+    if (posts.errors) {
+        reporter.panicOnBuild(`Error while running GraphQL query`)
+        return
+    }
+    const postDetailTemplate = path.resolve("./src/templates/post-detail.js")
+    posts.data.allContentfulFeature.edges.forEach(({node}) => {
+        createPage({
+            path: node.slug,
+            component: postDetailTemplate,
+            context: {slug: node.slug, id: node.id }
+        })
+    })
+
     // Article pages
     const articles = await graphql(`
         query MyArticlesQuery {
