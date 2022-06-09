@@ -64,7 +64,7 @@ const Footer = (props) => {
       <ul className={styles.bottom}>
         <li className={styles.fineprint}
           style={{color:props.textColor}}>
-          &copy; Placy, 2021
+          &copy; Placy, 2022
         </li>
         <li>
           <a  

@@ -3,50 +3,31 @@ const path = require('path')
 exports.createPages = async ({graphql, actions, reporter }) => {
     const {createPage} = actions
 
-    // Project Pages
-    const result = await graphql(`
-        query {
-            allContentfulProjects(filter: {type: {eq: true}}) {
-                edges {
-                node {
-                    id
-                    slug
-                    type
-                    title
-                }
-                }
-            }
-        }
-    `)
-        
-    if (result.errors) {
-        reporter.panicOnBuild(`Error while running GraphQL query`)
-        return
-    }
-
-    const projectDetailTemplate = path.resolve(`./src/templates/project-detail.js`)
-    result.data.allContentfulProjects.edges.forEach(({node}) => {
-        node.slug !== "post-quarantine-urbanism" && 
-        createPage({
-            path: `projects/${node.slug}`,
-            component: projectDetailTemplate,
-            context: {slug: node.slug}
-        })
-    })
-
     // Post pages
     const posts = await graphql(`
     query MyQuery {
-        allContentfulFeature {
-            edges {
+        allContentfulEntry {
+          edges {
             node {
+              ... on ContentfulNews {
+                id
+                title
+                slug
+              }
+              ... on ContentfulProjects {
+                id
                 slug
                 title
+              }
+              ... on ContentfulFeature {
                 id
+                slug
+                title
+              }
             }
-            }
+          }
         }
-    }
+      }
     `)
 
     if (posts.errors) {
@@ -54,7 +35,7 @@ exports.createPages = async ({graphql, actions, reporter }) => {
         return
     }
     const postDetailTemplate = path.resolve("./src/templates/post-detail.js")
-    posts.data.allContentfulFeature.edges.forEach(({node}) => {
+    posts.data.allContentfulEntry.edges.forEach(({node}) => {
         createPage({
             path: node.slug,
             component: postDetailTemplate,

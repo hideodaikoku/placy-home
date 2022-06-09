@@ -3,11 +3,19 @@ import { Link } from "gatsby";
 import styled, { createGlobalStyle } from 'styled-components'
 import * as styles from "../styles/header.module.scss";
 import font from '../fonts/GT-Zirkon-Bold.woff2';
+
 import PlacyLogo from "../images/placy-logo.svg"
 import InstaIcon from "../images/instagram.svg"
 import FaceIcon from "../images/facebook.svg"
 import TwitIcon from "../images/twitter.svg"
-import DarkModeToggle from "./dark-mode-toggle"
+import Black from "../images/Black.svg"
+import White from "../images/White.svg"
+import Yellow from "../images/Yellow.svg"
+
+import Toggle from "./toggle"
+import ColorSwitch from "./color-switch";
+
+
 
 const GlobalStyle = createGlobalStyle`
    @font-face {
@@ -132,6 +140,7 @@ const Header = (props) => {
         </Link>
         <div className={styles.slogan}> Forget the reviews. Follow your rhythm.</div>
       </div>
+      <ColorSwitch></ColorSwitch>
       <div 
         className={styles.menuIcon}>
         <MenuIcon
@@ -161,9 +170,6 @@ const Header = (props) => {
             <li>
               <a href="https://placy.typeform.com/to/lfzKCU" target="_blank" rel="noopener noreferrer" alt="Contact Us">Contact</a>
             </li>
-            <li>
-              <DarkModeToggle textColor={props.textColor} />
-            </li>
           </ul>
           <div>
             <a
@@ -191,52 +197,14 @@ const Header = (props) => {
 
       <nav className={styles.nav} style={{borderBottom: `1px solid ${props.textColor}`}}>
         <ul className={styles.navList}>
-          {/* <li className={styles.navItem}>
-            <Link 
-            href="/"
-            className={styles.navLink}
-            style={{color:props.textColor}}>
-              Home
-            </Link>
+          <li className={styles.navItem}>
+            <Toggle theme="yellow"><Yellow /></Toggle>
           </li>
           <li className={styles.navItem}>
-            <Link 
-            href="/music-map" 
-            className={styles.navLink}
-            style={{color:props.textColor}}>
-              Music Map
-            </Link>
-          </li>
-          <li className={styles.navItem}
-          style={{color:props.textColor}}>
-            <Link 
-            href="/projects" 
-            className={styles.navLink}
-            style={{color:props.textColor}}>
-              Projects
-            </Link>
+            <Toggle theme="dark"><Black /></Toggle>
           </li>
           <li className={styles.navItem}>
-            <Link 
-            href="/news" 
-            className={styles.navLink}
-            style={{color:props.textColor}}>
-              News
-            </Link>
-          </li>
-          <li className={styles.navItem}>
-            <a  
-              className={styles.navLink}
-              href="https://placy.typeform.com/to/lfzKCU" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              alt="Contact Us"
-              style={{color:props.textColor}}>
-                Contact
-            </a>
-          </li> */}
-          <li className={styles.navItem}>
-            <DarkModeToggle textColor={props.textColor} />
+            <Toggle theme ="white"><White /></Toggle>
           </li>
         </ul>
       </nav>

@@ -1,6 +1,6 @@
 import * as React from "react";
 import {useState, useEffect} from "react";
-import { graphql, useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery, Link } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import Layout from '../components/layout'
 import Seo from '../components/seo'
@@ -36,14 +36,13 @@ const IndexPage = ({data}) => {
 
     setFilters(updatedCheckedState);
   }
-
+  
   useEffect(()=> {
-    var res = []
+    var res = [];
     if(!checkedAll) {
       filters.forEach((filter, index)=> filter? res.push(categories[index]):null)
-      const found = data.allContentfulEntry.edges.filter(entries=> res.includes(entries.node.internal.type.replace("Contentful","")))
-      console.log(found)
-      setEntries(found.slice(0,entryAmount))
+      const found = data.allContentfulEntry.edges.filter(entry => res.includes(entry.node.internal.type.replace("Contentful", "")))
+      setEntries(found.slice(0,entryAmount));
     } else{
       setEntries(data.allContentfulEntry.edges.slice(0,entryAmount))
     }
@@ -101,6 +100,7 @@ const IndexPage = ({data}) => {
         <div className={styles.posts}>
           {entriesData.map(entry => (
           <div key={entry.node.id} className={styles.post}>
+            <Link to={entry.node.slug}>
             <GatsbyImage 
             image={entry.node.image.gatsbyImageData}
             className={styles.imgContainer}></GatsbyImage>
@@ -110,16 +110,17 @@ const IndexPage = ({data}) => {
               <h3 className={styles.postTitle}>{entry.node.title}</h3>
               <p className={styles.postDesc}>{entry.node.summary && entry.node.summary.summary}</p>
             </div>
+            </Link>
           </div>
           ))}
         </div>
-        { data.allContentfulEntry.edges.length >= entryAmount && 
+        { data.allContentfulEntry.edges.length >= entryAmount && entriesData.length >= entryAmount  ?
         
         <button className={styles.viewMore} onClick={() => ViewMore()}>
           <h3>View More</h3>
           <div className={styles.plus}><PlusSign /></div>
         </button>
-        }
+        :null}
         </div>
       </section>
       <section className={styles.main}>
@@ -136,6 +137,7 @@ export const query = graphql`
         node {
           ... on ContentfulNews {
             id
+            slug
             title
             date(formatString: "YY/MM/DD")
             internal {
@@ -147,6 +149,7 @@ export const query = graphql`
           }
           ... on ContentfulProjects {
             id
+            slug
             title
             internal {
               type
@@ -156,6 +159,18 @@ export const query = graphql`
             }
             image {
               gatsbyImageData
+            }
+          }
+          ... on ContentfulFeature {
+            id
+            title
+            slug
+            date(formatString: "YY/MM/DD")
+            image {
+              gatsbyImageData
+            }
+            internal {
+              type
             }
           }
         }

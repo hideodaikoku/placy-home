@@ -3,7 +3,7 @@ import Layout from '../components/layout'
 import Seo from '../components/seo'
 import { graphql, Link } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
-import * as styles from '../styles/project-details.module.scss'
+import * as styles from '../styles/post-details.module.scss'
 import { renderRichText } from "gatsby-source-contentful/rich-text"
 import { BLOCKS, MARKS } from '@contentful/rich-text-types'
 
@@ -57,10 +57,10 @@ export default function PostDetail({data}) {
             <div className={styles.textContainer}>
                 <div className={styles.typeDate}>
                  <p className={styles.type}>{entry.internal.type.replace("Contentful","")}</p>
-                 <p className={styles.date}>20{entry.date}</p>
+                 {entry.date ? <p className={styles.date}>20{entry.date}</p> : null}
                 </div>
                 <h1>{entry.title}</h1>
-                <p className={styles.author}>by <b>{entry.author}</b></p>
+                {entry.author ? <p className={styles.author}>by <b>{entry.author}</b></p>: null}
 
                 {entry.content
                 ? renderRichText(entry.content, options)
@@ -97,22 +97,47 @@ export default function PostDetail({data}) {
 export const articleQuery = graphql`
 query($id: String!) {
     contentfulEntry(id: {eq: $id }) {
-      ... on ContentfulFeature {
-        id
-        slug
-        title
-        content {
-          raw
+        ... on ContentfulProjects {
+            id
+            content {
+              raw
+            }
+            image {
+              gatsbyImageData
+            }
+            title
+            internal {
+              type
+            }
+          }
+          ... on ContentfulNews {
+            id
+            date(formatString: "YY/MM/DD")
+            title
+            image {
+              gatsbyImageData
+              title
+            }
+            internal {
+              type
+            }
+          }
+        ... on ContentfulFeature {
+            id
+            slug
+            title
+            content {
+            raw
+            }
+            author
+            date (formatString: "YY/MM/DD")
+            image {
+                gatsbyImageData
+            }
+            internal {
+                type
+            }
         }
-        author
-        date (formatString: "YY/MM/DD")
-        image {
-            gatsbyImageData
-        }
-        internal {
-            type
-        }
-      }
     }
   }
 `

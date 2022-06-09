@@ -12,8 +12,10 @@ exports.onRenderBody = ({ setHeadComponents }) => {
 
                       if (theme === 'dark') {
                         document.documentElement.className = 'dark';
+                      } else if (theme === 'yellow') {
+                        document.documentElement.className = 'yellow';
                       } else {
-                        document.documentElement.className = '';
+                        document.documentElement.className = 'white';
                       }
 
                       console.log('Theme updated:', theme);
@@ -38,7 +40,7 @@ exports.onRenderBody = ({ setHeadComponents }) => {
                     // Is there an Operating System Preference?
                     let darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
-                    setTheme(preferredTheme || (darkQuery.matches ? 'dark' : 'light'));
+                    setTheme(preferredTheme || (darkQuery.matches ? 'dark' : 'yellow'));
                   })();
                 `,
             }}
