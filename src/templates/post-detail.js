@@ -57,7 +57,7 @@ export default function PostDetail({data}) {
             <div className={styles.textContainer}>
                 <div className={styles.typeDate}>
                  <p className={styles.type}>{entry.internal.type.replace("Contentful","")}</p>
-                 {entry.date ? <p className={styles.date}>20{entry.date}</p> : null}
+                 {entry.date ? <p className={styles.date}>{entry.date}</p> : null}
                 </div>
                 <h1>{entry.title}</h1>
                 {entry.author ? <p className={styles.author}>by <b>{entry.author}</b></p>: null}
@@ -112,11 +112,14 @@ query($id: String!) {
           }
           ... on ContentfulNews {
             id
-            date(formatString: "YY/MM/DD")
+            date(formatString: "YYYY/MM/DD")
             title
             image {
               gatsbyImageData
               title
+            }
+            content {
+              raw
             }
             internal {
               type
@@ -130,7 +133,7 @@ query($id: String!) {
             raw
             }
             author
-            date (formatString: "YY/MM/DD")
+            date (formatString: "YYYY/MM/DD")
             image {
                 gatsbyImageData
             }

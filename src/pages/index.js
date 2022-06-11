@@ -11,11 +11,17 @@ import Checkbox from '../images/checked.svg'
 import PlusSign from '../images/plus-sign.svg'
 
 const IndexPage = ({data}) => {
+  const sortedData = data.allContentfulEntry.edges.sort(function(a, b) {
+      if (a.node.date && b.node.date) {
+        console.log(new Date(b.node.date));
+        return new Date(b.node.date) - new Date(a.node.date)
+      }
+    });
 
   const [checkedAll, setCheckedAll] = useState(true);
   const [filters, setFilters] = useState([false, false, false]);
   const [entryAmount, setAmount] = useState(6);
-  const [entriesData, setEntries] = useState(data.allContentfulEntry.edges.slice(0,6));
+  const [entriesData, setEntries] = useState(sortedData.slice(0,6));
   const categories = ["Feature", "Projects", "News"];
 
   const handleChangeAll = () => {
@@ -41,16 +47,16 @@ const IndexPage = ({data}) => {
     var res = [];
     if(!checkedAll) {
       filters.forEach((filter, index)=> filter? res.push(categories[index]):null)
-      const found = data.allContentfulEntry.edges.filter(entry => res.includes(entry.node.internal.type.replace("Contentful", "")))
+      const found = sortedData.filter(entry => res.includes(entry.node.internal.type.replace("Contentful", "")))
       setEntries(found.slice(0,entryAmount));
     } else{
-      setEntries(data.allContentfulEntry.edges.slice(0,entryAmount))
+      setEntries(sortedData.slice(0,entryAmount))
     }
     
   }, [filters,entryAmount])
 
   const ViewMore = () => {
-    if (data.allContentfulEntry.edges.length >= entryAmount) {
+    if (sortedData.length >= entryAmount) {
       setAmount(entryAmount+3);
     }
   }
@@ -106,7 +112,7 @@ const IndexPage = ({data}) => {
             className={styles.imgContainer}></GatsbyImage>
             <div className={styles.postInfo}>
               <div className={styles.type}>{entry.node.internal.type.replace("Contentful","")}</div>
-              <div className={styles.date}>{entry.node.date && "20"+entry.node.date}</div>
+              <div className={styles.date}>{entry.node.date && entry.node.date.replaceAll("-","/")}</div>
               <h3 className={styles.postTitle}>{entry.node.title}</h3>
               <p className={styles.postDesc}>{entry.node.summary && entry.node.summary.summary}</p>
             </div>
@@ -120,7 +126,7 @@ const IndexPage = ({data}) => {
           <h3>View More</h3>
           <div className={styles.plus}><PlusSign /></div>
         </button>
-        :null}
+        :null }
         </div>
       </section>
       <section className={styles.main}>
@@ -132,14 +138,14 @@ const IndexPage = ({data}) => {
 
 export const query = graphql`
   {
-    allContentfulEntry(sort: {fields: node_locale}) {
+    allContentfulEntry {
       edges {
         node {
           ... on ContentfulNews {
             id
             slug
             title
-            date(formatString: "YY/MM/DD")
+            date(formatString: "YYYY-MM-DD")
             internal {
               type
             }
@@ -165,7 +171,7 @@ export const query = graphql`
             id
             title
             slug
-            date(formatString: "YY/MM/DD")
+            date(formatString: "YYYY-MM-DD")
             image {
               gatsbyImageData
             }
