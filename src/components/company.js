@@ -1,8 +1,10 @@
 import React from "react";
 import * as styles from "../styles/company.module.scss";
 import textData from '../data/company.json';
+import { useIntl } from "gatsby-plugin-react-intl";
 
 const Company = () => {
+  const intl = useIntl()
   return (
     <div id="company" className="sectionContainer">
     <div className="titleContainer">
@@ -14,8 +16,8 @@ const Company = () => {
       {
         textData.map((item, idx)=>(
           <div key={idx} className={styles.row}>
-            <strong className={styles.label}>{item.label}</strong>
-            <p className={styles.value}>{item.value}</p>
+            <strong className={styles.label}>{intl.formatMessage({id: `about.company.${idx}.label`})}</strong>
+            <p className={styles.value}>{intl.formatMessage({id: `about.company.${idx}.value`})}</p>
           </div>
         ))
       }

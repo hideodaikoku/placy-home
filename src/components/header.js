@@ -185,7 +185,7 @@ const Header = (props) => {
               <FaceIcon className={styles.socialIcon} />
             </a>
           </div>
-          <LanguageSwitch nav={nav}></LanguageSwitch>
+          <LanguageSwitch></LanguageSwitch>
         </Menu>
       </div>
       <nav className={styles.nav} style={{borderBottom: `1px solid ${props.textColor}`}}>

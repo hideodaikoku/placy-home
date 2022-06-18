@@ -1,3 +1,140 @@
 {
-    "index": ""
+    "home": {
+        "app": {
+            "title": "Map App to Find a Place by Music",
+            "p": "Download the app and post (drop) music to a place that you like. With the app, you can browse not only the curated placelist content, but all the places associated with the music."
+        }
+    },
+    "about": {
+        "vision": {
+            "title": "Recreate the Relationship with the Place",
+            "p1": "What are the elements that make up your favorite place? The size, humidity, scent, scenery, music, people who gather there ... If you try to wash it out again, you can see that innumerable elements are intertwined in one space and the place is made up.",
+            "p2": "Now, of the elements that come to your mind, what do you look for in the future 'real'? As the social infrastructure shifts to online space, it is necessary to reinterpret the value of places in a new era with a positive attitude, rather than advocating a nostalgic 'return to offline'. Recreate the relationship between humans and places. That is the mission of Placy."
+        },
+        "ourBusiness": {
+            "title": "We run three Businesses",
+            "label1": "Map",
+            "subt1": "'Music Map': Explore a place",
+            "p1a": "The connection between music and place is strong. This can be seen from the fact that the flow of music tourism is accelerating today when music can be listened to anywhere online. Through music, we meet new places, people and stories.",
+            "p1b": "We believe that we can provide a meaningful experience by rooting music tourism, which is 'meeting places through music,' not only in festivals and pilgrimages to sacred places, but in everyday life. Placy operates a map service that searches for places based on the taste of music under the theme of 'Forget the reviews. Follow your rhythm.'",
+            "label2": "Studio",
+            "subt2": "'Edit' the location: Place content creation",
+            "p2a": "Each land in Japan has a culture and atmosphere that has been cultivated over a long period of time.",
+            "p2b": "Placy Studio collaborates with hotels, coffee shops and other stores, electric railway companies, local governments, etc. to create content that conveys the appeal of places such as placelists, writing, flexi discs, photography, and graphics.",
+            "label3": "Research",
+            "subt3": "'Prove' the location: think tank business",
+            "p3a": "As the social infrastructure shifts to online space, the value of place as a physical space needs to be reinterpreted.",
+            "p3b": "At Placy Research, in order to show the value of places in the future, including quantitative research work and index creation work that we are working with the government to measure the long-term value of places that can not be grasped by economic indicators such as the number of visitors and unit price of customers. I am doing research work."
+        },
+        "people": {
+            "0": {
+                "name": "Soma Suzuki",
+                "position": "CEO",
+                "profile_img": "members/soma.png",
+                "text": "After graduating from the Department of Applied Physics, Kyoto University, participated in the development of a platform for managing music copyrights on the blockchain at the MIT Media Lab. After that, he studied urban analysis in the Master's program at UCL Bartlett School, University of London, and founded Placy in May 2019. He has strengths in spatial analysis and music analysis. Currently, 'Cultivating The City OS' is being serialized at Wired Japan."
+            },
+            "1": {
+                "name": "Kazuyuki Morishita",
+                "position": "CTO",
+                "profile_img": "members/kazu.jpg",
+                "text": "Graduated from the Department of Mathematics, University of Melbourne. His specialty is discrete mathematics, optimization, and determinism. After working as a freelance engineer and chef, he now belongs to the business analysis department of a US financial institution. His strengths include risk analysis using map information and music analysis work experience. At Placy, he is in charge of algorithm development and research direction."
+            },
+            "2": {
+                "name": "Ryota Yamanaka",
+                "position": "COO",
+                "profile_img": "members/ryota.png",
+                "text": "In charge of Placy's mentor during the Axela era, he decided to transfer to the business domain and the enthusiasm of the members. He is a graduate of Keio University. While leading a large company DX as a senior manager in a foreign-affiliated consultant, he has experience in planning and launching a SaaS-type digital transformation business. After participating in Samurai Incubation, he will launch a local government x large company-type Axela business and grow it to a scale of over 200 million yen in one year. He also deals with redevelopment projects with major Debe."
+            },
+            "3": {
+                "name": "Yuki Kawasaki",
+                "position": "CCO",
+                "profile_img": "members/yuki.jpeg",
+                "text": "In the planning with JR East, I met Placy because I was in charge of writing work. Suzuki invited me as a member when I was interested in Placy as a possibility of building a new relationship between music and place. He is the editor-in-chief of Mixmag japan. He is working day and night to spread the alternative Japanese club scene to the world. He frequently appears in cinemas and gives lectures on media art at university."
+            },
+            "4": {
+                "name": "Kojima Kiyoki",
+                "position": "Designer",
+                "profile_img": "members/kojima.jpg",
+                "text": "Belongs to an IT business company. As a design director, she is responsible for quality assurance of user experience and visual design. Co-authored 'Inclusive Design: Participatory Design to Solve Social Issues'. At Placy, he is in charge of graphic design for App UX / UI and promotional materials."
+            },
+            "5": {
+                "name": "Yusuke Yamada",
+                "position": "Engineer",
+                "profile_img": "members/yamada.jpeg",
+                "text": "Engaged in machine learning research at graduate school, he has received awards at the Japanese Society for Artificial Intelligence National Convention and has been adopted by the ACM Multimedia Art Gallery. He has worked as an engineer and tech lead at multiple startups and joined ispec as CTO. Placy supports the design and implementation of back-end systems for apps and product management from a technical perspective."
+            },
+            "6": {
+                "name": "Yuya Nakajima",
+                "position": "Engineer",
+                "profile_img": "members/yuya.jpg",
+                "text": "At graduate school, engaged in research on IoT automation. She is a mentor for Life is Tech! And is involved in improving the curriculum as a leader in the iPhone app course. After working on multiple apps at teamLab.inc, he leads the mobile team at ispec. At Placy, he is the lead engineer for iOS apps."
+            },
+            "7": {
+                "name": "Tomoki Tanimura",
+                "position": "Engineer",
+                "profile_img": "members/tomoki.jpg",
+                "text": "Graduated from Keio University SFC. At universities and graduate schools, we have conducted multiple studies related to machine learning and image processing, and published them at international conferences and journals. He also has experience developing multiple products as a machine learning and backend engineer. Currently, as an executive officer of ispec, he is in charge of the company's business called bHAP. At Placy, I enjoy a wide range of activities, from backends to product management support."
+            },
+            "8": {
+                "name": "Takahiro Kanazawa",
+                "position": "Contents Planner",
+                "profile_img": "members/kanazawa_.jpg",
+                "text": "Graduated from the Faculty of Letters, Meiji University. While attending school, he studied at the University of Leeds in England and studied Media and Communication. After returning to Japan, she started working as a writer who sends Japanese music in English. Based on her experience participating in music festivals in Glasgow, Madrid and New York as well as in Japan, she is in charge of a wide range of activities from artist interviews to planning at Placy."
+            },
+            "9": {
+                "name": "Yurika Oikawa",
+                "position": "Writer",
+                "profile_img": "members/yurika.jpeg",
+                "text": "Graduated from Tokyo Gakugei University Secondary Education Teacher Training Course, Department of Social Sciences. While in school, she studied cultural geography and studied places and music. After graduating, she worked as an intern in music web media, and then engaged in artist management promotion and content writing. She is in charge of artist interviews and writing at Placy."
+            },
+            "10": {
+                "name": "Takuya Wada",
+                "position": "Editor / Writer",
+                "profile_img": "members/wada.jpg",
+                "text": "Based on 'Culture and its society / city as an incubator', he is involved in content production at media and publishing labels such as WIRED, VOGUE, and Kurotosha, as well as research by government agencies and content production by urban developers. She is responsible for the overall content direction of the project at Placy."
+            },
+            "11": {
+                "name": "Hideo Daikoku",
+                "position": "Engineer",
+                "profile_img": "members/hideo.png",
+                "text": "Born and raised in New Delhi, India, Keio University Graduate School of Media and Governance second year student. In charge of software development and design at Placy."
+            },
+            "12": {
+                "name": "Eisuke Mizuguchi",
+                "position": "Consulting Lawyer",
+                "profile_img": "members/eisuke.jpg",
+                "text": "Representative of Music Lawyer Collective 'Law and Theory', which provides free legal advice services to musicians. She deals with many projects with clients such as artists, music labels, and music-related companies."
+            }
+        },
+        "company": {
+            "0": {
+                "label": "Company Name",
+                "value": "Placy Co., Ltd."
+            },
+            "1": {
+                "label": "CEO",
+                "value": "Soma Suzuki"
+            },
+            "2": {
+                "label": "Business Information",
+                "value": "Computer software and hardware planning, research, development, design, manufacturing, sales, maintenance, Leeds, leasing and import / export, and consulting services related to these."
+            },
+            "3": {
+                "label": "Established",
+                "value": "May 2019"
+            },
+            "4": {
+                "label": "Capital",
+                "value": "9.5 million yen (including capital reserve)"
+            },
+            "5": {
+                "label": "Location",
+                "value": "〒153-0041, 1-28-5 Komaba, Meguro-ku, Tokyo Accumn 407"
+            },
+            "6": {
+                "label": "Bank",
+                "value": "Sumitomo Mitsui Banking Corporation, Mizuho Bank, Seibu Shinkin Bank, Kiraboshi Bank"
+            }
+        }
+    }
 }

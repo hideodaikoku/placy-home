@@ -2,10 +2,14 @@ import * as React from "react";
 import {useState, useEffect} from "react";
 import { graphql, Link } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
+
+import Post from '../components/post'
 import Layout from '../components/layout'
 import Seo from '../components/seo'
 import App from '../components/app'
+
 import * as styles from '../styles/index.module.scss'
+
 import Box from '../images/unchecked.svg'
 import Checkbox from '../images/checked.svg'
 import PlusSign from '../images/plus-sign.svg'
@@ -105,19 +109,7 @@ const IndexPage = ({data}) => {
 
         <div className={styles.posts}>
           {entriesData.map(entry => (
-          <div key={entry.node.id} className={styles.post}>
-            <Link to={entry.node.slug}>
-            <GatsbyImage 
-            image={entry.node.image.gatsbyImageData}
-            className={styles.imgContainer}></GatsbyImage>
-            <div className={styles.postInfo}>
-              <div className={styles.type}>{entry.node.internal.type.replace("Contentful","")}</div>
-              <div className={styles.date}>{entry.node.date && entry.node.date.replaceAll("-","/")}</div>
-              <h3 className={styles.postTitle}>{entry.node.title}</h3>
-              <p className={styles.postDesc}>{entry.node.summary && entry.node.summary.summary}</p>
-            </div>
-            </Link>
-          </div>
+          <Post article={entry} />
           ))}
         </div>
         { data.allContentfulEntry.edges.length >= entryAmount && entriesData.length >= entryAmount  ?

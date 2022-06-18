@@ -3,6 +3,8 @@ import * as styles from "../styles/people.module.scss";
 import memberData from '../data/members.json';
 import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage, StaticImage} from "gatsby-plugin-image";
+import {useIntl} from "gatsby-plugin-react-intl"
+import CloseButton from "../images/close-btn.svg"
 
 const People = () => {
   const data = useStaticQuery(graphql`
@@ -31,6 +33,10 @@ const People = () => {
     setModal(true)
   }
 
+  const intl = useIntl()
+  const membersIntl = intl.messages["about.people"]
+  console.log(membersIntl)
+
   return (
     <div id="people" className="sectionContainer">
       <div className="titleContainer">
@@ -42,7 +48,7 @@ const People = () => {
           <div className={styles.modalContainer} onClick={()=>setModal(false)}>
             <div className={styles.modal} onClick={e=>e.stopPropagation()}>
               <div className={styles.closeBtn}  onClick={()=>setModal(false)}>
-                <StaticImage src={'../images/close-btn.svg'} width={18} alt='close'/>
+                <CloseButton />
               </div>
               <div className={styles.modalTextContainer}>
                 <h2 className={styles.modalTitle}>{name}</h2>
@@ -59,7 +65,7 @@ const People = () => {
             {
               memberData.map((member, idx)=>{
                 return(
-                  <div className={styles.member} key={idx} onClick={()=>openModal(member.text, member.name)}>
+                  <div className={styles.member} key={idx} onClick={()=>openModal(intl.formatMessage({id: `about.people.${idx}.text`}), intl.formatMessage({id: `about.people.${idx}.name`}))}>
                     <div className={styles.profileContainer}>
                       <GatsbyImage
                       alt={member.name} 
@@ -70,10 +76,10 @@ const People = () => {
                       />
                     </div>
                     <h3 className={styles.name}>
-                      {member.name}
+                      {intl.formatMessage({id: `about.people.${idx}.name`})}
                     </h3>
                     <p className={styles.position}>
-                      {member.position}
+                      {intl.formatMessage({id: `about.people.${idx}.position`})}
                     </p>
                   </div>
                   )

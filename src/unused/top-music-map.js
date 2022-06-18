@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import { animated, Spring} from "react-spring";
-import InnerBox from "./inner-box";
+import InnerBox from "../components/inner-box";
 import * as styles from "../styles/top-music-map.module.scss";
 
 const TopMusicMap = (props) => {

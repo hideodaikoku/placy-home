@@ -4,7 +4,7 @@ import Layout from '../components/layout'
 import Seo from '../components/seo'
 import Top from '../components/top'
 import Vision from '../components/vision'
-import About from '../components/ourbusiness'
+import OurBusiness from '../components/ourbusiness'
 import People from '../components/people'
 import Company from '../components/company'
 import { Link } from 'react-scroll'
@@ -42,7 +42,7 @@ const IndexPage = () => {
         </section>
         <section className={styles.main}>
           <Vision />
-          <About />
+          <OurBusiness />
           <People />
           <Company />
         </section>

@@ -1,10 +1,12 @@
 import React from "react";
 import * as styles from "../styles/ourbusiness.module.scss";
-import textData from '../data/about.json';
 import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby"
+import { useIntl } from "gatsby-plugin-react-intl"
 
-const About = (props) => {
+
+const OurBusiness = () => {
+  const intl = useIntl()
   return (
     <div id="about" className="sectionContainer">
       <div className="titleContainer">
@@ -13,27 +15,26 @@ const About = (props) => {
         </h1>
       </div>
       <div className={styles.container}>
-        <h2 className={styles.title}>{textData.title}</h2>
+        <h2 className={styles.title}>
+          {intl.formatMessage({id: "about.ourBusiness.title"})}
+          </h2>
         <section className={styles.section}>
           <div className={styles.imageContainer}>
             <StaticImage src={'../images/2.png'} width={500} alt="Placy App"/>
           </div>
           <div className={styles.textContainer}>
             <div className={styles.sectionTitle}>
-              <span>{textData.label_1}</span>
+              <span>{intl.formatMessage({id: "about.ourBusiness.label1"})}</span>
               <h3>
-                {textData.subtitle_1}
+                {intl.formatMessage({id: "about.ourBusiness.subt1"})}
               </h3>
             </div>
             <p>
-              {textData.paragraph_1a}
+            {intl.formatMessage({id: "about.ourBusiness.p1a"})}
             </p>
             <p>
-              {textData.paragraph_1b}
+            {intl.formatMessage({id: "about.ourBusiness.p1b"})}
             </p>
-            <Link to="/music-map">
-              Learn More
-            </Link>
           </div>
 
         </section>
@@ -43,20 +44,17 @@ const About = (props) => {
           </div>
           <div className={styles.textContainer}>
             <div className={styles.sectionTitle}>
-              <span>{textData.label_2}</span>
+              <span>{intl.formatMessage({id: "about.ourBusiness.label2"})}</span>
               <h3>
-                {textData.subtitle_2}
+              {intl.formatMessage({id: "about.ourBusiness.subt2"})}
               </h3>
             </div>
             <p>
-              {textData.paragraph_2a}
+            {intl.formatMessage({id: "about.ourBusiness.p2a"})}
             </p>
             <p>
-              {textData.paragraph_2b}
+            {intl.formatMessage({id: "about.ourBusiness.p2b"})}
             </p>
-            <Link to="/projects">
-              Learn More
-            </Link>
           </div>
         </section>
         <section className={styles.section}>
@@ -65,20 +63,17 @@ const About = (props) => {
           </div>
           <div className={styles.textContainer}>
             <div className={styles.sectionTitle}>
-              <span>{textData.label_3}</span>
+              <span>{intl.formatMessage({id: "about.ourBusiness.label3"})}</span>
               <h3>
-                {textData.subtitle_3}
+              {intl.formatMessage({id: "about.ourBusiness.subt3"})}
               </h3>
             </div>
             <p>
-              {textData.paragraph_3a}
+            {intl.formatMessage({id: "about.ourBusiness.p3a"})}
             </p>
             <p>
-              {textData.paragraph_3b}
+            {intl.formatMessage({id: "about.ourBusiness.p3b"})}
             </p>
-            <Link to="/projects">
-              Learn More
-            </Link>
           </div>
         </section>
       </div>
@@ -86,4 +81,4 @@ const About = (props) => {
   );
 };
 
-export default About;
+export default OurBusiness;

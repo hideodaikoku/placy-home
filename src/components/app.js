@@ -3,8 +3,10 @@ import { StaticImage } from 'gatsby-plugin-image'
 import * as styles from '../styles/app.module.scss'
 import text from '../data/app.json'
 import PlacyLogo from "../images/placy-logo.svg"
+import { useIntl } from 'gatsby-plugin-react-intl'
 
 const App = () => {
+    const intl = useIntl()
     return (
         <div id='app' className='sectionContainer'>
             <div className='titleContainer'>
@@ -16,10 +18,10 @@ const App = () => {
                 <div className={styles.container}>
                     <div className={styles.textContainer}>
                         <h2 className={styles.paragraphTitle}>
-                            {text.title}
+                            {intl.formatMessage({id: `home.app.title`})}
                         </h2>
                         <p className={styles.paragraph}>
-                            {text.paragraph}
+                            {intl.formatMessage({id: `home.app.p`})}
                         </p>
                     </div>
                     <StaticImage src='../images/5.png' alt='placy-app' className={styles.imageContainer}/>

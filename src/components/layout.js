@@ -10,9 +10,7 @@ const Layout = (props) => {
     <div className={styles.container} style={{backgroundColor: props.color}}>
       <Header color={props.color} textColor={props.textColor}/>
       <div className={styles.content}>{props.children}</div>
-      {/* <div> */}
-        <Footer textColor={props.textColor}/>
-      {/* </div> */}
+      <Footer textColor={props.textColor}/>
     </div>
   );
 };
