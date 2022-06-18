@@ -188,7 +188,7 @@ const Header = (props) => {
           <LanguageSwitch></LanguageSwitch>
         </Menu>
       </div>
-      <nav className={styles.nav} style={{borderBottom: `1px solid ${props.textColor}`}}>
+      <nav className={styles.nav}>
         <ul className={styles.navList}>
           <li className={styles.navItem}>
             <Toggle theme="yellow"><Yellow /></Toggle>
