@@ -131,6 +131,8 @@ const Header = (props) => {
   return (
     <div className={styles.container} style={{backgroundColor:props.color}}>
       <GlobalStyle nav={nav}/>
+      <div className={styles.innerCont}>
+
       <div className={styles.logoContainer}>
         <Link to="/">
           <PlacyLogo />
@@ -204,6 +206,7 @@ const Header = (props) => {
           </li>
         </ul>
       </nav>
+      </div>
 
     </div>
   );
