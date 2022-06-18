@@ -1,12 +1,12 @@
 import React from "react"
-import Layout from '../components/layout'
-import Seo from '../components/seo'
 import { graphql, Link } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
-import * as styles from '../styles/post-details.module.scss'
 import { renderRichText } from "gatsby-source-contentful/rich-text"
 import { BLOCKS, MARKS } from '@contentful/rich-text-types'
+import * as styles from '../styles/post-details.module.scss'
 
+import Layout from '../components/layout'
+import Seo from '../components/seo'
 import RelevantArticles from "../components/relevant-articles"
 
 export default function PostDetail({data}) {
@@ -51,8 +51,6 @@ export default function PostDetail({data}) {
                         }
                       })()
                  } layout="constrained"/>
-            </div>
-            <div className={styles.top}>
             </div>
             <div className={styles.textContainer}>
                 <div className={styles.typeDate}>

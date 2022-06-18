@@ -1,7 +1,6 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import * as styles from '../styles/app.module.scss'
-import text from '../data/app.json'
 import PlacyLogo from "../images/placy-logo.svg"
 import { useIntl } from 'gatsby-plugin-react-intl'
 

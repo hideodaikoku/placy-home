@@ -1,12 +1,11 @@
 import * as React from "react";
 import {useState, useEffect} from "react";
-import { graphql, Link } from "gatsby";
-import { GatsbyImage } from "gatsby-plugin-image";
+import { graphql } from "gatsby";
 
-import Post from '../components/post'
 import Layout from '../components/layout'
 import Seo from '../components/seo'
 import App from '../components/app'
+import Post from '../components/post'
 
 import * as styles from '../styles/index.module.scss'
 
@@ -17,9 +16,9 @@ import PlusSign from '../images/plus-sign.svg'
 const IndexPage = ({data}) => {
   const sortedData = data.allContentfulEntry.edges.sort(function(a, b) {
       if (a.node.date && b.node.date) {
-        console.log(new Date(b.node.date));
         return new Date(b.node.date) - new Date(a.node.date)
       }
+      return 0
     });
 
   const [checkedAll, setCheckedAll] = useState(true);
@@ -72,36 +71,36 @@ const IndexPage = ({data}) => {
         <nav className={styles.leftNav}>
           <ul className={styles.sidebar}>
             <li className={styles.listItem} onClick={()=>handleChangeAll()}>
-              <span className={styles.listIcon}>{
+              <span>{
                 checkedAll ?
                   <Checkbox />
                   : <Box />
               }</span>
-              <span className={styles.listLabel}>All</span>
+              <span>All</span>
             </li>
             <li className={styles.listItem} onClick={()=> handleChange(0)}>
-              <span className={styles.listIcon}>{
+              <span>{
                 filters[0] ?
                   <Checkbox />
                   : <Box />
               }</span>
-              <span className={styles.listLabel}>Feature</span>
+              <span >Feature</span>
             </li>
             <li className={styles.listItem} onClick={()=> handleChange(1)}>
-              <span className={styles.listIcon}>{
+              <span>{
                 filters[1] ?
                   <Checkbox />
                   : <Box />
               }</span>
-              <span className={styles.listLabel}>Projects</span>
+              <span>Projects</span>
             </li>
             <li className={styles.listItem} onClick={()=> handleChange(2)}>
-              <span className={styles.listIcon}>{
+              <span>{
                 filters[2] ?
                   <Checkbox />
                   : <Box />
               }</span>
-              <span className={styles.listLabel}>News</span>
+              <span>News</span>
             </li>
           </ul>
         </nav>

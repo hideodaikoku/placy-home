@@ -1,7 +1,6 @@
 import React from "react";
 import * as styles from "../styles/ourbusiness.module.scss";
 import { StaticImage } from "gatsby-plugin-image";
-import { Link } from "gatsby"
 import { useIntl } from "gatsby-plugin-react-intl"
 
 

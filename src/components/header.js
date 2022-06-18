@@ -133,7 +133,7 @@ const Header = (props) => {
       <GlobalStyle nav={nav}/>
       <div className={styles.logoContainer}>
         <Link to="/">
-          <PlacyLogo className={props.textColor && styles.logo} />
+          <PlacyLogo />
         </Link>
         <div className={styles.slogan}> Forget the reviews. Follow your rhythm.</div>
       </div>
@@ -168,21 +168,21 @@ const Header = (props) => {
               href="https://www.instagram.com/placy_city/" 
               target="_blank" 
               rel="noopener noreferrer">
-              <InstaIcon className={styles.socialIcon} />
+              <InstaIcon />
             </a>
             <a 
               className={styles.navLink}
               href="https://twitter.com/placy_city" 
               target="_blank" 
               rel="noopener noreferrer">
-              <TwitIcon className={styles.socialIcon} />
+              <TwitIcon />
             </a>
             <a 
               className={styles.navLink}
               href="https://www.facebook.com/placy.city/" 
               target="_blank" 
               rel="noopener noreferrer">
-              <FaceIcon className={styles.socialIcon} />
+              <FaceIcon />
             </a>
           </div>
           <LanguageSwitch></LanguageSwitch>

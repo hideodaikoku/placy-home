@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import * as styles from "../styles/people.module.scss";
 import memberData from '../data/members.json';
 import { useStaticQuery, graphql } from "gatsby"
-import { GatsbyImage, StaticImage} from "gatsby-plugin-image";
+import { GatsbyImage} from "gatsby-plugin-image";
 import {useIntl} from "gatsby-plugin-react-intl"
 import CloseButton from "../images/close-btn.svg"
 
