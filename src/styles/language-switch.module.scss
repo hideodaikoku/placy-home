@@ -1,0 +1,21 @@
+.language-switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+    border: 1px solid var(--color-text);
+    border-radius: 62.43rem;
+}
+
+.lang {
+    padding: 0.75rem;
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1rem;
+    border-radius: 62.43rem;
+}
+
+.lang:hover {
+    cursor: pointer;
+}

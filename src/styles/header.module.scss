@@ -1,4 +1,10 @@
 .logo-container {
+    a svg {
+        width: 5.65rem;
+        path {
+            fill: var(--color-text);
+        }
+    }
     .slogan {
         display: none;
     }
@@ -39,33 +45,15 @@
     .nav{
         display: none;
     }
-
-    a svg {
-        width: 5.65rem;
-        path {
-            fill: var(--color-text);
-        }
-    }
-
-    a svg.logo {
-        path {
-            fill: var(--color-blackwhite);
-
-        }
-    }
-
-    a svg.social-icon {
-        path {
-            fill: var(--color-background);
-            stroke: var(--color-text);
-
-        }
+}
+.social-media {
+    padding: 0;
+    margin-left: 1.45rem;
+    .nav-link svg {
+        margin-right: 2.18rem;
     }
 }
 
-.nav-link svg {
-    margin-right: 0.4rem;
-}
 
 @media only screen and (min-width: 700px){
     .logo-container {
@@ -91,11 +79,12 @@
         .nav{
             display: flex;
             justify-content: flex-end;
-            margin-top: -1.5rem;
+            margin-top: -2.3rem;
             border-bottom: 1px solid var(--color-text);
             .nav-list{
                 display: flex;
                 flex-direction: row;
+                align-items: center;
                 justify-content: space-between;
                 list-style-type: none;
                 margin-bottom: 1rem;

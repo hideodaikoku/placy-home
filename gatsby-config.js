@@ -62,5 +62,17 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
+    {
+      resolve: `gatsby-plugin-react-intl`,
+      options: {
+        path: `${__dirname}/src/intl`,
+        languages: [`ja`, `en`],
+        defaultLanguage: `ja`,
+        redirect: true,
+        redirectDefaultLanguageToRoot: true,
+        ignoredPaths: [],
+        fallbackLanguage: `ja`
+      }
+    }
   ],
 };

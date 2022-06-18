@@ -14,6 +14,7 @@ import Yellow from "../images/Yellow.svg"
 
 import Toggle from "./toggle"
 import ColorSwitch from "./color-switch";
+import LanguageSwitch from "./language-switch";
 
 
 
@@ -84,7 +85,7 @@ const Menu = styled.nav`
   top: 0;
   right:0;
   visibility: ${({ nav }) => nav ? "visible" : "hidden"};
-  transform: ${({ nav }) => nav ? "translateY(0%)" : "translateY(100%)"};
+  transform: ${({ nav }) => nav ? "translateY(10%)" : "translateY(100%)"};
   transition: transform 500ms;
   padding: 1rem;
   ul{
@@ -108,9 +109,6 @@ const Menu = styled.nav`
           background-size: 100% 2px;
         }
       }
-      :last-child{
-        margin-top: 2rem;
-      }
     }
   }
 
@@ -119,8 +117,7 @@ const Menu = styled.nav`
     flex-direction: row;
     justify-content: space-between;
     margin-top: 2rem;
-    width: 30%;
-    padding-left: 1rem;
+    margin-left: 1.45rem;
   }
 `
 
@@ -159,20 +156,15 @@ const Header = (props) => {
               <Link href="/">Home</Link>
             </li>
             <li>
-              <Link href="/music-map">Music Map</Link>
-            </li>
-            <li>
-              <Link href="/projects">Projects</Link>
-            </li>
-            <li>
-              <Link href="/news">News</Link>
+              <Link href="/about">About</Link>
             </li>
             <li>
               <a href="https://placy.typeform.com/to/lfzKCU" target="_blank" rel="noopener noreferrer" alt="Contact Us">Contact</a>
             </li>
           </ul>
-          <div>
+          <div className={styles.socialMedia}>
             <a
+              className={styles.navLink}
               href="https://www.instagram.com/placy_city/" 
               target="_blank" 
               rel="noopener noreferrer">
@@ -186,15 +178,16 @@ const Header = (props) => {
               <TwitIcon className={styles.socialIcon} />
             </a>
             <a 
+              className={styles.navLink}
               href="https://www.facebook.com/placy.city/" 
               target="_blank" 
               rel="noopener noreferrer">
               <FaceIcon className={styles.socialIcon} />
             </a>
           </div>
+          <LanguageSwitch nav={nav}></LanguageSwitch>
         </Menu>
       </div>
-
       <nav className={styles.nav} style={{borderBottom: `1px solid ${props.textColor}`}}>
         <ul className={styles.navList}>
           <li className={styles.navItem}>
@@ -205,6 +198,9 @@ const Header = (props) => {
           </li>
           <li className={styles.navItem}>
             <Toggle theme ="white"><White /></Toggle>
+          </li>
+          <li className={styles.navItem}>
+            <LanguageSwitch></LanguageSwitch>
           </li>
         </ul>
       </nav>

@@ -1,6 +1,6 @@
 import * as React from "react";
 import {useState, useEffect} from "react";
-import { graphql, useStaticQuery, Link } from "gatsby";
+import { graphql, Link } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import Layout from '../components/layout'
 import Seo from '../components/seo'
@@ -172,6 +172,9 @@ export const query = graphql`
             title
             slug
             date(formatString: "YYYY-MM-DD")
+            summary {
+              summary
+            }
             image {
               gatsbyImageData
             }
