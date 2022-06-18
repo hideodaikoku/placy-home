@@ -1,35 +1,41 @@
-.color-switch {
-    display: block;
-    position: fixed;
-    top: 1rem;
-    right: 5rem;
-}
-
-.color-switch:hover {
-    cursor: pointer;
-}
 .container {
     display: block;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
+    .color-switch {
+        display: block;
+        position: fixed;
+        top: 1rem;
+        right: 5rem;
+    }
+    .color-switch:hover {
+        cursor: pointer;
+    }
+    .overlay {
+        display: block;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        .color-box {
+            display: block;
+            position: fixed;
+            top: 3rem;
+            right: 2.5rem;
+            padding: 0.5rem;
+            width: 7rem;
+            border: 1px solid var(--color-text);
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            background-color: var(--color-background);
+        }
+    }
+
 }
 
-.color-box {
-    display: block;
-    position: fixed;
-    top: 3rem;
-    right: 2.5rem;
-    padding: 0.5rem;
-    width: 7rem;
-    border: 1px solid var(--color-text);
-    border-radius: 8px;
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--color-background);
-}
 
 @media only screen and (min-width: 850px) {
+    .container {
+        display: none;
+    }
     .color-switch {
         display: none;
     }

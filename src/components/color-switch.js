@@ -11,17 +11,17 @@ const ColorSwitch = () => {
     const [colorSwitchActive, setActive] = useState(false);
 
     return (
-        <>
+        <div className={styles.container}>
             <StaticImage onClick={() => setActive(!colorSwitchActive)} className={styles.colorSwitch} src="../images/color-switch.png"/>
             {colorSwitchActive && 
-            <div className={styles.container} onClick={() => setActive(false)}>
+            <div className={styles.overlay} onClick={() => setActive(false)}>
                 <div className={styles.colorBox} onClick={e=>e.stopPropagation()}>
                     <Toggle theme="yellow"><Yellow /></Toggle>    
                     <Toggle theme="dark"><Black /></Toggle>    
                     <Toggle theme="white"><White /></Toggle>    
                 </div>
             </div>}
-        </>
+        </div>
     )
 }
 
