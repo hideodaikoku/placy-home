@@ -131,15 +131,14 @@ const Header = (props) => {
   return (
     <div className={styles.container} style={{backgroundColor:props.color}}>
       <GlobalStyle nav={nav}/>
+      <ColorSwitch />
       <div className={styles.innerCont}>
-
       <div className={styles.logoContainer}>
         <Link to="/">
           <PlacyLogo />
         </Link>
         <div className={styles.slogan}> Forget the reviews. Follow your rhythm.</div>
       </div>
-      <ColorSwitch></ColorSwitch>
       <div 
         className={styles.menuIcon}>
         <MenuIcon
