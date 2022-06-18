@@ -1,11 +1,17 @@
 import React from 'react'
+import { useState } from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import * as styles from '../styles/app.module.scss'
 import PlacyLogo from "../images/placy-logo.svg"
+import Pause from "../images/pause.svg"
+import Play from "../images/play.svg"
 import { useIntl } from 'gatsby-plugin-react-intl'
+
 
 const App = () => {
     const intl = useIntl()
+    const [onPlay, setPlay] = useState(false)
+
     return (
         <div id='app' className='sectionContainer'>
             <div className='titleContainer'>
@@ -23,7 +29,13 @@ const App = () => {
                             {intl.formatMessage({id: `home.app.p`})}
                         </p>
                     </div>
-                    <StaticImage src='../images/5.png' alt='placy-app' className={styles.imageContainer}/>
+                    <div className={styles.imageContainer}>
+                        <StaticImage src='../images/1.png' alt='placy-app' />
+                        <div className={styles.videoControl} onClick={() => setPlay(!onPlay)}>
+                            {onPlay ? 
+                            <Pause /> : <Play />}
+                        </div>
+                    </div>
                 </div>
                 <div className={styles.download}>
                     <a href='https://apps.apple.com/jp/app/placy/id1474567327' 
