@@ -12,7 +12,7 @@ const Post = ({ article }) => {
             className={styles.imgContainer}></GatsbyImage>
             <div className={styles.postInfo}>
                 <div className={styles.type}>{article.node.internal.type.replace("Contentful","")}</div>
-                <div className={styles.date}>{article.node.date && "20"+article.node.date}</div>
+                <div className={styles.date}>{article.node.date && article.node.date.replaceAll("-","/")}</div>
                 <h3 className={styles.postTitle}>{article.node.title}</h3>
                 <p className={styles.postDesc}>{article.node.summary && article.node.summary.summary}</p>
             </div>
