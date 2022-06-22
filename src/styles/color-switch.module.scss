@@ -1,5 +1,7 @@
 .container {
     display: block;
+    position: fixed;
+    z-index: 7;
     .color-switch {
         display: block;
         position: fixed;

@@ -85,7 +85,7 @@ const Menu = styled.nav`
   top: 0;
   right:0;
   visibility: ${({ nav }) => nav ? "visible" : "hidden"};
-  transform: ${({ nav }) => nav ? "translateY(10%)" : "translateY(100%)"};
+  transform: ${({ nav }) => nav ? "translateY(0%)" : "translateY(100%)"};
   transition: transform 500ms;
   padding: 1rem;
   ul{
@@ -133,8 +133,8 @@ const Header = (props) => {
       <GlobalStyle nav={nav}/>
       <div className={styles.innerCont}>
       <div className={styles.logoContainer}>
-        <Link to="/">
-          <PlacyLogo />
+        <Link to="/" >
+          <PlacyLogo style={{position: nav ? 'fixed' : 'relative'}}/>
         </Link>
         <div className={styles.slogan}> Forget the reviews. Follow your rhythm.</div>
       </div>
