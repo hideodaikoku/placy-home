@@ -73,21 +73,21 @@ const MenuIcon = styled.button`
 const Menu = styled.nav`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   margin: 0 auto;
   align-items: flex-start;
   text-align: left;
   height: ${({ nav }) => nav ? "100vh" : "0"};
   width: 100%;
   background-color: #f3c91f;
-  z-index: 4;
-  position: absolute;
+  position: fixed;
+  z-index: 1;
   top: 0;
   right:0;
   visibility: ${({ nav }) => nav ? "visible" : "hidden"};
-  transform: ${({ nav }) => nav ? "translateY(0%)" : "translateY(100%)"};
-  transition: transform 500ms;
-  padding: 1rem;
+  opacity: ${({nav}) => nav ? "1" : "0"};
+  transition: opacity 300ms, visibility 400ms;
+  padding: 10.6rem 1rem 1rem 1rem;
   ul{
     list-style-type: none;
     li{
@@ -116,7 +116,6 @@ const Menu = styled.nav`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 2rem;
     margin-left: 1.45rem;
   }
 `
@@ -134,7 +133,7 @@ const Header = (props) => {
       <div className={styles.innerCont}>
       <div className={styles.logoContainer}>
         <Link to="/" >
-          <PlacyLogo style={{position: nav ? 'fixed' : 'relative'}}/>
+          <PlacyLogo />
         </Link>
         <div className={styles.slogan}> Forget the reviews. Follow your rhythm.</div>
       </div>
@@ -152,7 +151,7 @@ const Header = (props) => {
       </div>
       <div className={styles.mobileMenu}>
         <Menu nav={nav}>
-          <ul>
+          <ul className={nav && styles.slide}>
             <li>
               <Link href="/">Home</Link>
             </li>
@@ -163,7 +162,7 @@ const Header = (props) => {
               <a href="https://placy.typeform.com/to/lfzKCU" target="_blank" rel="noopener noreferrer" alt="Contact Us">Contact</a>
             </li>
           </ul>
-          <div className={styles.socialMedia}>
+          <div className={styles.socialMedia+ " " + (nav && styles.slide)}>
             <a
               className={styles.navLink}
               href="https://www.instagram.com/placy_city/" 
@@ -186,7 +185,7 @@ const Header = (props) => {
               <FaceIcon />
             </a>
           </div>
-          <LanguageSwitch></LanguageSwitch>
+          <LanguageSwitch class={nav && styles.slide} />
         </Menu>
       </div>
       <nav className={styles.nav}>

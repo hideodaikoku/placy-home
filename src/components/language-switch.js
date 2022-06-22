@@ -7,9 +7,9 @@ const languageName = {
     en: "English"
 }
 
-const LanguageSwitch = () => {
+const LanguageSwitch = (props) => {
     return (
-        <div className={styles.languageSwitch}>
+        <div className={styles.languageSwitch + " " + (props.class && props.class)}>
             <IntlContextConsumer>
                 {({ languages, language: currentLocale }) =>
                   languages.map(language => (
