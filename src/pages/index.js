@@ -114,7 +114,7 @@ const IndexPage = ({data}) => {
           <Post article={entry} />
           ))}
         </div>
-        { data.allContentfulEntry.edges.length >= entryAmount && entriesData.length >= entryAmount  ?
+        { data.allContentfulEntry.edges.length > entryAmount && entriesData.length >= entryAmount  ?
         
         <button className={styles.viewMore} onClick={() => ViewMore()}>
           <h3>View More</h3>

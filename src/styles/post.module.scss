@@ -92,7 +92,8 @@
 @media only screen and (min-width: 1000px) {
     .post {
         .img-container {
-            height: 13rem;
+            height: auto;
+            aspect-ratio: 1.78;
         }
     }
 }
