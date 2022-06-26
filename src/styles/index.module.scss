@@ -94,12 +94,13 @@
         display: flex;
         flex-direction: row;
         .left-nav{
-            margin-top: 0;
-            display: flex;
             position: sticky;
+            top: 110px;
             min-width: 8.4rem;
+            margin: 0;
+            padding: 0;
+            display: flex;
             align-self: flex-start;
-            top: 0;
             .sidebar{
                 margin-top: 0;
                 list-style-type: none;

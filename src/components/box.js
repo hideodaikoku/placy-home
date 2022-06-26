@@ -19,7 +19,7 @@ const Box = ({w, i, boxClass, children}) => {
         style={{
             ...spring,
             width: Math.floor(Math.random() * (340 - 150) +150),
-            height: Math.floor(Math.random() * (335 - 150) +150),
+            height: Math.floor(Math.random() * (340 - 150) +150),
         }}
         className={boxClass}
         key={i}>

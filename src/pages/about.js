@@ -3,7 +3,6 @@ import Layout from '../components/layout'
 import Seo from '../components/seo'
 import Top from '../components/top'
 import Vision from '../components/vision'
-import OurBusiness from '../components/ourbusiness'
 import People from '../components/people'
 import Company from '../components/company'
 import { Link } from 'react-scroll'
@@ -41,7 +40,6 @@ const AboutPage = () => {
         </section>
         <section className={styles.main}>
           <Vision />
-          <OurBusiness />
           <People />
           <Company />
         </section>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from "react";
+import React from "react";
 import * as styles from "../styles/top.module.scss";
 import Box from "./box"
 import InnerBox from "./inner-box"
@@ -16,7 +16,7 @@ const Top = () => {
     <div className={styles.container}>
         <div className={styles.empty}></div>
         <h1 className={styles.topText}>
-        We are Placy,<br id={styles.firstBreak}/> a collective reinterpreting the value of place,<br id={styles.secondBreak}/> through spatial analysis and cultural curation.
+        Forget the reviews. <br id={styles.firstBreak}/>Follow your rhythm
         </h1>
         {boxes.map(b => (
           <Box 

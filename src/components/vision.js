@@ -24,10 +24,13 @@ const Vision =()=>{
             <p className={styles.paragraph}>
               {intl.formatMessage({ id: "about.vision.p2"})}
             </p>
+            <p className={styles.paragraph}>
+              {intl.formatMessage({ id: "about.vision.p3"})}
+            </p>
           </section>
         </div>
         <div className={styles.imageContainer}>
-          <StaticImage src='../images/1.png' width={500} alt='maria-medem' /> 
+          <StaticImage src='../images/5.png' alt='maria-medem' /> 
         </div>
       </div>
     </div>
