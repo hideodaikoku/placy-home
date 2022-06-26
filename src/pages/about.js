@@ -9,7 +9,7 @@ import Company from '../components/company'
 import { Link } from 'react-scroll'
 import * as styles from '../styles/aboutpage.module.scss'
 
-const IndexPage = () => {
+const AboutPage = () => {
   return (
     <Layout>
       <Seo />
@@ -22,7 +22,7 @@ const IndexPage = () => {
                 Vision
               </li>
             </Link>
-            <Link activeClass="active" to="about" offset={-100} spy={true} smooth={true}>
+            <Link activeClass="active" to="ourBusiness" offset={-100} spy={true} smooth={true}>
               <li>
                 Our Business
               </li>
@@ -50,4 +50,4 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage
+export default AboutPage

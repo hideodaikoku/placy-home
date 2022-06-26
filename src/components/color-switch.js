@@ -12,7 +12,9 @@ const ColorSwitch = () => {
 
     return (
         <div className={styles.container}>
-            <StaticImage onClick={() => setActive(!colorSwitchActive)} className={styles.colorSwitch} src="../images/color-switch.png"/>
+            <StaticImage onClick={() => setActive(!colorSwitchActive)} 
+            className={styles.colorSwitch} 
+            src="../images/color-switch.png"/>
             {colorSwitchActive && 
             <div className={styles.overlay} onClick={() => setActive(false)}>
                 <div className={styles.colorBox} onClick={e=>e.stopPropagation()}>

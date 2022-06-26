@@ -62,9 +62,10 @@ const Footer = (props) => {
       </ul>
       </div>
       <ul className={styles.bottom}>
-        <li className={styles.fineprint}
-          style={{color:props.textColor}}>
+        <li >
+          <Link to="/" className={styles.fineprint}>
           &copy; Placy, 2022
+          </Link>
         </li>
         <li>
           <a  

@@ -22,7 +22,7 @@ const IndexPage = ({data}) => {
     });
 
   const [checkedAll, setCheckedAll] = useState(true);
-  const [filters, setFilters] = useState([false, false, false]);
+  const [filters, setFilters] = useState([true, true, true]);
   const [entryAmount, setAmount] = useState(6);
   const [entriesData, setEntries] = useState(sortedData.slice(0,6));
   const categories = ["Feature", "Projects", "News"];
@@ -38,11 +38,14 @@ const IndexPage = ({data}) => {
   }
 
   const handleChange = (position) => {
+    const updatedCheckedState = filters.map((item, index) => {
+      if (checkedAll) {
+        return index !== position ? !item : item
+      }
+      return index === position ? !item : item
+    });
+      
     setCheckedAll(false)
-    const updatedCheckedState = filters.map((item, index) =>
-      index === position ? !item : item
-    );
-
     setFilters(updatedCheckedState);
   }
   
@@ -76,31 +79,31 @@ const IndexPage = ({data}) => {
                   <Checkbox />
                   : <Box />
               }</span>
-              <span>All</span>
+              <span className={styles.filterItem}>All</span>
             </li>
             <li className={styles.listItem} onClick={()=> handleChange(0)}>
               <span>{
-                filters[0] ?
+                (filters[0] && checkedAll === false) ?
                   <Checkbox />
                   : <Box />
               }</span>
-              <span >Feature</span>
+              <span className={styles.filterItem}>Feature</span>
             </li>
             <li className={styles.listItem} onClick={()=> handleChange(1)}>
               <span>{
-                filters[1] ?
+                (filters[1] && checkedAll === false) ?
                   <Checkbox />
                   : <Box />
               }</span>
-              <span>Projects</span>
+              <span className={styles.filterItem}>Projects</span>
             </li>
             <li className={styles.listItem} onClick={()=> handleChange(2)}>
               <span>{
-                filters[2] ?
+                (filters[2] && checkedAll === false) ?
                   <Checkbox />
                   : <Box />
               }</span>
-              <span>News</span>
+              <span className={styles.filterItem}>News</span>
             </li>
           </ul>
         </nav>

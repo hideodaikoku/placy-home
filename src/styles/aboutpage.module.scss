@@ -14,10 +14,10 @@
     .bottom-container {
         display: flex;
         flex-direction: row;
-        padding: 3rem;
+        padding: 3.75rem 0.75rem 3.75rem 1.75rem;
         .left-nav{
             display: flex;
-            width: 10rem;
+            width: 8.2rem;
             position: sticky;            
             align-self: flex-start;
             top: 0;
@@ -27,14 +27,14 @@
                 padding:0;
                 margin-left:0;
                 li{
-                    padding-left: 1rem;
+                    padding-left: 0.5rem;
                     font-size: .8rem;
                     color: var(--color-text);
                 }
             }
         }
         .main{
-            width: 90%;
+            width: 100%;
         }
     }
 }
@@ -42,10 +42,4 @@
 
 
 @media only screen and (min-width: 1000px) {
-    .bottom-container{
-        padding: 3.75rem;
-        .left-nav{
-            width: 15rem;
-        }
-    }
 }

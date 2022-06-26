@@ -32,7 +32,7 @@
 .container{
     background: var(--color-background);
     position: fixed;
-    z-index: 2;
+    z-index: 4;
     width: 100%;
     .menu-icon {
         div {
@@ -90,7 +90,7 @@
         position: relative;
         align-items: center;
         border-bottom: none;
-        padding: none;
+        padding: 0;
         .slogan {
             display: block;
             font-family: "GT Zirkon Light";

@@ -13,9 +13,6 @@ const Vision =()=>{
         </h1>
       </div>
       <div className={styles.container}>
-        <div className={styles.imageContainer}>
-          <StaticImage src='../images/1.png' width={500} alt='maria-medem' /> 
-        </div>
         <div className={styles.textContainer}>
           <h2 className={styles.paragraphTitle}>
             {intl.formatMessage({id: "about.vision.title"})}
@@ -28,6 +25,9 @@ const Vision =()=>{
               {intl.formatMessage({ id: "about.vision.p2"})}
             </p>
           </section>
+        </div>
+        <div className={styles.imageContainer}>
+          <StaticImage src='../images/1.png' width={500} alt='maria-medem' /> 
         </div>
       </div>
     </div>

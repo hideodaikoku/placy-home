@@ -18,10 +18,15 @@
                     text-decoration: none;
                     font-size: 1.2rem;
                     color: var(--color-text);
+                    transition: border-bottom .3s;
+                    border-bottom: 1px solid transparent;
                     cursor: pointer;
                     :visited{
                         color: var(--color-text);
                     }
+                }
+                .nav-link:hover {
+                    border-color: var(--color-text);
                 }
             }
             .nav-list:first-child {
@@ -69,8 +74,8 @@
 
 @media only screen and (min-width: 700px){
     .container{
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
         .top-container {
             margin-bottom: 0.5rem;
             .top{
@@ -95,8 +100,12 @@
             }
         }
         .bottom{
+            justify-content: flex-start;
             margin: 0rem 0 2rem 0;
             padding-left: 0;
+            .fineprint {
+                margin-right: 1.5rem;
+            }
         }
     }
 }

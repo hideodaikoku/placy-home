@@ -14,6 +14,7 @@
         font-size: 2rem;
         line-height: 3rem;
         font-family: 'GT Zirkon';
+        z-index: 2;
         #first-break{
             display: inline;
         }
@@ -60,7 +61,7 @@
             width: 15rem;
         }
         .top-text{
-            width: 90%;
+            // width: 90%;
             padding-left: 1rem;
             #first-break{
                 display: none;

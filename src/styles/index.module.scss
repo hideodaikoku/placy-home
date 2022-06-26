@@ -5,7 +5,7 @@
     flex-direction: column;
     padding: 0 1rem;
     .left-nav {
-        margin-top: 5rem;
+        margin-top: 3.2rem;
         margin-bottom: 1.5rem;
         .sidebar {
             margin: 0;
@@ -19,14 +19,22 @@
                     stroke: var(--color-text);
                     margin-right: 0.5rem;
                 }
+                .filter-item {
+                    border-bottom: 1px solid transparent;
+                    transition: border-bottom 300ms;
+                }
+                
+            }
+            .list-item:hover {
+                cursor:pointer;
+                .filter-item {
+                    border-color: var(--color-text);
+                }
             }
             .list-item + .list-item {
                 margin-left: 1.5rem;
             }
         }
-    }
-    li:hover {
-        cursor:pointer;
     }
     .posts {
         display: flex;
@@ -86,13 +94,14 @@
         display: flex;
         flex-direction: row;
         .left-nav{
+            margin-top: 0;
             display: flex;
             position: sticky;
-            min-width: 10%;
+            min-width: 8.4rem;
             align-self: flex-start;
             top: 0;
             .sidebar{
-                margin-top: 7rem;
+                margin-top: 0;
                 list-style-type: none;
                 padding:0;
                 .list-item{
@@ -102,6 +111,7 @@
                 }
                 .list-item + .list-item{
                     margin: 0;
+                    margin-top: 0.75rem;
                 }
             }
         }

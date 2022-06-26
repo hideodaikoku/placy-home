@@ -7,7 +7,7 @@ import { useIntl } from "gatsby-plugin-react-intl"
 const OurBusiness = () => {
   const intl = useIntl()
   return (
-    <div id="about" className="sectionContainer">
+    <div id="ourBusiness" className="sectionContainer">
       <div className="titleContainer">
         <h1 className="sectionTitle">
           Our Business

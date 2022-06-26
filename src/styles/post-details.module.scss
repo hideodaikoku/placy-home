@@ -20,6 +20,9 @@
                 display: flex;
                 justify-content: space-between;
                 margin-bottom: 1rem;
+                font-size: 0.875rem;
+                font-weight: 400;
+                line-height: 1.5rem;
                 .type {
                     font-size: inherit;
                     line-height: 0.875rem;
@@ -37,13 +40,14 @@
             }
             .author {
                 text-align: right;
+                margin-bottom: 3rem;
             }
             h1 {
                 font-size: 1.5rem;
                 line-height: 2.25rem;
             }
             h2 {
-                margin-top: 2.67rem;
+                margin-top: 3rem;
                 font-size: 1.25rem;
             }
             p{
@@ -83,28 +87,34 @@
                     }
                 }
                 .arrow{
+                    --s: -100%;
                     margin-right: 2rem;
                     width: 10rem;
-                    height: 0.5rem;
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-end;
+                    height: 100%;
+                    white-space: nowrap;
+                    overflow: hidden;
                     svg {
+                        width: 10rem;
+                        transition: transform 500ms;
                         path {
                             fill: var(--color-text);
                         }
                     }
+                    svg:first-child {
+                        margin-right: 0.5rem;
+                    }
                 }
             }
             
-            .button:hover{
+            .button:hover {
                 background-color: var(--color-text);
                 border-color: var(--color-background);
                 .button-text{
                     color: var(--color-background);
                 }
-                .arrow{
-                    svg{
+                .arrow {
+                    svg {
+                        transform: translate(-10.5rem, 0%);
                         path{
                             fill: var(--color-background);
                         }
@@ -169,11 +179,12 @@
             .text-container {
                 width: 100%;
                 max-width: 43.56rem;
+                .author {
+                    font-size: 1rem;
+                    line-height: 175%;
+                }
                 .button {
                     margin-bottom: 5rem;
-                    .arrow {
-                        width: 10rem;
-                    }
                 }
             }
         }

@@ -27,8 +27,8 @@
 }
 
 .sectionContainer {
-  margin: 3rem auto;
-  padding: 1rem;
+  margin: 4rem 1.25rem;
+  border-bottom: 1px solid var(--color-text);
   .titleContainer {
     border-bottom: 1px solid var(--color-text);
     .sectionTitle {
@@ -39,6 +39,7 @@
     }
   }
 }
+
 .active {
   li{ 
     list-style-type: '\2605';
@@ -46,7 +47,8 @@
 }
 
 html {
-  font-family: sans-serif;
+  font-family: "Noto Sans JP", "GT Zirkon Light";
+  font-size: 16px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -117,7 +119,7 @@ mark {
 }
 small {
   font-size: 80%;
-  font-family: Roboto, sans-serif;
+  font-family: "GT Zirkon Light";
 }
 sub,
 sup {
@@ -233,7 +235,6 @@ textarea {
   font: inherit;
 }
 html {
-  font: 112.5%/1.45em georgia, serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -248,7 +249,7 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 1);
-  font-family: sans-serif;
+  font-family: "Noto Sans JP", "GT Zirkon Light";
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -669,8 +670,18 @@ pre tt:after {
   content: "";
 }
 
-@media only screen and (max-width: 480px) {
-  html {
-    font-size: 100%;
+@media only screen and (min-width: 700px) {
+  .sectionContainer {
+    margin: 4rem auto;
   }
+}
+
+@keyframes switchOn {
+  from {background: var(--color-background);}
+  to {background: var(--color-text);}
+}
+
+@keyframes switchOff {
+  from {background: var(--color-text);}
+  to {background: var(--color-background);}
 }

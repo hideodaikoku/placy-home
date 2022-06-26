@@ -20,6 +20,7 @@ const LanguageSwitch = (props) => {
                       style={{
                         color: currentLocale === language ? `var(--color-background)` : `var(--color-text)`,
                         background: currentLocale === language ? `var(--color-text)` : `var(--color-background)`,
+                        animation: currentLocale === language ? `switchOn 400ms` : `switchOff 400ms`
                       }}
                       >
                         {languageName[language]}
