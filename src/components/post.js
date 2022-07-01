@@ -14,7 +14,7 @@ const Post = ({ article }) => {
                 <div className={styles.type}>{article.node.internal.type.replace("Contentful","")}</div>
                 <div className={styles.date}>{article.node.date && article.node.date.replaceAll("-","/")}</div>
                 <h3 className={styles.postTitle}>{article.node.title}</h3>
-                <p className={styles.postDesc}>{article.node.summary && article.node.summary.summary}</p>
+                {article.node.summary && <p className={styles.postDesc}> {article.node.summary.summary}</p>}
             </div>
             </Link>
         </div>
