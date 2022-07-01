@@ -67,7 +67,8 @@
         margin: 0;
     }
     .placy-img {
-        border-radius: 1rem;
+        width: 100%;
+        border-radius: 1rem 1rem 0 0;
     }
     .download-info {
         padding: 1rem;
@@ -127,6 +128,7 @@
             display: flex;
             flex-direction: row;
             .placy-img {
+                border-radius: 1rem 0 0 1rem;
                 width: 32rem;
             }
             .download-info {
