@@ -151,7 +151,7 @@ const Header = (props) => {
       </div>
       <div className={styles.mobileMenu}>
         <Menu nav={nav}>
-          <ul className={nav && styles.slide}>
+          <ul className={nav ? styles.slide : null}>
             <li>
               <Link href="/">Home</Link>
             </li>
@@ -162,7 +162,7 @@ const Header = (props) => {
               <a href="https://placy.typeform.com/to/lfzKCU" target="_blank" rel="noopener noreferrer" alt="Contact Us">Contact</a>
             </li>
           </ul>
-          <div className={styles.socialMedia+ " " + (nav && styles.slide)}>
+          <div className={styles.socialMedia+ " " + (nav ? styles.slide : null)}>
             <a
               className={styles.navLink}
               href="https://www.instagram.com/placy_city/" 
@@ -185,7 +185,7 @@ const Header = (props) => {
               <FaceIcon />
             </a>
           </div>
-          <LanguageSwitch class={nav && styles.slide} />
+          <LanguageSwitch class={nav ? styles.slide : null} />
         </Menu>
       </div>
       <nav className={styles.nav}>

@@ -2,11 +2,12 @@ import React from "react"
 import { graphql, Link } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import { renderRichText } from "gatsby-source-contentful/rich-text"
-import { BLOCKS, MARKS } from '@contentful/rich-text-types'
+import { BLOCKS, MARKS, INLINES } from '@contentful/rich-text-types'
 import * as styles from '../styles/post-details.module.scss'
 
 import Layout from '../components/layout'
 import Seo from '../components/seo'
+import Video from '../components/video'
 import RelevantArticles from "../components/relevant-articles"
 
 export default function PostDetail({data}) {
@@ -19,17 +20,32 @@ export default function PostDetail({data}) {
         [MARKS.BOLD]: text => <Bold>{text}</Bold>,
     },
     renderNode: {
-        [BLOCKS.PARAGRAPH]: (node, children) => <Text>{children}</Text>,
-        [BLOCKS.EMBEDDED_ASSET]: node => {
+      [INLINES.HYPERLINK]: (node) => {
+        if(node.data.uri.indexOf('youtube.com') !== -1) {
+          return <Video videoSrcUrl={node.data.uri} videoTitle={node.content[0].value} videoClass={styles.videoContainer} />
+        }
+        return <a href={node.data.uri} target="_blank" rel="noopener noreferrer">{node.content[0].value ? node.content[0].value : node.data.uri}</a>
+      },
+      [BLOCKS.PARAGRAPH]: (node, children) => <Text>{children}</Text>,
+      [BLOCKS.EMBEDDED_ASSET]: node => {
         return (
-            <>
+          <>
             <h2>Embedded Asset</h2>
             <pre>
                 <code>{JSON.stringify(node, null, 2)}</code>
             </pre>
             </>
         )
-        },
+      },
+      "embedded-asset-block": node => {
+        console.log(node.data.target)
+        const { gatsbyImageData } = node.data.target
+        if (!gatsbyImageData) {
+          // asset is not an image
+          return null
+        }
+        return <GatsbyImage image={gatsbyImageData} alt="" className={styles.embeddedImg} />
+      },
     },
     }
 
@@ -50,7 +66,9 @@ export default function PostDetail({data}) {
                           default: return "cover";
                         }
                       })()
-                 } layout="constrained"/>
+                 } 
+                 layout="constrained"
+                 alt=""/>
             </div>
             <div className={styles.textContainer}>
                 <div className={styles.typeDate}>
@@ -64,7 +82,7 @@ export default function PostDetail({data}) {
                 ? renderRichText(entry.content, options)
                 : <>
                     <h4 style={{textAlign:"start"}}>Coming soon...</h4>
-                    </>}
+                  </>}
                 <Link to="/" className={styles.button}>
                     <p className={styles.buttonText}>
                         Back
@@ -131,7 +149,14 @@ query($id: String!) {
             slug
             title
             content {
-            raw
+              raw
+              references {
+                ... on ContentfulAsset {
+                  contentful_id
+                  __typename
+                  gatsbyImageData
+                }
+              }
             }
             author
             date (formatString: "YYYY/MM/DD")

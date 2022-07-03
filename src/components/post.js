@@ -9,7 +9,8 @@ const Post = ({ article }) => {
             <Link to={`/${article.node.slug}`}>
             <GatsbyImage 
             image={article.node.image.gatsbyImageData}
-            className={styles.imgContainer}></GatsbyImage>
+            className={styles.imgContainer}
+            alt="post-img"></GatsbyImage>
             <div className={styles.postInfo}>
                 <div className={styles.type}>{article.node.internal.type.replace("Contentful","")}</div>
                 <div className={styles.date}>{article.node.date && article.node.date.replaceAll("-","/")}</div>
