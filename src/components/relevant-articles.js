@@ -56,7 +56,12 @@ const RelevantArticles = (props) => {
       }
     `)
 
-    const articles = data.allContentfulEntry.edges;
+    const articles = data.allContentfulEntry.edges.filter(({node}) => {
+      if((node.title !== "dummy-post") && (node.title !== props.id)) {
+        return true
+      }
+      return false
+    });
     for (let i = articles.length - 1; i > 0; i --) {
         const j = Math.floor(Math.random() * i);
         const temp =articles[i];
