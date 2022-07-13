@@ -108,19 +108,17 @@ const IndexPage = ({data}) => {
           </ul>
         </nav>
         <div>
-
-        <div className={styles.posts}>
-          {entriesData.map(entry => (
-          <Post article={entry} />
-          ))}
-        </div>
-        { data.allContentfulEntry.edges.length > entryAmount && entriesData.length >= entryAmount  ?
-        
-        <button className={styles.viewMore} onClick={() => ViewMore()}>
-          <h3>View More</h3>
-          <div className={styles.plus}><PlusSign /></div>
-        </button>
-        :null }
+          <div className={styles.posts}>
+            {entriesData.map(entry => (
+            <Post article={entry} />
+            ))}
+          </div>
+          { data.allContentfulEntry.edges.length > entryAmount && entriesData.length >= entryAmount  ?
+          <button className={styles.viewMore} onClick={() => ViewMore()}>
+            <h3>View More</h3>
+            <div className={styles.plus}><PlusSign /></div>
+          </button>
+          :null }
         </div>
       </section>
       <section className={styles.main}>
