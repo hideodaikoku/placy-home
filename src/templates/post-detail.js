@@ -120,6 +120,11 @@ query($id: String!) {
             id
             content {
               raw
+              references {
+                contentful_id
+                __typename
+                gatsbyImageData
+              }
             }
             image {
               gatsbyImageData
@@ -139,6 +144,11 @@ query($id: String!) {
             }
             content {
               raw
+              references {
+                contentful_id
+                __typename
+                gatsbyImageData
+              }
             }
             internal {
               type
@@ -151,11 +161,9 @@ query($id: String!) {
             content {
               raw
               references {
-                ... on ContentfulAsset {
-                  contentful_id
-                  __typename
-                  gatsbyImageData
-                }
+                contentful_id
+                __typename
+                gatsbyImageData
               }
             }
             author

@@ -14,7 +14,9 @@ import Checkbox from '../images/checked.svg'
 import PlusSign from '../images/plus-sign.svg'
 
 const IndexPage = ({data}) => {
-  const sortedData = data.allContentfulEntry.edges.sort(function(a, b) {
+  const sortedData = data.allContentfulEntry.edges
+    .filter((entry) => entry.node.title === "dummy-post" ? false : true)
+    .sort(function(a, b) {
       if (a.node.date && b.node.date) {
         return new Date(b.node.date) - new Date(a.node.date)
       }

@@ -36,6 +36,9 @@ exports.createPages = async ({graphql, actions, reporter }) => {
     }
     const postDetailTemplate = path.resolve("./src/templates/post-detail.js")
     posts.data.allContentfulEntry.edges.forEach(({node}) => {
+        if(node.title == "dummy-post") {
+            return
+        }
         createPage({
             path: node.slug,
             component: postDetailTemplate,
