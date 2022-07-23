@@ -21,11 +21,6 @@ const AboutPage = () => {
                 Vision
               </li>
             </Link>
-            <Link activeClass="active" to="ourBusiness" offset={-100} spy={true} smooth={true}>
-              <li>
-                Our Business
-              </li>
-            </Link>
             <Link activeClass="active" to="people" offset={-100} spy={true} smooth={true}>
               <li>
                 People
