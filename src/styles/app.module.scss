@@ -30,7 +30,7 @@
         display: block;
         border: 1px solid var(--color-text);
         border-radius: 1rem;
-        margin-bottom: 2.25rem;
+        // margin-bottom: 2.25rem; // remove comment when adding the rest of the App component
         img {
             object-position: bottom;
             border-radius: 1rem;
@@ -62,6 +62,7 @@
 .download {
     border: 1px solid var(--color-text);
     border-radius: 1rem;
+    margin-top: 3rem; // comment out when adding the rest of the app component
     a {
         text-decoration: none;
         margin: 0;
