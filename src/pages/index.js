@@ -124,7 +124,7 @@ const IndexPage = ({data}) => {
         </div>
       </section>
       <section className={styles.main}>
-        {/* <App /> */}
+        <App />
       </section>
     </Layout>
   )

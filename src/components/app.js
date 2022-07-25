@@ -38,14 +38,14 @@ const App = () => {
                     </div>
                 </div>
                 <div className={styles.download}>
-                    <a href='https://apps.apple.com/jp/app/placy/id1474567327' 
+                    <a href='https://placysmack.page.link/cooperate-site' 
                     target="_blank" rel="noopener noreferrer">
                         <StaticImage src='../images/app-img.png' alt='placy' className={styles.placyImg} />
                         <div className={styles.downloadInfo}>
                             <p className={styles.smack}>仮ですSMACK後で差し替え</p>
                             <PlacyLogo />
                             <p className={styles.slogan}>Forget the reviews. Follow your rhythm.</p>
-                            <StaticImage src='../images/app-store.png' width={130} 
+                            <StaticImage src='../images/smack-game.png' width={130} 
                             alt='app-store' className={styles.appStore} />
                         </div>
                     </a>
