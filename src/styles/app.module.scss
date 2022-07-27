@@ -67,29 +67,33 @@
         text-decoration: none;
         margin: 0;
     }
-    .placy-img {
+    .smack-img {
         width: 100%;
         border-radius: 1rem 1rem 0 0;
     }
     .download-info {
         padding: 1rem;
-        .smack {
-            font-size: 1.25rem;
-        }
-        .slogan {
-            font-size: 0.875rem;
-        }
-        .smack, .slogan, svg {
-            margin-bottom: 1rem;
-        }
         svg {
-            width: 7.68rem;
+            margin-bottom: 1rem;
+            width: 10rem;
             path {
                 fill: var(--color-text);
             }
         }
-        .app-store {
-            margin: 0;
+        .app-stores {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            a {
+                display: inline-block;
+                margin-bottom: 0.5rem;
+                .app-store {
+                    height: 2.5rem;
+                    width: 8.125rem;
+                    margin: 0;
+                }
+            }
         }
 
     }
@@ -125,15 +129,16 @@
         }
     }
     .download {
-        a {
-            display: flex;
-            flex-direction: row;
-            .placy-img {
-                border-radius: 1rem 0 0 1rem;
-                width: 32rem;
-            }
-            .download-info {
-                padding: 2.5rem 7.5rem;
+        display: flex;
+        .smack-img {
+            border-radius: 1rem 0 0 1rem;
+            width: 32rem;
+        }
+        .download-info {
+            padding: 2.5rem 7.5rem;
+            svg {
+                width: 15rem;
+                margin-bottom: 2rem;
             }
         }
     }

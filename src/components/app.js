@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import * as styles from '../styles/app.module.scss'
-import PlacyLogo from "../images/placy-logo.svg"
+import SmackLogo from "../images/smack-icon.svg"
 import Pause from "../images/pause.svg"
 import Play from "../images/play.svg"
 import { useIntl } from 'gatsby-plugin-react-intl'
@@ -40,15 +40,23 @@ const App = () => {
                 <div className={styles.download}>
                     <a href='https://placysmack.page.link/cooperate-site' 
                     target="_blank" rel="noopener noreferrer">
-                        <StaticImage src='../images/smack-game.png' alt='placy' className={styles.placyImg} />
-                        <div className={styles.downloadInfo}>
-                            <p className={styles.smack}>仮ですSMACK後で差し替え</p>
-                            <PlacyLogo />
-                            <p className={styles.slogan}>Forget the reviews. Follow your rhythm.</p>
-                            <StaticImage src='../images/app-store.png' width={130} 
-                            alt='app-store' className={styles.appStore} />
-                        </div>
+                        <StaticImage src='../images/smack-game.png' alt='placy' className={styles.smackImg} />
                     </a>
+                    <div className={styles.downloadInfo}>
+                        <SmackLogo />
+                        <div className={styles.appStores}>
+                            <a href='https://apps.apple.com/jp/app/placy-smack/id1625088342'
+                              target="_blank" rel="noopener noreferrer">
+                            <StaticImage src='../images/app-store.png'  
+                            alt='app-store' className={styles.appStore} />
+                            </a>
+                            <a href='https://play.google.com/store/apps/details?id=com.placy.smack'
+                              target="_blank" rel="noopener noreferrer">
+                            <StaticImage src='../images/google-play-icon.png'  
+                            alt='play-store' className={styles.appStore} />
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
